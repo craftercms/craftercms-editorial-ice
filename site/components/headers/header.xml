@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright (C) 2007-2019 Crafter Software Corporation. All Rights Reserved.
+  ~
+  ~ This program is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ This program is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  -->
+
+<component>
+	<content-type>/component/header</content-type>	<display-template>/templates/web/components/header.ftl</display-template>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>af02</objectGroupId>
+	<objectId>af023d71-d5ea-f8e5-2ec9-07a8b239d0c5</objectId>
+	<file-name>header.xml</file-name>
+	<folder-name/>
+	<internal-name>Header</internal-name>
+	<logo_text/>
+	<business_name_s>Editorial</business_name_s>
+	<logo/>
+	<social_media_links_o>	<item>	<url_s>http://twitter.com</url_s>
+	<social_media_s>fa-twitter</social_media_s>
+	</item>	<item>	<social_media_s>fa-facebook</social_media_s>
+	<url_s>http://facebook.com</url_s>
+	</item>	<item>	<social_media_s>fa-google-plus</social_media_s>
+	<url_s>http://plus.google.com</url_s>
+	</item></social_media_links_o>
+	<createdDate>2017-2-3T23:27:50.000Z</createdDate>
+	<createdDate_dt>2017-2-3T23:27:50.000Z</createdDate_dt>
+	<lastModifiedDate>2017-3-13T20:37:41.000Z</lastModifiedDate>
+	<lastModifiedDate_dt>2017-3-13T20:37:41.000Z</lastModifiedDate_dt>
+</component>

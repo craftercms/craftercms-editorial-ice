@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright (C) 2007-2019 Crafter Software Corporation. All Rights Reserved.
+  ~
+  ~ This program is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ This program is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  -->
+
+<page>
+	<content-type>/page/category-landing</content-type>	<display-template>/templates/web/pages/category-landing.ftl</display-template>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>102f</objectGroupId>
+	<objectId>102fb288-0dd8-806c-7651-2dd8838ca016</objectId>
+	<header/>
+	<file-name>index.xml</file-name>
+	<folder-name>style</folder-name>
+	<internal-name>Style</internal-name>
+	<title_t>Style</title_t>
+	<placeInNav>true</placeInNav>
+	<orderDefault_f>8000</orderDefault_f>
+	<createdDate>2017-3-13T22:26:52.000Z</createdDate>
+	<createdDate_dt>2017-3-13T22:26:52.000Z</createdDate_dt>
+	<lastModifiedDate>2017-3-21T18:15:50.000Z</lastModifiedDate>
+	<lastModifiedDate_dt>2017-3-21T18:15:50.000Z</lastModifiedDate_dt>
+	<left-rail/>
+	<category_s>style</category_s>
+	<max_articles_i>10</max_articles_i>
+	<articles_title_t>Style</articles_title_t>
+</page>

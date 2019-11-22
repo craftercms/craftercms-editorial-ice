@@ -99,6 +99,9 @@
 <script src="/static-assets/js/ie/respond.min.js"></script><![endif]-->
 <script src="/static-assets/js/main.js?v=${siteContext.siteName}"></script>
 
-<@studio.toolSupport/>
+<#--@studio.toolSupport/-->
+
+<script src="/craftercms-guest.umd.js"></script>
+
 </body>
 </html>

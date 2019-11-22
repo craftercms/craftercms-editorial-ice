@@ -101,7 +101,7 @@
 
 <#--@studio.toolSupport/-->
 
-<script src="/craftercms-guest.umd.js"></script>
+<script src="http://authoring.sample.com:3000/craftercms-guest.umd.js"></script>
 
 </body>
 </html>

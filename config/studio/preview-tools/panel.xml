@@ -43,7 +43,6 @@ Now supports JSON too!
       <moduleName>component-panel</moduleName>
       <title>pageComponents</title>
     </module>
-    <!--
     <module>
       <moduleName>craftercms.ice.assets</moduleName>
       <title>assetsPanel</title>
@@ -52,7 +51,6 @@ Now supports JSON too!
       <moduleName>craftercms.ice.audiences</moduleName>
       <title>audiencesPanel</title>
     </module>
-    -->
     <!--
     <module>
       <moduleName>craftercms.ice.audiencess</moduleName>

@@ -32,7 +32,7 @@
       <@renderComponent component=contentModel.header_o.item />
 
       <!-- Banner -->
-      <section data-craftercms-model-id="1234" id="banner" <@studio.iceAttr iceGroup="hero"/>>
+      <section id="banner" <@studio.iceAttr iceGroup="hero"/>>
         <div class="content">
           <header>${contentModel.hero_title_html}</header>
           ${contentModel.hero_text_html}

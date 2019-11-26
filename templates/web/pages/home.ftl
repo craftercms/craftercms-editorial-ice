@@ -100,9 +100,9 @@
 <script src="/static-assets/js/main.js?v=${siteContext.siteName}"></script>
 
 <#--
-<script src="http://authoring.sample.com:3000/craftercms-guest.umd.js"></script>
--->
 <@studio.toolSupport/>
+-->
+<script src="http://authoring.sample.com:3000/craftercms-guest.umd.js"></script>
 
 </body>
 </html>

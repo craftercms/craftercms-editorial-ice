@@ -1,7 +1,6 @@
 <#--import "/templates/system/common/cstudio-support.ftl" as studio /-->
 <#import "/templates/web/macros.ftl" as studio>
 
-
 <!DOCTYPE HTML>
 <!--
 	Editorial by HTML5 UP

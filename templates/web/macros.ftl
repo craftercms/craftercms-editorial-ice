@@ -145,7 +145,7 @@
     <div data-studio-ice="${id}"></div>
   </#if>
 </#macro>
-  
+
 <#macro draggableComponent id="" component="" componentPath="">
   <#if modePreview>
     <#if id != "" && component == "" && componentPath == "">
@@ -173,3 +173,5 @@
     </@ice>
   </div>
 </#macro>
+
+<h1>Hey, Macro!</h1>

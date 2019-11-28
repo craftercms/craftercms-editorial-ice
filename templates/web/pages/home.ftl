@@ -29,7 +29,7 @@
   <div id="main">
     <div class="inner">
     
-    <@studio.TestMe>
+    <@studio.TestMe/>
 
       <!-- Header -->
       <@renderComponent component=contentModel.header_o.item />

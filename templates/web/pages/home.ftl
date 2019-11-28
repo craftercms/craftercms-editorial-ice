@@ -28,6 +28,8 @@
   <!-- Main -->
   <div id="main">
     <div class="inner">
+    
+    <@studio.TestMe>
 
       <!-- Header -->
       <@renderComponent component=contentModel.header_o.item />

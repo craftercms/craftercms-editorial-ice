@@ -59,26 +59,6 @@
 	<lastModifiedDate>2019-10-11T19:20:07.555Z</lastModifiedDate>
 	<lastModifiedDate_dt>2019-10-11T19:20:07.555Z</lastModifiedDate_dt>
 </component>
-	</item><item datasource="features" inline="true">	<key>9e93c15d-9473-363b-6179-ce02c1203756</key>
-	<value>Four</value>
-<component id="9e93c15d-9473-363b-6179-ce02c1203756">
-	<content-type>/component/feature</content-type>
-	<display-template>/templates/web/components/feature.ftl</display-template>
-	<no-template-required/>
-	<merge-strategy>inherit-levels</merge-strategy>
-	<objectGroupId>9e93</objectGroupId>
-	<objectId>9e93c15d-9473-363b-6179-ce02c1203756</objectId>
-	<disabled>false</disabled>
-	<icon_s>fa-gavel</icon_s>
-	<file-name>9e93c15d-9473-363b-6179-ce02c1203756.xml</file-name>
-	<internal-name>Four</internal-name>
-	<title_t>Four</title_t>
-	<body_html>&lt;p&gt;Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.&lt;/p&gt;</body_html>
-	<createdDate>2019-10-11T19:21:00.910Z</createdDate>
-	<createdDate_dt>2019-10-11T19:21:00.910Z</createdDate_dt>
-	<lastModifiedDate>2019-10-11T19:21:00.910Z</lastModifiedDate>
-	<lastModifiedDate_dt>2019-10-11T19:21:00.910Z</lastModifiedDate_dt>
-</component>
 	</item><item datasource="features" inline="true">	<key>9f6b80da-21c8-9232-5175-2b1b97db1ed0</key>
 	<value>Three</value>
 <component id="9f6b80da-21c8-9232-5175-2b1b97db1ed0">
@@ -98,6 +78,26 @@
 	<createdDate_dt>2019-10-11T19:20:49.115Z</createdDate_dt>
 	<lastModifiedDate>2019-10-11T19:20:49.115Z</lastModifiedDate>
 	<lastModifiedDate_dt>2019-10-11T19:20:49.115Z</lastModifiedDate_dt>
+</component>
+	</item><item datasource="features" inline="true">	<key>9e93c15d-9473-363b-6179-ce02c1203756</key>
+	<value>Four</value>
+<component id="9e93c15d-9473-363b-6179-ce02c1203756">
+	<content-type>/component/feature</content-type>
+	<display-template>/templates/web/components/feature.ftl</display-template>
+	<no-template-required/>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>9e93</objectGroupId>
+	<objectId>9e93c15d-9473-363b-6179-ce02c1203756</objectId>
+	<disabled>false</disabled>
+	<icon_s>fa-gavel</icon_s>
+	<file-name>9e93c15d-9473-363b-6179-ce02c1203756.xml</file-name>
+	<internal-name>Four</internal-name>
+	<title_t>Four</title_t>
+	<body_html>&lt;p&gt;Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.&lt;/p&gt;</body_html>
+	<createdDate>2019-10-11T19:21:00.910Z</createdDate>
+	<createdDate_dt>2019-10-11T19:21:00.910Z</createdDate_dt>
+	<lastModifiedDate>2019-10-11T19:21:00.910Z</lastModifiedDate>
+	<lastModifiedDate_dt>2019-10-11T19:21:00.910Z</lastModifiedDate_dt>
 </component>
 	</item><item datasource="features" inline="true">	<key>af1c108b-f7ae-26af-fbe1-a828e52d6a1f</key>
 	<value>Embedded Feature</value>

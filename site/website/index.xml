@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<page><version>2.0</version>
+<page>
 	<content-type>/page/home</content-type>
 	<display-template>/templates/web/pages/home.ftl</display-template>
 	<no-template-required/>
@@ -13,8 +13,8 @@
 	<folder-name/>
 	<createdDate>2017-1-31T16:18:14.000Z</createdDate>
 	<createdDate_dt>2017-1-31T16:18:14.000Z</createdDate_dt>
-	<lastModifiedDate>2019-11-29T20:14:38.764Z</lastModifiedDate>
-	<lastModifiedDate_dt>2019-11-29T20:14:38.764Z</lastModifiedDate_dt>
+	<lastModifiedDate>2019-12-04T10:41:39.352Z</lastModifiedDate>
+	<lastModifiedDate_dt>2019-12-04T10:41:39.352Z</lastModifiedDate_dt>
 	<title_t>Editorial</title_t>
 	<hero_text_html>&lt;p&gt;Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas. Pellentesque sapien ac quam. Lorem ipsum dolor sit nullam.&lt;/p&gt;</hero_text_html>
 	<hero_title_html>&lt;h1&gt;Hi, I&amp;rsquo;m Editorial&lt;/h1&gt;
@@ -39,7 +39,7 @@
 	<lastModifiedDate>2019-10-11T19:19:53.590Z</lastModifiedDate>
 	<lastModifiedDate_dt>2019-10-11T19:19:53.590Z</lastModifiedDate_dt>
 </component>
-	</item><item datasource="features" inline="true">	<key>310b0c87-c3ca-4da0-4aa2-7002a318d7ce</key>
+	</item>	<item datasource="features" inline="true">	<key>310b0c87-c3ca-4da0-4aa2-7002a318d7ce</key>
 	<value>Two</value>
 <component id="310b0c87-c3ca-4da0-4aa2-7002a318d7ce">
 	<content-type>/component/feature</content-type>
@@ -59,7 +59,7 @@
 	<lastModifiedDate>2019-10-11T19:20:07.555Z</lastModifiedDate>
 	<lastModifiedDate_dt>2019-10-11T19:20:07.555Z</lastModifiedDate_dt>
 </component>
-	</item><item datasource="features" inline="true">	<key>9f6b80da-21c8-9232-5175-2b1b97db1ed0</key>
+	</item>	<item datasource="features" inline="true">	<key>9f6b80da-21c8-9232-5175-2b1b97db1ed0</key>
 	<value>Three</value>
 <component id="9f6b80da-21c8-9232-5175-2b1b97db1ed0">
 	<content-type>/component/feature</content-type>
@@ -79,7 +79,7 @@
 	<lastModifiedDate>2019-10-11T19:20:49.115Z</lastModifiedDate>
 	<lastModifiedDate_dt>2019-10-11T19:20:49.115Z</lastModifiedDate_dt>
 </component>
-	</item><item datasource="features" inline="true">	<key>9e93c15d-9473-363b-6179-ce02c1203756</key>
+	</item>	<item datasource="features" inline="true">	<key>9e93c15d-9473-363b-6179-ce02c1203756</key>
 	<value>Four</value>
 <component id="9e93c15d-9473-363b-6179-ce02c1203756">
 	<content-type>/component/feature</content-type>
@@ -99,7 +99,7 @@
 	<lastModifiedDate>2019-10-11T19:21:00.910Z</lastModifiedDate>
 	<lastModifiedDate_dt>2019-10-11T19:21:00.910Z</lastModifiedDate_dt>
 </component>
-	</item><item datasource="features" inline="true">	<key>af1c108b-f7ae-26af-fbe1-a828e52d6a1f</key>
+	</item>	<item datasource="features" inline="true">	<key>af1c108b-f7ae-26af-fbe1-a828e52d6a1f</key>
 	<value>Embedded Feature</value>
 <component id="af1c108b-f7ae-26af-fbe1-a828e52d6a1f">
 	<content-type>/component/feature</content-type>
@@ -119,7 +119,11 @@
 	<lastModifiedDate>2019-11-25T16:11:11.026Z</lastModifiedDate>
 	<lastModifiedDate_dt>2019-11-25T16:11:11.026Z</lastModifiedDate_dt>
 </component>
-	</item>				</features_o>
+	</item>	<item datasource="sharedFeatures">	<key>/site/components/features/4be0a368-783c-8f73-7469-63a62636bd4c.xml</key>
+	<value>Five</value>
+	<include>/site/components/features/4be0a368-783c-8f73-7469-63a62636bd4c.xml</include>
+	<disableFlattening>false</disableFlattening>
+	</item></features_o>
 	<header/>
 	<hero_image_s>/static-assets/images/strawberries.jpg</hero_image_s>
 	<left-rail_o item-list="true">	<item>	<key>/site/components/left-rails/left-rail-with-latest-articles.xml</key>

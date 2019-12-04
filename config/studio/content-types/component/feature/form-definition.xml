@@ -62,6 +62,16 @@
 							<value>50</value>
 							<type>int</type>
 						</property>
+						<property>
+							<name>readonly</name>
+							<value></value>
+							<type>boolean</type>
+						</property>
+						<property>
+							<name>tokenize</name>
+							<value>false</value>
+							<type>boolean</type>
+						</property>
 					</properties>
 					<constraints>
 						<constraint>
@@ -77,7 +87,7 @@
 					<iceId></iceId>
 					<title>Disable Component</title>
 					<description></description>
-					<defaultValue></defaultValue>
+					<defaultValue>false</defaultValue>
 					<help></help>
 					<properties>
 						<property>

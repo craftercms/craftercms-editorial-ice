@@ -59,7 +59,7 @@
 	<lastModifiedDate>2019-10-11T19:19:53.590Z</lastModifiedDate>
 	<lastModifiedDate_dt>2019-10-11T19:19:53.590Z</lastModifiedDate_dt>
 </component>
-	</item>	<item datasource="features" inline="true">	<key>310b0c87-c3ca-4da0-4aa2-7002a318d7ce</key>
+	</item>	<item datasource="features"><key>1f298bfe-3c9c-4fd3-bba7-b43ab868360d</key><value>New Feature</value><component id="1f298bfe-3c9c-4fd3-bba7-b43ab868360d"><content-type>/component/feature</content-type><display-template>/templates/web/components/feature.ftl</display-template><internal-name>New Feature</internal-name><file-name>1f298bfe-3c9c-4fd3-bba7-b43ab868360d.xml</file-name><merge-strategy>inherit-levels</merge-strategy><createdDate_dt>2019-12-05T17:45:18.600Z</createdDate_dt><lastModifiedDate_dt>2019-12-05T17:45:18.600Z</lastModifiedDate_dt><objectId>1f298bfe-3c9c-4fd3-bba7-b43ab868360d</objectId><locale>en</locale><disabled>false</disabled><icon_s>fa-lightbulb-o</icon_s><title_t>Feature Title</title_t><body_html>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</body_html></component></item><item datasource="features" inline="true">	<key>310b0c87-c3ca-4da0-4aa2-7002a318d7ce</key>
 	<value>Two</value>
 <component id="310b0c87-c3ca-4da0-4aa2-7002a318d7ce">
 	<content-type>/component/feature</content-type>

@@ -79,7 +79,7 @@
 	<lastModifiedDate>2019-10-11T19:20:07.555Z</lastModifiedDate>
 	<lastModifiedDate_dt>2019-10-11T19:20:07.555Z</lastModifiedDate_dt>
 </component>
-	</item>	<item datasource="features"><key>dc39a813-58c4-4455-8544-310e75d8605c</key><value>New Feature</value><component id="dc39a813-58c4-4455-8544-310e75d8605c"><content-type>/component/feature</content-type><display-template>/templates/web/components/feature.ftl</display-template><internal-name>New Feature</internal-name><file-name>dc39a813-58c4-4455-8544-310e75d8605c.xml</file-name><merge-strategy>inherit-levels</merge-strategy><createdDate_dt>2019-12-05T17:52:07.094Z</createdDate_dt><lastModifiedDate_dt>2019-12-05T17:52:07.094Z</lastModifiedDate_dt><objectId>dc39a813-58c4-4455-8544-310e75d8605c</objectId><locale>en</locale><disabled>false</disabled><icon_s>fa-lightbulb-o</icon_s><title_t>Feature Title</title_t><body_html>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</body_html></component></item><item datasource="features" inline="true">	<key>9f6b80da-21c8-9232-5175-2b1b97db1ed0</key>
+	</item>	<item datasource="features" inline="true">	<key>9f6b80da-21c8-9232-5175-2b1b97db1ed0</key>
 	<value>Three</value>
 <component id="9f6b80da-21c8-9232-5175-2b1b97db1ed0">
 	<content-type>/component/feature</content-type>

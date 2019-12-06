@@ -65,7 +65,7 @@ class SearchHelper {
       .from(start)
       .size(rows)
       .highlighter(highlighter)
-    
+
     def result = elasticsearch.search(new SearchRequest().source(builder))
 
     if (result) {
@@ -94,13 +94,13 @@ class SearchHelper {
     if (additionalCriteria) {
       q = "${q} AND ${additionalCriteria}"
     }
-    
+
     def builder = new SearchSourceBuilder()
       .query(QueryBuilders.queryStringQuery(q))
       .from(start)
       .size(rows)
       .sort(new FieldSortBuilder("date_dt").order(SortOrder.DESC))
-    
+
     def result = elasticsearch.search(new SearchRequest().source(builder))
 
     if (result) {
@@ -118,6 +118,9 @@ class SearchHelper {
       hits.each {hit ->
         def doc = hit.getSourceAsMap()
         def article = [:]
+            article.id = doc.objectId
+            article.objectId = doc.objectId
+            article.path = doc.localId
             article.title = doc.title_t
             article.url = urlTransformationService.transform("storeUrlToRenderUrl", doc.localId)
 
@@ -149,6 +152,9 @@ class SearchHelper {
     if (documents) {
       documents.each {doc ->
         def article = [:]
+            article.id = doc.objectId
+            article.objectId = doc.objectId
+            article.path = doc.localId
             article.title = doc.subject_t
             article.summary = doc.summary_t
             article.url = urlTransformationService.transform("storeUrlToRenderUrl", doc.localId)

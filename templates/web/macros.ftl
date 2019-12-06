@@ -1,46 +1,12 @@
-<#macro renderComponents componentList parent={}>
-  <#if componentList?? && componentList.item??>
-    <#list componentList.item as module>
-      <#if parent?has_content>
-        <@renderComponent component=module parent=parent />
-      <#else>
-        <@renderComponent component=module />
-      </#if>
-    </#list>
-  </#if>
-</#macro>
-
-<#macro renderRTEComponents model>
-
-  <#assign componentCount = model['count(//rteComponents//item/id)'] />
-
-  <#if componentCount == 1 >
-    <#assign curComponentPath = ""+model['//rteComponents//item/contentId'] />
-    <div style='display:none' id='o_${model['//rteComponents//item/id']}'>
-      <#-- @renderComponent component=model['//rteComponents//item'] /-->
-      <@renderComponent componentPath=curComponentPath />
-    </div>
-    <#assign item = siteItemService.getSiteItem(curComponentPath) />
-    <@renderRTEComponents model=item />
-  <#elseif (componentCount > 1) == true >
-    <#assign components = model['//rteComponents//item'] />
-    <#list components as c>
-      <#if c.id??>
-        <div style='display:none' id='o_${c.id}'>
-          <#assign curComponentPath = "" + c.contentId />
-          <@renderComponent componentPath=curComponentPath />
-        </div>
-        <#assign item = siteItemService.getSiteItem(curComponentPath) />
-        <@renderRTEComponents model=item />
-      </#if>
-    </#list>
-  </#if>
-</#macro>
-
 <#macro toolSupport>
   <#if modePreview>
-    <script src="/studio/static-assets/libs/requirejs/require.js"
-            data-main="/studio/overlayhook?site=NOTUSED&page=NOTUSED&cs.js"></script>
+    <script src="http://authoring.sample.com:3000/craftercms-guest.umd.js"></script>
+  <#--
+  <script
+    src="/studio/static-assets/libs/requirejs/require.js"
+    data-main="/studio/overlayhook?site=NOTUSED&page=NOTUSED&cs.js"
+  ></script>
+  -->
   </#if>
 </#macro>
 
@@ -48,39 +14,27 @@
   <@toolSupport />
 </#macro>
 
-<#-- Main macro for component attributes -->
+<#-- Macro for component attributes -->
 <#macro componentAttr path="" ice=false iceGroup="" component={}>
   <#if !modePreview>
     <#return>
   </#if>
-  <#if component?has_content>
-    <@componentAttrComponent ice=ice iceGroup=iceGroup component=component />
+  <#if !component?has_content>
+    <#assign item = siteItemService.getSiteItem(path)/>
   <#else>
-    <@componentAttrLegacy ice=ice iceGroup=iceGroup path=path />
+    <#assign item = component/>
   </#if>
-</#macro>
-
-<#-- Macro to handle component attributes for a SiteItem -->
-<#macro componentAttrComponent ice=false iceGroup="" component={}>
-  data-studio-component="${component.storeUrl}"
-  data-studio-component-path="${component.storeUrl}"
+  data-studio-component="${item.storeUrl}"
+  data-studio-component-path="${item.storeUrl}"
   <#if ice>
-    <@iceAttrComponent component=component iceGroup=iceGroup/>
+    <@iceAttr component=item iceGroup=iceGroup/>
   </#if>
-  <#if !component.getDom()?has_content >
-    data-studio-embedded-item-id="${component.objectId}"
-  </#if>
-</#macro>
-
-<#-- Macro to handle component attributes for a path -->
-<#macro componentAttrLegacy path="" ice=false iceGroup="">
-  data-studio-component="${path}"
-  data-studio-component-path="${path}"
-  <#if ice>
-    <@iceAttrLegacy path=path iceGroup=iceGroup/>
+  <#if !ice && !item.dom?has_content >
+    data-studio-embedded-item-id="${item.objectId}"
   </#if>
 </#macro>
 
+<#-- Macro for drop zone attributes -->
 <#macro componentContainerAttr target objectId="" component={}>
   <#if !modePreview>
     <#return>
@@ -93,50 +47,36 @@
   <#else>
   <#-- Use objectId for backwards compatibility -->
     data-studio-components-objectId="${objectId}"
+    data-studio-zone-content-type="${contentModel['content-type']}"
   </#if>
 </#macro>
 
-<#-- Main macro for ICE attributes -->
+<#-- Macro for ICE attributes -->
 <#macro iceAttr iceGroup="" path="" label="" component={} >
   <#if !modePreview>
     <#return>
   </#if>
-  <#if component?has_content >
-    <@iceAttrComponent iceGroup=iceGroup label=label component=component />
+  <#if !(component?has_content)>
+    <#if path?has_content>
+      <#assign item = siteItemService.getSiteItem(path)/>
+    <#else>
+      <#assign item = contentModel/>
+    </#if>
   <#else>
-    <@iceAttrLegacy iceGroup=iceGroup label=label path=path />
+    <#assign item = component/>
   </#if>
-</#macro>
-
-<#-- Macro to handle ICE attributes for a SiteItem -->
-<#macro iceAttrComponent iceGroup="" label="" component={} >
 <#-- Figure out the label to use -->
   <#if label?has_content >
     <#assign actualLabel = label />
   <#elseif iceGroup?has_content >
     <#assign actualLabel = iceGroup />
   <#else>
-    <#assign actualLabel = component["internal-name"] />
+    <#assign actualLabel = item["internal-name"]!"" />
   </#if>
-  data-studio-ice="${iceGroup}" data-studio-ice-label="${actualLabel}" data-studio-ice-path="${component.storeUrl}"
+  data-studio-ice="${iceGroup}" data-studio-ice-label="${actualLabel}" data-studio-ice-path="${item.storeUrl}"
 <#-- If the given component has a parent -->
-  <#if !component.getDom()?has_content >
-    data-studio-embedded-item-id="${component.objectId}"
-  </#if>
-</#macro>
-
-<#-- Macro to handle ICE attributes for a path -->
-<#macro iceAttrLegacy iceGroup="" label="" path="" >
-  <#if label?has_content >
-    <#assign actualLabel = label />
-  <#elseif iceGroup?has_content >
-    <#assign actualLabel = iceGroup />
-  <#else>
-    <#assign actualLabel = path />
-  </#if>
-  data-studio-ice="${iceGroup}" data-studio-ice-label="${actualLabel}"
-  <#if path?has_content >
-    data-studio-ice-path="${path}"
+  <#if !item.dom?has_content >
+    data-studio-embedded-item-id="${item.objectId}"
   </#if>
 </#macro>
 
@@ -174,4 +114,126 @@
   </div>
 </#macro>
 
-<h1>Hey, Macro!</h1>
+<#--
+TODO:
+Can we put content types on the context so we can extract the content type name automatically?
+-->
+<#macro tag $tag="div" $model=contentModel $field="" $index="" $label="" $attrs={} attrs...>
+  <#assign nested><#nested/></#assign>
+  <#assign attributes = attrs?has_content?then(attrs, {})>
+  <#assign $attributes = attributes + $attrs/>
+  <#if nested?has_content>
+    <#assign nested = "\n${nested}  ">
+  </#if>
+  <${$tag}
+  <#list $attributes as attr, value>
+    ${attr}="${value}"
+  </#list>
+  <#if modePreview && $model?has_content>
+    data-craftercms-model-id="${$model.objectId}"
+    <#if $field?has_content>
+    <#---->data-craftercms-field-id="${$field}"
+    </#if>
+    <#if $index?has_content>
+    <#---->data-craftercms-index="${$index}"
+    </#if>
+    <#if $label?has_content>
+    <#---->data-craftercms-label="${$label}"
+    </#if>
+  </#if>
+  >${nested}</${$tag}>
+</#macro>
+
+<#macro article $model=contentModel $field="" $index="" $label="" $attrs={} attrs...>
+  <#assign attributes = attrs?has_content?then(attrs, {})>
+  <#assign $attributes = attributes + $attrs/>
+  <@tag $tag="article" $model=$model $field=$field $index=$index $label=$label $attrs=$attributes><#nested></@tag>
+</#macro>
+
+<#macro a $model=contentModel $field="" $index="" $label="" $attrs={} attrs...>
+  <#assign attributes = attrs?has_content?then(attrs, {})>
+  <#assign $attributes = attributes + $attrs/>
+  <@tag $tag="a" $model=$model $field=$field $index=$index $label=$label $attrs=$attributes><#nested></@tag>
+</#macro>
+
+<#macro img $model=contentModel $field="" $index="" $label="" $attrs={} attrs...>
+  <#assign attributes = attrs?has_content?then(attrs, {})>
+  <#assign $attributes = attributes + $attrs/>
+  <@tag $tag="img" $model=$model $field=$field $index=$index $label=$label $attrs=$attributes><#nested></@tag>
+</#macro>
+
+<#macro header $model=contentModel $field="" $index="" $label="" $attrs={} attrs...>
+  <#assign attributes = attrs?has_content?then(attrs, {})>
+  <#assign $attributes = attributes + $attrs/>
+  <@tag $tag="header" $model=$model $field=$field $index=$index $label=$label $attrs=$attributes><#nested></@tag>
+</#macro>
+
+<#macro div $model=contentModel $field="" $index="" $label="" $attrs={} attrs...>
+  <#assign attributes = attrs?has_content?then(attrs, {})>
+  <#assign $attributes = attributes + $attrs/>
+  <@tag $tag="div" $model=$model $field=$field $index=$index $label=$label $attrs=$attributes><#nested></@tag>
+</#macro>
+
+<#macro span $model=contentModel $field="" $index="" $label="" $attrs={} attrs...>
+  <#assign attributes = attrs?has_content?then(attrs, {})>
+  <#assign $attributes = attributes + $attrs/>
+  <@tag $tag="span" $model=$model $field=$field $index=$index $label=$label $attrs=$attributes><#nested></@tag>
+</#macro>
+
+<#macro h1 $model=contentModel $field="" $index="" $label="" $attrs={} attrs...>
+  <#assign attributes = attrs?has_content?then(attrs, {})>
+  <#assign $attributes = attributes + $attrs/>
+  <@tag $tag="h1" $model=$model $field=$field $index=$index $label=$label $attrs=$attributes><#nested></@tag>
+</#macro>
+<#macro h2 $model=contentModel $field="" $index="" $label="" $attrs={} attrs...>
+  <#assign attributes = attrs?has_content?then(attrs, {})>
+  <#assign $attributes = attributes + $attrs/>
+  <@tag $tag="h2" $model=$model $field=$field $index=$index $label=$label $attrs=$attributes><#nested></@tag>
+</#macro>
+<#macro h3 $model=contentModel $field="" $index="" $label="" $attrs={} attrs...>
+  <#assign attributes = attrs?has_content?then(attrs, {})>
+  <#assign $attributes = attributes + $attrs/>
+  <@tag $tag="h3" $model=$model $field=$field $index=$index $label=$label $attrs=$attributes><#nested></@tag>
+</#macro>
+<#macro h4 $model=contentModel $field="" $index="" $label="" $attrs={} attrs...>
+  <#assign attributes = attrs?has_content?then(attrs, {})>
+  <#assign $attributes = attributes + $attrs/>
+  <@tag $tag="h4" $model=$model $field=$field $index=$index $label=$label $attrs=$attributes><#nested></@tag>
+</#macro>
+<#macro h5 $model=contentModel $field="" $index="" $label="" $attrs={} attrs...>
+  <#assign attributes = attrs?has_content?then(attrs, {})>
+  <#assign $attributes = attributes + $attrs/>
+  <@tag $tag="h5" $model=$model $field=$field $index=$index $label=$label $attrs=$attributes><#nested></@tag>
+</#macro>
+<#macro h6 $model=contentModel $field="" $index="" $label="" $attrs={} attrs...>
+  <#assign attributes = attrs?has_content?then(attrs, {})>
+  <#assign $attributes = attributes + $attrs/>
+  <@tag $tag="h6" $model=$model $field=$field $index=$index $label=$label $attrs=$attributes><#nested></@tag>
+</#macro>
+
+<#macro ul $model=contentModel $field="" $index="" $label="" $attrs={} attrs...>
+  <#assign attributes = attrs?has_content?then(attrs, {})>
+  <#assign $attributes = attributes + $attrs/>
+  <@tag $tag="ul" $model=$model $field=$field $index=$index $label=$label $attrs=$attributes><#nested></@tag>
+</#macro>
+
+<#macro body $model=contentModel $field="" $index="" $label="" $attrs={} attrs...>
+  <#assign attributes = attrs?has_content?then(attrs, {})>
+  <#assign $attributes = attributes + $attrs/>
+  <@tag $tag="body" $model=$model $field=$field $index=$index $label=$label $attrs=$attributes><#nested></@tag>
+</#macro>
+
+<#macro p $model=contentModel $field="" $index="" $label="" $attrs={} attrs...>
+  <#assign attributes = attrs?has_content?then(attrs, {})>
+  <#assign $attributes = attributes + $attrs/>
+  <@tag $tag="p" $model=$model $field=$field $index=$index $label=$label $attrs=$attributes><#nested></@tag>
+</#macro>
+
+<#--
+<#macro div></#macro>
+<#macro article></#macro>
+<#macro section></#macro>
+<#macro h1></#macro>
+<#macro h2></#macro>
+<#macro h3></#macro>
+-->

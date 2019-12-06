@@ -1,8 +1,14 @@
-<#import "/templates/system/common/cstudio-support.ftl" as studio />
-<article <@studio.componentAttr component=contentModel ice=true />>
-  <span class="icon ${contentModel.icon_s}"></span>
+<#--<#import "/templates/system/common/cstudio-support.ftl" as studio />-->
+<#import "/templates/web/macros.ftl" as studio>
+
+<@studio.article $model=($model!contentModel) $field=($field!"") $index=($index!"")>
+  <@studio.span class="icon ${contentModel.icon_s}" $field="icon_s"/>
   <div class="content">
-    <h3>${contentModel.title_t}</h3>
-    ${contentModel.body_html}
+    <@studio.h3 $field="title_t">
+      ${contentModel.title_t}
+    </@studio.h3>
+    <@studio.span $field="body_html">
+      ${contentModel.body_html}
+    </@studio.span>
   </div>
-</article>
+</@studio.article>

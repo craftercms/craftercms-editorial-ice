@@ -123,7 +123,7 @@
 	<value>Five</value>
 	<include>/site/components/features/4be0a368-783c-8f73-7469-63a62636bd4c.xml</include>
 	<disableFlattening>false</disableFlattening>
-	</item><item datasource="features"><key>6a7ff62b-d6a0-4c82-b6de-432cfd3d2a62</key><value>New Feature</value><component id="6a7ff62b-d6a0-4c82-b6de-432cfd3d2a62"><content-type>/component/feature</content-type><display-template>/templates/web/components/feature.ftl</display-template><internal-name>New Feature</internal-name><file-name>6a7ff62b-d6a0-4c82-b6de-432cfd3d2a62.xml</file-name><merge-strategy>inherit-levels</merge-strategy><createdDate_dt>2019-12-09T19:33:03.085Z</createdDate_dt><lastModifiedDate_dt>2019-12-09T19:33:03.085Z</lastModifiedDate_dt><objectId>6a7ff62b-d6a0-4c82-b6de-432cfd3d2a62</objectId><locale>en</locale><disabled>false</disabled><icon_s>fa-lightbulb-o</icon_s><title_t>Feature Title</title_t><body_html>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</body_html></component></item></features_o>
+	</item></features_o>
 	<header/>
 	<hero_image_s>/static-assets/images/strawberries.jpg</hero_image_s>
 	<left-rail_o item-list="true">	<item>	<key>/site/components/left-rails/left-rail-with-latest-articles.xml</key>

@@ -31,8 +31,8 @@
 		<includes>
 		    <!-- 
 		    1. Roles - you're a press release person. 
-		    2. ... - 
-		    3. ... - 
+		    2. Directory structure / Paths - 
+		    3. Names / Moniker - Content types, drop zone names, content tags, field (tags)
 		    -->
 		    <!-- Paths in which the content type is allowed to live. -->
 		    <!-- Content types get tied to paths. Paths get attached to permissions. -->

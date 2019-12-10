@@ -10,4 +10,5 @@
 	<quickCreatePath></quickCreatePath>
 	<noThumbnail>true</noThumbnail>
 	<image-thumbnail></image-thumbnail>
+	<!-- no includes or excludes so component can be created anywhere -->
 </content-type>

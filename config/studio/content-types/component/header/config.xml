@@ -29,6 +29,13 @@
 	<image-thumbnail>component-header.png</image-thumbnail>
 	<paths>
 		<includes>
+		    <!-- 
+		    1. Roles - you're a press release person. 
+		    2. ... - 
+		    3. ... - 
+		    -->
+		    <!-- Paths in which the content type is allowed to live. -->
+		    <!-- Content types get tied to paths. Paths get attached to permissions. -->
 			<pattern>^/site/components/headers/.*</pattern>
 		</includes>
 	</paths>

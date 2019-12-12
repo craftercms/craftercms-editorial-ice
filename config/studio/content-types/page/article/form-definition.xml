@@ -203,7 +203,7 @@
 						</property>
 						<property>
 							<name>contentTypes</name>
-							<value>/page/article,/component/articles-widget,/page/category-landing,/component/contact-widget</value>
+							<value>*</value>
 							<type>contentTypes</type>
 						</property>
 						<property>

@@ -201,6 +201,16 @@
 							<value></value>
 							<type>boolean</type>
 						</property>
+						<property>
+							<name>contentTypes</name>
+							<value>/page/article,/component/articles-widget</value>
+							<type>contentTypes</type>
+						</property>
+						<property>
+							<name>tags</name>
+							<value></value>
+							<type>string</type>
+						</property>
 					</properties>
 					<constraints>
 						<constraint>

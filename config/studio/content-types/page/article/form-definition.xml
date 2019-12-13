@@ -203,7 +203,7 @@
 						</property>
 						<property>
 							<name>contentTypes</name>
-							<value>*</value>
+							<value>/component/header</value>
 							<type>contentTypes</type>
 						</property>
 						<property>

@@ -208,7 +208,7 @@
 						</property>
 						<property>
 							<name>tags</name>
-							<value></value>
+							<value>carousel, gallery</value>
 							<type>string</type>
 						</property>
 					</properties>

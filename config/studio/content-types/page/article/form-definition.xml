@@ -259,6 +259,16 @@
 							<value></value>
 							<type>boolean</type>
 						</property>
+						<property>
+							<name>contentTypes</name>
+							<value>,/component/left-rail</value>
+							<type>contentTypes</type>
+						</property>
+						<property>
+							<name>tags</name>
+							<value></value>
+							<type>string</type>
+						</property>
 					</properties>
 					<constraints>
 						<constraint>
@@ -298,6 +308,11 @@
 							<name>readonly</name>
 							<value></value>
 							<type>boolean</type>
+						</property>
+						<property>
+							<name>listDirection</name>
+							<value>[{&quot;value&quot;:&quot;horizontal&quot;,&quot;label&quot;:&quot;Horizonal&quot;,&quot;selected&quot;:true},{&quot;value&quot;:&quot;vertical&quot;,&quot;label&quot;:&quot;Vertical&quot;,&quot;selected&quot;:false}]</value>
+							<type>dropdown</type>
 						</property>
 					</properties>
 					<constraints>

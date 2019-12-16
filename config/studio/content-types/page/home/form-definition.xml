@@ -191,6 +191,16 @@
 							<value></value>
 							<type>boolean</type>
 						</property>
+						<property>
+							<name>contentTypes</name>
+							<value>,/component/header</value>
+							<type>contentTypes</type>
+						</property>
+						<property>
+							<name>tags</name>
+							<value></value>
+							<type>string</type>
+						</property>
 					</properties>
 					<constraints>
 						<constraint>
@@ -238,6 +248,16 @@
 							<name>useSingleValueFilename</name>
 							<value></value>
 							<type>boolean</type>
+						</property>
+						<property>
+							<name>contentTypes</name>
+							<value>,/component/left-rail</value>
+							<type>contentTypes</type>
+						</property>
+						<property>
+							<name>tags</name>
+							<value></value>
+							<type>string</type>
 						</property>
 					</properties>
 					<constraints>
@@ -507,6 +527,16 @@
 							<name>useSingleValueFilename</name>
 							<value></value>
 							<type>boolean</type>
+						</property>
+						<property>
+							<name>contentTypes</name>
+							<value>,/component/feature</value>
+							<type>contentTypes</type>
+						</property>
+						<property>
+							<name>tags</name>
+							<value></value>
+							<type>string</type>
 						</property>
 					</properties>
 					<constraints>

@@ -39,7 +39,7 @@
 	<lastModifiedDate>2019-11-25T16:11:11.026Z</lastModifiedDate>
 	<lastModifiedDate_dt>2019-11-25T16:11:11.026Z</lastModifiedDate_dt>
 </component>
-	</item><item datasource="features" inline="true">	<key>a89386c4-a205-2681-2db1-c3606f714411</key>
+	</item><item datasource="features"><key>a297bfd4-6712-419c-a639-6063cac0e6da</key><value>New Feature</value><component id="a297bfd4-6712-419c-a639-6063cac0e6da"><content-type>/component/feature</content-type><display-template>/templates/web/components/feature.ftl</display-template><internal-name>New Feature</internal-name><file-name>a297bfd4-6712-419c-a639-6063cac0e6da.xml</file-name><merge-strategy>inherit-levels</merge-strategy><createdDate_dt>2019-12-18T14:59:14.418Z</createdDate_dt><lastModifiedDate_dt>2019-12-18T14:59:14.418Z</lastModifiedDate_dt><objectId>a297bfd4-6712-419c-a639-6063cac0e6da</objectId><locale>en</locale><disabled>false</disabled><icon_s>fa-lightbulb-o</icon_s><title_t>Feature Title</title_t><body_html>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</body_html></component></item><item datasource="features" inline="true">	<key>a89386c4-a205-2681-2db1-c3606f714411</key>
 	<value>One</value>
 <component id="a89386c4-a205-2681-2db1-c3606f714411">
 	<content-type>/component/feature</content-type>

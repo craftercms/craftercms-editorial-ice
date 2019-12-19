@@ -36,7 +36,7 @@
     <publishing>
         <comments>
             <!-- Global setting would apply to all -->
-            <required>false</required>
+            <required encrypt>false</required>
             <!-- Additional (also optional) specific overrides -->
             <!-- <delete-required/> -->
             <!-- <bulk-publish-required/> -->

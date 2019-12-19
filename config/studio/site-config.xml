@@ -47,7 +47,7 @@
     <form-engine>
         <field-name-postfix>true</field-name-postfix>
         <ignore-postfix-fields>
-            <field data-encrypt>internal-name</field>
+            <field>internal-name</field>
             <field>file-name</field>
             <field>placeInNav</field>
             <field>scripts</field>

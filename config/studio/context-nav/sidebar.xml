@@ -30,7 +30,7 @@
 									<params>
 										<label>Dashboard</label>
 										<path>/site-dashboard</path>
-										<test encrypt>Testing</test>
+										<test encrypted="">Testing</test>
 									</params>
 								</modulehook>
 

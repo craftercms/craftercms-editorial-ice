@@ -102,6 +102,7 @@
 									<params>
 										<label>Dashboard</label>
 										<path>/site-dashboard</path>
+										<test encrypt>Testing</test>
 									</params>
 								</modulehook>
 

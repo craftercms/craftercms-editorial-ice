@@ -289,7 +289,7 @@
 					<properties>
 						<property>
 							<name>datasource</name>
-							<value>asdf,SocialMediaTypes,SocialMediaTypes,Social Media Types</value>
+							<value>asdf,SocialMediaTypes,SocialMediaTypes,SocialMediaTypes</value>
 							<type>datasource:item</type>
 						</property>
 						<property>
@@ -386,24 +386,19 @@
 					</properties>
 				</datasource>
 				<datasource>
-					<type>key-value-list</type>
-					<id>Social Media Types</id>
-					<title>Social Media Types</title>
+					<type>site-component</type>
+					<id>brandIcons</id>
+					<title>Brand Icons</title>
 					<interface>item</interface>
 					<properties>
 						<property>
 							<name>dataType</name>
-							<value>[{&quot;value&quot;:&quot;value&quot;,&quot;label&quot;:&quot;&quot;,&quot;selected&quot;:false},{&quot;value&quot;:&quot;value_s&quot;,&quot;label&quot;:&quot;String&quot;,&quot;selected&quot;:true},{&quot;value&quot;:&quot;value_i&quot;,&quot;label&quot;:&quot;Integer&quot;,&quot;selected&quot;:false},{&quot;value&quot;:&quot;value_f&quot;,&quot;label&quot;:&quot;Float&quot;,&quot;selected&quot;:false},{&quot;value&quot;:&quot;value_dt&quot;,&quot;label&quot;:&quot;Date&quot;,&quot;selected&quot;:false},{&quot;value&quot;:&quot;value_html&quot;,&quot;label&quot;:&quot;HTML&quot;,&quot;selected&quot;:false}]</value>
+							<value>[{&quot;value&quot;:&quot;value&quot;,&quot;label&quot;:&quot;&quot;,&quot;selected&quot;:false},{&quot;value&quot;:&quot;value_s&quot;,&quot;label&quot;:&quot;String&quot;,&quot;selected&quot;:true},{&quot;value&quot;:&quot;value_i&quot;,&quot;label&quot;:&quot;Integer&quot;,&quot;selected&quot;:false},{&quot;value&quot;:&quot;value_f&quot;,&quot;label&quot;:&quot;Float&quot;,&quot;selected&quot;:false},{&quot;value&quot;:&quot;value_dt&quot;,&quot;label&quot;:&quot;Date&quot;,&quot;selected&quot;:false},{&quot;value&quot;:&quot;value_html&quot;,&quot;label&quot;:&quot;Data Type&quot;,&quot;selected&quot;:false}]</value>
 								<type>undefined</type>
 						</property>
 						<property>
-							<name>options</name>
-							<value>[{&quot;key&quot;:&quot;fa-twitter&quot;,&quot;value&quot;:&quot;Twitter&quot;},{&quot;key&quot;:&quot;fa-facebook&quot;,&quot;value&quot;:&quot;Facebook&quot;},{&quot;key&quot;:&quot;fa-instagram&quot;,&quot;value&quot;:&quot;Instagram&quot;},{&quot;key&quot;:&quot;fa-google-plus&quot;,&quot;value&quot;:&quot;Google+&quot;},{&quot;key&quot;:&quot;fa-snapchat-ghost&quot;,&quot;value&quot;:&quot;Snapchat&quot;},{&quot;key&quot;:&quot;fa-linkedin-square&quot;,&quot;value&quot;:&quot;LinkedIn&quot;},{&quot;key&quot;:&quot;fa-github-alt&quot;,&quot;value&quot;:&quot;GitHub&quot;},{&quot;key&quot;:&quot;fa-stack-overflow&quot;,&quot;value&quot;:&quot;StackOverflow&quot;},{&quot;key&quot;:&quot;fa-medium&quot;,&quot;value&quot;:&quot;Medium&quot;}]</value>
-								<type>undefined</type>
-						</property>
-						<property>
-							<name>showkeys</name>
-							<value></value>
+							<name>componentPath</name>
+							<value>/site/taxonomy/brand-icons.xml</value>
 								<type>undefined</type>
 						</property>
 					</properties>

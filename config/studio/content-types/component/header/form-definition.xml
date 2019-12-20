@@ -289,7 +289,7 @@
 					<properties>
 						<property>
 							<name>datasource</name>
-							<value>asdf,SocialMediaTypes,SocialMediaTypes,SocialMediaTypes</value>
+							<value>brandIcons</value>
 							<type>datasource:item</type>
 						</property>
 						<property>

@@ -17,6 +17,8 @@
   -->
 
 <contextNav>
+    <encrypt encrypted="">My Password</encrypt>
+    <encrypt encrypted="">Password of Mine!</encrypt>
 	<contexts>
 		<context>
 			<groups>
@@ -30,7 +32,7 @@
 									<params>
 										<label>Dashboard</label>
 										<path>/site-dashboard</path>
-										<test encrypted="">Testing</test>
+										<test>Testing</test>
 									</params>
 								</modulehook>
 

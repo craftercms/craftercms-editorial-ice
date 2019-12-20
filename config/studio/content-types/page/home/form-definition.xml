@@ -550,7 +550,7 @@
 			</fields>
 		</section>
 		<section>
-			<title>Default Section Title 1576857414858</title>
+			<title>Default Section Title 1576857489319</title>
 			<description></description>
 			<defaultOpen>false</defaultOpen>
 			<fields>
@@ -565,12 +565,12 @@
 					<properties>
 						<property>
 							<name>minSize</name>
-							<value></value>
+							<value>0</value>
 							<type>int</type>
 						</property>
 						<property>
 							<name>maxSize</name>
-							<value></value>
+							<value>1</value>
 							<type>int</type>
 						</property>
 						<property>

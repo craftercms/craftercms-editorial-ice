@@ -188,7 +188,7 @@
 						</property>
 						<property>
 							<name>contentTypes</name>
-							<value>/component/feature,/component/articles-widget</value>
+							<value>/component/feature,/component/articles-widget,/component/twoColumns</value>
 							<type>contentTypes</type>
 						</property>
 						<property>

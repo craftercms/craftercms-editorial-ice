@@ -1,27 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-  ~ Copyright (C) 2007-2019 Crafter Software Corporation. All Rights Reserved.
-  ~
-  ~ This program is free software: you can redistribute it and/or modify
-  ~ it under the terms of the GNU General Public License as published by
-  ~ the Free Software Foundation, either version 3 of the License, or
-  ~ (at your option) any later version.
-  ~
-  ~ This program is distributed in the hope that it will be useful,
-  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
-  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-  ~ GNU General Public License for more details.
-  ~
-  ~ You should have received a copy of the GNU General Public License
-  ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
-  -->
-
 <component>
-	<content-type>/taxonomy</content-type>	<display-template/>
+	<content-type>/taxonomy</content-type>
+	<display-template/>
+	<no-template-required/>
 	<merge-strategy>inherit-levels</merge-strategy>
 	<objectGroupId>ff91</objectGroupId>
 	<objectId>ff915902-c3c7-d3d1-b828-17f9828f919f</objectId>
-	<items>	<item>	<key>fa-diamond</key>
+	<items item-list="true">	<item>	<key>fa-gem</key>
 	<value>Diamond</value>
 	</item>	<item>	<key>fa-paper-plane</key>
 	<value>Paper Plane</value>
@@ -53,6 +38,6 @@
 	<internal-name>Feature Icons</internal-name>
 	<createdDate>2017-5-12T5:6:42.000Z</createdDate>
 	<createdDate_dt>2017-5-12T5:6:42.000Z</createdDate_dt>
-	<lastModifiedDate>2017-5-12T5:6:42.000Z</lastModifiedDate>
-	<lastModifiedDate_dt>2017-5-12T5:6:42.000Z</lastModifiedDate_dt>
+	<lastModifiedDate>2019-12-20T11:28:22.042Z</lastModifiedDate>
+	<lastModifiedDate_dt>2019-12-20T11:28:22.042Z</lastModifiedDate_dt>
 </component>

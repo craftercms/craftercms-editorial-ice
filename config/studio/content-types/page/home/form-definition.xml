@@ -550,7 +550,7 @@
 			</fields>
 		</section>
 		<section>
-			<title>Default Section Title 1576951020949</title>
+			<title>Default Section Title 1576957864573</title>
 			<description></description>
 			<defaultOpen>true</defaultOpen>
 			<fields>
@@ -558,7 +558,7 @@
 					<type>node-selector</type>
 					<id>content_o</id>
 					<iceId></iceId>
-					<title>Content</title>
+					<title>Dynamic Content</title>
 					<description></description>
 					<defaultValue></defaultValue>
 					<help></help>

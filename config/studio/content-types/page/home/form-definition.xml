@@ -550,7 +550,7 @@
 			</fields>
 		</section>
 		<section>
-			<title>Default Section Title 1576949923370</title>
+			<title>Default Section Title 1576951020949</title>
 			<description></description>
 			<defaultOpen>true</defaultOpen>
 			<fields>
@@ -575,7 +575,7 @@
 						</property>
 						<property>
 							<name>itemManager</name>
-							<value></value>
+							<value>features,embeddedLayout</value>
 							<type>datasource:item</type>
 						</property>
 						<property>
@@ -734,6 +734,19 @@
 						<property>
 							<name>type</name>
 							<value></value>
+								<type>undefined</type>
+						</property>
+					</properties>
+				</datasource>
+				<datasource>
+					<type>embedded-content</type>
+					<id>embeddedLayout</id>
+					<title>Embedded Layout</title>
+					<interface>item</interface>
+					<properties>
+						<property>
+							<name>contentType</name>
+							<value>/component/twoColumn</value>
 								<type>undefined</type>
 						</property>
 					</properties>

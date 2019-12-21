@@ -746,7 +746,7 @@
 					<properties>
 						<property>
 							<name>contentType</name>
-							<value>/component/twoColumn</value>
+							<value>/component/twoColumns</value>
 								<type>undefined</type>
 						</property>
 					</properties>

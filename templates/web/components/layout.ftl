@@ -1,11 +1,59 @@
-<#assign numOfColumns = contentModel.numOfColumns_i!1>
+<#import "/templates/web/macros.ftl" as studio>
 
-<#assign n = 4>
-<#assign factor = 12 / n>
-<div class="row">
-    <#list 0..<n as i>
-      <div class="col-${factor}-xlarge col-12-small">
-        Col ${i+1}
-      </div>
-    </#list>
+<#assign numOfColumns = (contentModel.numberOfColumns_s!1)?number>
+<#assign factor = 12 / numOfColumns>
+
+<!-- Layout Component -->
+<@studio.div $model=($model!contentModel) $field=($field!"") $index=($index!"")>
+  <@studio.div $field="items_o" class="row">
+  <#if contentModel.items_o?? && contentModel.items_o.item??>
+  <#list contentModel.items_o.item as component>
+    <@studio.div $field="items_o" $index="${component?index}" class="col-${factor} col-${factor}-xlarge col-12-small">
+      <@studio.div $field="items_o.content_o" $index="${component?index}">
+        <#list component.content_o.item as item>
+          <@renderComponent
+            component=item
+            additionalModel={
+              '$index': item?index,
+              '$model': contentModel,
+              '$field': 'items_o.content_o'
+            }
+          />
+        </#list>
+      </@studio.div>
+    </@studio.div>
+  </#list>
+  </#if>
+  </@studio.div>
+</@studio.div>
+<!-- /Layout Component -->
+
+<#--
+<@studio.div $field="items_o" class="row">
+<#if contentModel.items_o?? && contentModel.items_o.item??>
+<#list contentModel.items_o.item as component>
+<div class="col-${factor} col-${factor}-xlarge col-12-small">
+  <@renderComponent
+    component=component.content_o.item
+    additionalModel={
+      '$index': component?index,
+      '$model': contentModel,
+      '$field': 'items_o'
+    }
+  />
 </div>
+</#list>
+</#if>
+</@studio.div>
+-->
+
+<#--
+  <@renderComponent
+    component=component.content_o.item
+    additionalModel={
+      '$index': component?index,
+      '$model': contentModel,
+      '$field': 'items_o'
+    }
+  />
+-->

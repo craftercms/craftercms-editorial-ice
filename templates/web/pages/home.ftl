@@ -9,19 +9,9 @@
 -->
 <html>
 <head>
-  <title>${contentModel.title_t}</title>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
-  <!--[if lte IE 8]>
-  <script src="/static-assets/js/ie/html5shiv.js"></script><![endif]-->
-  <link rel="stylesheet" href="/static-assets/css/main.css?v=${siteContext.siteName}"/>
-  <!--[if lte IE 9]>
-  <link rel="stylesheet" href="/static-assets/css/ie9.css"/><![endif]-->
-  <!--[if lte IE 8]>
-  <link rel="stylesheet" href="/static-assets/css/ie8.css"/><![endif]-->
-  <link rel="stylesheet" href="/static-assets/css/jquery-ui.min.css"/>
+  <#include "/templates/web/fragments/head.ftl">
 </head>
-<body>
+<body class="is-preload">
 <!-- Wrapper -->
 <div id="wrapper">
 
@@ -56,7 +46,7 @@
         </span>
       </section>
 
-      <!-- Section -->
+      <!-- Section: Features -->
       <section>
         <header class="major">
           <@studio.tag $tag="h2" $field="features_title_t">
@@ -78,9 +68,27 @@
           </#if>
         </@studio.tag>
       </section>
+      <!-- /Section: Features -->
+
+      <!-- Section: Content -->
+      <@studio.section $field="content_o">
+      <#if contentModel.content_o?? && contentModel.content_o.item??>
+      <#list contentModel.content_o.item as component>
+        <@renderComponent
+          component=component
+          additionalModel={
+            '$index': component?index,
+            '$model': contentModel,
+            '$field': 'content_o',
+              '$label': 'Layout component'
+          }
+        />
+      </#list>
+      </#if>
+      </@studio.section>
+      <!-- /Section: Content -->
 
       <!-- Section -->
-      <#-- TODO: groovy controller needs to include model id and such so this can be ICE'cified -->
       <section>
         <header class="major">
           <h2>Featured Articles</h2>
@@ -129,16 +137,8 @@
 
 </div>
 
-<!-- Scripts -->
-<script src="/static-assets/js/jquery.min.js"></script>
-<script src="/static-assets/js/jquery-ui.min.js"></script>
-<script src="/static-assets/js/skel.min.js"></script>
-<script src="/static-assets/js/util.js"></script>
-<!--[if lte IE 8]>
-<script src="/static-assets/js/ie/respond.min.js"></script><![endif]-->
-<script src="/static-assets/js/main.js?v=${siteContext.siteName}"></script>
+<#include "/templates/web/fragments/scripts.ftl">
 
 <@studio.toolSupport/>
-
 </body>
 </html>

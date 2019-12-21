@@ -150,7 +150,7 @@
   <features_title_t>Erat lacinia</features_title_t>
   <disabled>false</disabled>
   <header_o item-list="true"/>
-  <content_o>
+  <content_o item-list="true">
     <item datasource="features">
       <key>8b4caec9-643e-406b-97a8-f1cfff384c22</key>
       <value>New Layout</value>

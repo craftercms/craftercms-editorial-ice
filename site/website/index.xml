@@ -155,7 +155,12 @@
   <disabled>false</disabled>
   <header_o item-list="true"/>
   <content_o item-list="true">
-    <item datasource="embeddedLayout" inline="true">
+    <item datasource="sharedFeatures">
+                <key>/site/components/features/72ef047f-02b7-89e2-bbd5-4763ac7dbca8.xml</key>
+                <value>Six</value>
+                <include>/site/components/features/72ef047f-02b7-89e2-bbd5-4763ac7dbca8.xml</include>
+                <disableFlattening>false</disableFlattening>
+              </item><item datasource="embeddedLayout" inline="true">
       <key>9f162335-063c-817b-8fef-16f865de4900</key>
       <value>Embedded Layout</value>
       <component id="9f162335-063c-817b-8fef-16f865de4900">
@@ -171,12 +176,7 @@
         <items_o item-list="true">
           <item>
             <content_o>
-              <item datasource="sharedFeatures">
-                <key>/site/components/features/72ef047f-02b7-89e2-bbd5-4763ac7dbca8.xml</key>
-                <value>Six</value>
-                <include>/site/components/features/72ef047f-02b7-89e2-bbd5-4763ac7dbca8.xml</include>
-                <disableFlattening>false</disableFlattening>
-              </item>
+              
             </content_o>
           </item>
         </items_o>

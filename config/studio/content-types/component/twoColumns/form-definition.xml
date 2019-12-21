@@ -233,5 +233,18 @@
 						</property>
 					</properties>
 				</datasource>
+				<datasource>
+					<type>embedded-content</type>
+					<id>embedded</id>
+					<title>Embedded</title>
+					<interface>item</interface>
+					<properties>
+						<property>
+							<name>contentType</name>
+							<value>/</value>
+								<type>undefined</type>
+						</property>
+					</properties>
+				</datasource>
 	</datasources>
 </form>

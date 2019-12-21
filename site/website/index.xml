@@ -16,9 +16,14 @@
   <lastModifiedDate>2019-12-21T18:37:24.473Z</lastModifiedDate>
   <lastModifiedDate_dt>2019-12-21T18:37:24.473Z</lastModifiedDate_dt>
   <title_t>Editorial</title_t>
-  <hero_text_html>&lt;p&gt;Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas. Pellentesque sapien ac quam. Lorem ipsum dolor sit nullam.&lt;/p&gt;</hero_text_html>
+  <hero_text_html>&lt;p&gt;Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante
+    interdum congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna
+    finibus nisi nec lacinia. Nam maximus erat id euismod egestas. Pellentesque sapien ac quam. Lorem ipsum dolor sit
+    nullam.&lt;/p&gt;
+  </hero_text_html>
   <hero_title_html>&lt;h1&gt;Hi, I&amp;rsquo;m Editorial&lt;/h1&gt;
-&lt;h3&gt;&lt;span style="font-size: 1.5em;"&gt;by HTML5 UP&lt;/span&gt;&lt;/h3&gt;</hero_title_html>
+    &lt;h3&gt;&lt;span style="font-size: 1.5em;"&gt;by HTML5 UP&lt;/span&gt;&lt;/h3&gt;
+  </hero_title_html>
   <features_o item-list="true">
     <item datasource="features" inline="true">
       <key>af1c108b-f7ae-26af-fbe1-a828e52d6a1f</key>
@@ -58,7 +63,8 @@
         <disabled>false</disabled>
         <icon_s>fa-building far</icon_s>
         <body_html>&lt;p&gt;Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis
-          ante interdum. Sed nulla amet lorem feugiat tempus aliquam.&lt;/p&gt;</body_html>
+          ante interdum. Sed nulla amet lorem feugiat tempus aliquam.&lt;/p&gt;
+        </body_html>
         <createdDate>2019-10-11T19:19:53.590Z</createdDate>
         <createdDate_dt>2019-10-11T19:19:53.590Z</createdDate_dt>
         <lastModifiedDate>2019-12-20T13:39:25.803Z</lastModifiedDate>
@@ -81,7 +87,8 @@
         <disabled>false</disabled>
         <icon_s>fa-arrow-alt-circle-down far</icon_s>
         <body_html>&lt;p&gt;Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis
-          ante interdum. Sed nulla amet lorem feugiat tempus aliquam.&lt;/p&gt;</body_html>
+          ante interdum. Sed nulla amet lorem feugiat tempus aliquam.&lt;/p&gt;
+        </body_html>
         <createdDate>2019-10-11T19:20:07.555Z</createdDate>
         <createdDate_dt>2019-10-11T19:20:07.555Z</createdDate_dt>
         <lastModifiedDate>2019-12-20T13:38:40.378Z</lastModifiedDate>
@@ -104,7 +111,8 @@
         <icon_s>fa-bell far</icon_s>
         <file-name>9f6b80da-21c8-9232-5175-2b1b97db1ed0.xml</file-name>
         <body_html>&lt;p&gt;Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis
-          ante interdum. Sed nulla amet lorem feugiat tempus aliquam.&lt;/p&gt;</body_html>
+          ante interdum. Sed nulla amet lorem feugiat tempus aliquam.&lt;/p&gt;
+        </body_html>
         <createdDate>2019-10-11T19:20:49.115Z</createdDate>
         <createdDate_dt>2019-10-11T19:20:49.115Z</createdDate_dt>
         <lastModifiedDate>2019-12-20T13:38:46.577Z</lastModifiedDate>
@@ -127,7 +135,8 @@
         <internal-name>Four</internal-name>
         <title_t>Four</title_t>
         <body_html>&lt;p&gt;Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis
-          ante interdum. Sed nulla amet lorem feugiat tempus aliquam.&lt;/p&gt;</body_html>
+          ante interdum. Sed nulla amet lorem feugiat tempus aliquam.&lt;/p&gt;
+        </body_html>
         <createdDate>2019-10-11T19:21:00.910Z</createdDate>
         <createdDate_dt>2019-10-11T19:21:00.910Z</createdDate_dt>
         <lastModifiedDate>2019-12-20T13:38:53.950Z</lastModifiedDate>
@@ -155,12 +164,7 @@
   <disabled>false</disabled>
   <header_o item-list="true"/>
   <content_o item-list="true">
-    <item datasource="sharedFeatures">
-                <key>/site/components/features/72ef047f-02b7-89e2-bbd5-4763ac7dbca8.xml</key>
-                <value>Six</value>
-                <include>/site/components/features/72ef047f-02b7-89e2-bbd5-4763ac7dbca8.xml</include>
-                <disableFlattening>false</disableFlattening>
-              </item><item datasource="embeddedLayout" inline="true">
+    <item datasource="embeddedLayout" inline="true">
       <key>9f162335-063c-817b-8fef-16f865de4900</key>
       <value>Embedded Layout</value>
       <component id="9f162335-063c-817b-8fef-16f865de4900">
@@ -176,7 +180,12 @@
         <items_o item-list="true">
           <item>
             <content_o>
-              
+              <item datasource="sharedFeatures">
+                <key>/site/components/features/72ef047f-02b7-89e2-bbd5-4763ac7dbca8.xml</key>
+                <value>Six</value>
+                <include>/site/components/features/72ef047f-02b7-89e2-bbd5-4763ac7dbca8.xml</include>
+                <disableFlattening>false</disableFlattening>
+              </item>
             </content_o>
           </item>
         </items_o>
@@ -202,7 +211,10 @@
         <disabled>false</disabled>
         <icon_s>fa-closed-captioning far</icon_s>
         <title_t>Feature Title</title_t>
-        <body_html>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</body_html>
+        <body_html>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+          et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+          ea commodo consequat.
+        </body_html>
       </component>
     </item>
   </content_o>

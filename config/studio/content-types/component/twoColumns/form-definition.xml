@@ -130,7 +130,7 @@
 					<type>repeat</type>
 					<id>items_o</id>
 					<iceId></iceId>
-					<title>Items</title>
+					<title>Layout Items</title>
 					<description></description>
 					<minOccurs>0</minOccurs>
 					<maxOccurs>*</maxOccurs>
@@ -151,7 +151,7 @@
 					<type>node-selector</type>
 					<id>content_o</id>
 					<iceId></iceId>
-					<title>Content</title>
+					<title>Layout Item</title>
 					<description></description>
 					<defaultValue></defaultValue>
 					<help></help>

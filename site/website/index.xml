@@ -200,7 +200,7 @@
         <objectId>3704ab3e-fbbf-43b1-aab9-142da59c1fb6</objectId>
         <locale>en</locale>
         <disabled>false</disabled>
-        <icon_s>fa-lightbulb-o</icon_s>
+        <icon_s>fa-closed-captioning far</icon_s>
         <title_t>Feature Title</title_t>
         <body_html>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</body_html>
       </component>

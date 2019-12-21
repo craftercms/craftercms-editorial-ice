@@ -1,4 +1,5 @@
-<#import "/templates/system/common/cstudio-support.ftl" as studio />
+<#--import "/templates/system/common/cstudio-support.ftl" as studio /-->
+<#import "/templates/web/macros.ftl" as studio>
 
 <!DOCTYPE HTML>
 <!--
@@ -8,16 +9,8 @@
 -->
 <html>
 <head>
-	<title>${contentModel.title_t}</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<!--[if lte IE 8]><script src="/static-assets/js/ie/html5shiv.js"></script><![endif]-->
-	<link rel="stylesheet" href="/static-assets/css/main.css?v=${siteContext.siteName}" />
-	<!--[if lte IE 9]><link rel="stylesheet" href="/static-assets/css/ie9.css" /><![endif]-->
-	<!--[if lte IE 8]><link rel="stylesheet" href="/static-assets/css/ie8.css" /><![endif]-->
-	<link rel="stylesheet" href="/static-assets/css/jquery-ui.min.css" />
+	<#include "/templates/web/fragments/head.ftl">
 </head>
-
 <body>
 
 <!-- Wrapper -->
@@ -60,13 +53,7 @@
 
 </div>
 
-<!-- Scripts -->
-<script src="/static-assets/js/jquery.min.js"></script>
-<script src="/static-assets/js/jquery-ui.min.js"></script>
-<script src="/static-assets/js/skel.min.js"></script>
-<script src="/static-assets/js/util.js"></script>
-<!--[if lte IE 8]><script src="/static-assets/js/ie/respond.min.js"></script><![endif]-->
-<script src="/static-assets/js/main.js?v=${siteContext.siteName}"></script>
+<#include "/templates/web/fragments/scripts.ftl">
 
 <@studio.toolSupport/>
 </body>

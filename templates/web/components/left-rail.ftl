@@ -2,7 +2,7 @@
 <#import "/templates/web/macros.ftl" as studio>
 <#import "/templates/web/navigation2/navigation.ftl" as nav/>
 
-<div id="left-rail" <@studio.componentAttr component=contentModel ice=true iceGroup="left-rail"/>>
+<div id="sidebar" <@studio.componentAttr component=contentModel ice=true iceGroup="left-rail"/>>
   <div class="inner">
 
     <!-- Search -->
@@ -28,6 +28,7 @@
     <#else>
       <#assign additionalModel = {} />
     </#if>
+
     <#if contentModel.widgets_o.item?has_content>
       <#list contentModel.widgets_o.item as widget>
         <@renderComponent component = widget additionalModel = additionalModel />

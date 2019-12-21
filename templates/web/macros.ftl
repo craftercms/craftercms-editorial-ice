@@ -174,6 +174,12 @@ Can we put content types on the context so we can extract the content type name 
   <@tag $tag="div" $model=$model $field=$field $index=$index $label=$label $attrs=$attributes><#nested></@tag>
 </#macro>
 
+<#macro section $model=contentModel $field="" $index="" $label="" $attrs={} attrs...>
+    <#assign attributes = attrs?has_content?then(attrs, {})>
+    <#assign $attributes = attributes + $attrs/>
+    <@tag $tag="section" $model=$model $field=$field $index=$index $label=$label $attrs=$attributes><#nested></@tag>
+</#macro>
+
 <#macro span $model=contentModel $field="" $index="" $label="" $attrs={} attrs...>
   <#assign attributes = attrs?has_content?then(attrs, {})>
   <#assign $attributes = attributes + $attrs/>

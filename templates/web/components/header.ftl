@@ -1,7 +1,7 @@
 <#--<#import "/templates/system/common/cstudio-support.ftl" as studio />-->
 <#import "/templates/web/macros.ftl" as studio>
 
-<@studio.header class="main-header" id="header" $index=($index!"") $field=($field!"") $model=($model!contentModel)>
+<@studio.header id="header" $index=($index!"") $field=($field!"") $model=($model!contentModel)>
   <a href="/" class="logo">
     <#--
     TODO/FYI For docs...

@@ -168,7 +168,7 @@
 						</property>
 						<property>
 							<name>itemManager</name>
-							<value></value>
+							<value>embeddedFeaturesDS</value>
 							<type>datasource:item</type>
 						</property>
 						<property>
@@ -235,13 +235,13 @@
 				</datasource>
 				<datasource>
 					<type>embedded-content</type>
-					<id>embedded</id>
-					<title>Embedded</title>
+					<id>embeddedFeaturesDS</id>
+					<title>Embedded Features</title>
 					<interface>item</interface>
 					<properties>
 						<property>
 							<name>contentType</name>
-							<value>/</value>
+							<value>/component/feature</value>
 								<type>undefined</type>
 						</property>
 					</properties>

@@ -550,9 +550,9 @@
 			</fields>
 		</section>
 		<section>
-			<title>Default Section Title 1576857489319</title>
+			<title>Default Section Title 1576949923370</title>
 			<description></description>
-			<defaultOpen>false</defaultOpen>
+			<defaultOpen>true</defaultOpen>
 			<fields>
 				<field>
 					<type>node-selector</type>

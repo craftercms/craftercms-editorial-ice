@@ -150,23 +150,27 @@
   <features_title_t>Erat lacinia</features_title_t>
   <disabled>false</disabled>
   <header_o item-list="true"/>
-  <content_o item-list="true">
-    <item datasource="features">
-      <key>8b4caec9-643e-406b-97a8-f1cfff384c22</key>
-      <value>New Layout</value>
-      <component id="8b4caec9-643e-406b-97a8-f1cfff384c22">
-        <content-type>/component/twoColumns</content-type>
-        <display-template>/templates/web/components/layout.ftl</display-template>
-        <internal-name>New Layout</internal-name>
-        <file-name>8b4caec9-643e-406b-97a8-f1cfff384c22.xml</file-name>
-        <merge-strategy>inherit-levels</merge-strategy>
-        <createdDate_dt>2019-12-21T17:26:49.867Z</createdDate_dt>
-        <lastModifiedDate_dt>2019-12-21T17:26:49.867Z</lastModifiedDate_dt>
-        <objectId>8b4caec9-643e-406b-97a8-f1cfff384c22</objectId>
-        <locale>en</locale>
-        <numberOfColumns_s>2</numberOfColumns_s>
-        <items_o/>
-      </component>
+  <items_o item-list="true">
+    <item datasource="features" inline="true">
+      <content_o item-list="true">
+        <item datasource="features" inline="true">
+          <key>8b4caec9-643e-406b-97a8-f1cfff384c22</key>
+          <value>New Layout</value>
+          <component id="8b4caec9-643e-406b-97a8-f1cfff384c22">
+            <content-type>/component/twoColumns</content-type>
+            <display-template>/templates/web/components/layout.ftl</display-template>
+            <internal-name>New Layout</internal-name>
+            <file-name>8b4caec9-643e-406b-97a8-f1cfff384c22.xml</file-name>
+            <merge-strategy>inherit-levels</merge-strategy>
+            <createdDate_dt>2019-12-21T17:26:49.867Z</createdDate_dt>
+            <lastModifiedDate_dt>2019-12-21T17:26:49.867Z</lastModifiedDate_dt>
+            <objectId>8b4caec9-643e-406b-97a8-f1cfff384c22</objectId>
+            <locale>en</locale>
+            <numberOfColumns_s>2</numberOfColumns_s>
+            <items_o/>
+          </component>
+        </item>
+      </content_o>
     </item>
-  </content_o>
+  </items_o>
 </page>

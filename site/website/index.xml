@@ -13,8 +13,8 @@
 	<folder-name/>
 	<createdDate>2017-1-31T16:18:14.000Z</createdDate>
 	<createdDate_dt>2017-1-31T16:18:14.000Z</createdDate_dt>
-	<lastModifiedDate>2019-12-21T18:20:19.781Z</lastModifiedDate>
-	<lastModifiedDate_dt>2019-12-21T18:20:19.781Z</lastModifiedDate_dt>
+	<lastModifiedDate>2019-12-21T18:21:44.952Z</lastModifiedDate>
+	<lastModifiedDate_dt>2019-12-21T18:21:44.952Z</lastModifiedDate_dt>
 	<title_t>Editorial</title_t>
 	<hero_text_html>&lt;p&gt;Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas. Pellentesque sapien ac quam. Lorem ipsum dolor sit nullam.&lt;/p&gt;</hero_text_html>
 	<hero_title_html>&lt;h1&gt;Hi, I&amp;rsquo;m Editorial&lt;/h1&gt;
@@ -146,11 +146,16 @@
 	<file-name>9f162335-063c-817b-8fef-16f865de4900.xml</file-name>
 	<internal-name>Embedded Layout</internal-name>
 	<numberOfColumns_s>3</numberOfColumns_s>
-	<items_o item-list="true"/>
+	<items_o item-list="true">	<item>	<content_o>		<item><key>1f664fba-fdf0-aeff-b438-1936ac64e3ef</key>
+<value>Feature Inside Layout</value>
+<datasource>embeddedFeaturesDS</datasource>
+<inline>true</inline>
+		</item></content_o>
+	</item></items_o>
 	<createdDate>2019-12-21T18:20:26.129Z</createdDate>
 	<createdDate_dt>2019-12-21T18:20:26.129Z</createdDate_dt>
-	<lastModifiedDate>2019-12-21T18:20:26.129Z</lastModifiedDate>
-	<lastModifiedDate_dt>2019-12-21T18:20:26.129Z</lastModifiedDate_dt>
+	<lastModifiedDate>2019-12-21T18:21:51.063Z</lastModifiedDate>
+	<lastModifiedDate_dt>2019-12-21T18:21:51.063Z</lastModifiedDate_dt>
 </component>
 	</item></content_o>
 </page>

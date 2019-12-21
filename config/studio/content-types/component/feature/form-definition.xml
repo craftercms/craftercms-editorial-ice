@@ -117,7 +117,7 @@
 					<iceId></iceId>
 					<title>Icon</title>
 					<description></description>
-					<defaultValue>fa-lightbulb-o</defaultValue>
+					<defaultValue>fa-closed-captioning far</defaultValue>
 					<help></help>
 					<properties>
 						<property>

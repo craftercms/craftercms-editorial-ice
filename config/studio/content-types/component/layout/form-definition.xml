@@ -2,7 +2,7 @@
 	<title>Layout</title>
 	<description></description>
 	<objectType>component</objectType>
-	<content-type>/component/twoColumns</content-type>
+	<content-type>/component/layout</content-type>
 	<imageThumbnail>undefined</imageThumbnail>
 	<quickCreate>false</quickCreate>
 	<quickCreatePath></quickCreatePath>
@@ -188,7 +188,7 @@
 						</property>
 						<property>
 							<name>contentTypes</name>
-							<value>/component/feature,/component/articles-widget,/component/twoColumns</value>
+							<value>/component/feature,/component/articles-widget,/component/layout</value>
 							<type>contentTypes</type>
 						</property>
 						<property>

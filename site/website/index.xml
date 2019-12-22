@@ -153,7 +153,7 @@
       <key>9f162335-063c-817b-8fef-16f865de4900</key>
       <value>Embedded Layout</value>
       <component id="9f162335-063c-817b-8fef-16f865de4900">
-        <content-type>/component/twoColumns</content-type>
+        <content-type>/component/layout</content-type>
         <display-template>/templates/web/components/layout.ftl</display-template>
         <no-template-required/>
         <merge-strategy>inherit-levels</merge-strategy>

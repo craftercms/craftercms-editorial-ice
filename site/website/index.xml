@@ -164,7 +164,7 @@
         <numberOfColumns_s>2</numberOfColumns_s>
         <items_o item-list="true">
           <item>
-            <content_o>
+            <content_o item-list="true">
               <item>
                 <datasource>sharedFeatures</datasource>
                 <key>/site/components/features/72ef047f-02b7-89e2-bbd5-4763ac7dbca8.xml</key>

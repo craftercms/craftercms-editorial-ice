@@ -79,8 +79,7 @@
           additionalModel={
             '$index': component?index,
             '$model': contentModel,
-            '$field': 'content_o',
-              '$label': 'Layout component'
+            '$field': 'content_o'
           }
         />
       </#list>

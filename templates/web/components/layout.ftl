@@ -4,7 +4,7 @@
 <#assign factor = 12 / numOfColumns>
 
 <!-- Layout Component -->
-<@studio.div $model=($model!contentModel) $field=($field!"") $index=($index!"")>
+<@studio.div $model=($model!contentModel) $field=($field!"") $index=($index!"") $label=($label!"")>
   <@studio.div $field="items_o" class="row">
   <#if contentModel.items_o?? && contentModel.items_o.item??>
   <#list contentModel.items_o.item as component>

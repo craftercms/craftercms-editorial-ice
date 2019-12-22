@@ -166,25 +166,5 @@
 	<lastModifiedDate>2019-12-21T20:22:10.267Z</lastModifiedDate>
 	<lastModifiedDate_dt>2019-12-21T20:22:10.267Z</lastModifiedDate_dt>
 </component>
-	</item>	<item datasource="features" inline="true">	<key>3704ab3e-fbbf-43b1-aab9-142da59c1fb6</key>
-	<value>New Feature</value>
-<component id="3704ab3e-fbbf-43b1-aab9-142da59c1fb6">
-        <content-type>/component/feature</content-type>
-        <display-template>/templates/web/components/feature.ftl</display-template>
-        <internal-name>New Feature</internal-name>
-        <file-name>3704ab3e-fbbf-43b1-aab9-142da59c1fb6.xml</file-name>
-        <merge-strategy>inherit-levels</merge-strategy>
-        <createdDate_dt>2019-12-21T20:12:30.185Z</createdDate_dt>
-        <lastModifiedDate_dt>2019-12-21T20:12:30.185Z</lastModifiedDate_dt>
-        <objectId>3704ab3e-fbbf-43b1-aab9-142da59c1fb6</objectId>
-        <locale>en</locale>
-        <disabled>false</disabled>
-        <icon_s>fa-closed-captioning far</icon_s>
-        <title_t>Feature Title</title_t>
-        <body_html>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-          et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-          ea commodo consequat.
-        </body_html>
-      </component>
-	</item></content_o>
+	</item>	</content_o>
 </page>

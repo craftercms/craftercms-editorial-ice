@@ -1,29 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <page>
-  <content-type>/page/home</content-type>
-  <display-template>/templates/web/pages/home.ftl</display-template>
-  <no-template-required/>
-  <merge-strategy>inherit-levels</merge-strategy>
-  <placeInNav>false</placeInNav>
-  <file-name>index.xml</file-name>
-  <internal-name>Home</internal-name>
-  <orderDefault_f>-1</orderDefault_f>
-  <objectGroupId>8d7f</objectGroupId>
-  <objectId>8d7f21fa-5e09-00aa-8340-853b7db302da</objectId>
-  <folder-name/>
-  <createdDate>2017-1-31T16:18:14.000Z</createdDate>
-  <createdDate_dt>2017-1-31T16:18:14.000Z</createdDate_dt>
-  <lastModifiedDate>2019-12-21T20:22:02.821Z</lastModifiedDate>
-  <lastModifiedDate_dt>2019-12-21T20:22:02.821Z</lastModifiedDate_dt>
-  <title_t>Editorial</title_t>
-  <hero_text_html>&lt;p&gt;Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas. Pellentesque sapien ac quam. Lorem ipsum dolor sit nullam.&lt;/p&gt;</hero_text_html>
-  <hero_title_html>&lt;h1&gt;Hi, I&amp;rsquo;m Editorial&lt;/h1&gt;
+	<content-type>/page/home</content-type>
+	<display-template>/templates/web/pages/home.ftl</display-template>
+	<no-template-required/>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<placeInNav>false</placeInNav>
+	<file-name>index.xml</file-name>
+	<internal-name>Home</internal-name>
+	<orderDefault_f>-1</orderDefault_f>
+	<objectGroupId>8d7f</objectGroupId>
+	<objectId>8d7f21fa-5e09-00aa-8340-853b7db302da</objectId>
+	<folder-name/>
+	<createdDate>2017-1-31T16:18:14.000Z</createdDate>
+	<createdDate_dt>2017-1-31T16:18:14.000Z</createdDate_dt>
+	<lastModifiedDate>2019-12-22T10:52:39.890Z</lastModifiedDate>
+	<lastModifiedDate_dt>2019-12-22T10:52:39.890Z</lastModifiedDate_dt>
+	<title_t>Editorial</title_t>
+	<hero_text_html>&lt;p&gt;Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas. Pellentesque sapien ac quam. Lorem ipsum dolor sit nullam.&lt;/p&gt;</hero_text_html>
+	<hero_title_html>&lt;h1&gt;Hi, I&amp;rsquo;m Editorial&lt;/h1&gt;
 &lt;h3&gt;&lt;span style="font-size: 1.5em;"&gt;by HTML5 UP&lt;/span&gt;&lt;/h3&gt;</hero_title_html>
-  <features_o item-list="true">
-    <item datasource="features" inline="true">
-      <key>af1c108b-f7ae-26af-fbe1-a828e52d6a1f</key>
-      <value>Embedded Feature</value>
-      <component id="af1c108b-f7ae-26af-fbe1-a828e52d6a1f">
+	<features_o item-list="true">	<item datasource="features" inline="true">	<key>af1c108b-f7ae-26af-fbe1-a828e52d6a1f</key>
+	<value>Embedded Feature</value>
+<component id="af1c108b-f7ae-26af-fbe1-a828e52d6a1f">
         <content-type>/component/feature</content-type>
         <display-template>/templates/web/components/feature.ftl</display-template>
         <no-template-required/>
@@ -41,11 +39,9 @@
         <lastModifiedDate>2019-12-20T13:38:26.035Z</lastModifiedDate>
         <lastModifiedDate_dt>2019-12-20T13:38:26.035Z</lastModifiedDate_dt>
       </component>
-    </item>
-    <item datasource="features" inline="true">
-      <key>a89386c4-a205-2681-2db1-c3606f714411</key>
-      <value>One</value>
-      <component id="a89386c4-a205-2681-2db1-c3606f714411">
+	</item>	<item datasource="features" inline="true">	<key>a89386c4-a205-2681-2db1-c3606f714411</key>
+	<value>One</value>
+<component id="a89386c4-a205-2681-2db1-c3606f714411">
         <content-type>/component/feature</content-type>
         <display-template>/templates/web/components/feature.ftl</display-template>
         <no-template-required/>
@@ -64,11 +60,9 @@
         <lastModifiedDate>2019-12-20T13:39:25.803Z</lastModifiedDate>
         <lastModifiedDate_dt>2019-12-20T13:39:25.803Z</lastModifiedDate_dt>
       </component>
-    </item>
-    <item datasource="features" inline="true">
-      <key>310b0c87-c3ca-4da0-4aa2-7002a318d7ce</key>
-      <value>Two</value>
-      <component id="310b0c87-c3ca-4da0-4aa2-7002a318d7ce">
+	</item>	<item datasource="features" inline="true">	<key>310b0c87-c3ca-4da0-4aa2-7002a318d7ce</key>
+	<value>Two</value>
+<component id="310b0c87-c3ca-4da0-4aa2-7002a318d7ce">
         <content-type>/component/feature</content-type>
         <display-template>/templates/web/components/feature.ftl</display-template>
         <no-template-required/>
@@ -87,11 +81,9 @@
         <lastModifiedDate>2019-12-20T13:38:40.378Z</lastModifiedDate>
         <lastModifiedDate_dt>2019-12-20T13:38:40.378Z</lastModifiedDate_dt>
       </component>
-    </item>
-    <item datasource="features" inline="true">
-      <key>9f6b80da-21c8-9232-5175-2b1b97db1ed0</key>
-      <value>Three</value>
-      <component id="9f6b80da-21c8-9232-5175-2b1b97db1ed0">
+	</item>	<item datasource="features" inline="true">	<key>9f6b80da-21c8-9232-5175-2b1b97db1ed0</key>
+	<value>Three</value>
+<component id="9f6b80da-21c8-9232-5175-2b1b97db1ed0">
         <content-type>/component/feature</content-type>
         <display-template>/templates/web/components/feature.ftl</display-template>
         <no-template-required/>
@@ -110,11 +102,9 @@
         <lastModifiedDate>2019-12-20T13:38:46.577Z</lastModifiedDate>
         <lastModifiedDate_dt>2019-12-20T13:38:46.577Z</lastModifiedDate_dt>
       </component>
-    </item>
-    <item datasource="features" inline="true">
-      <key>9e93c15d-9473-363b-6179-ce02c1203756</key>
-      <value>Four</value>
-      <component id="9e93c15d-9473-363b-6179-ce02c1203756">
+	</item>	<item datasource="features" inline="true">	<key>9e93c15d-9473-363b-6179-ce02c1203756</key>
+	<value>Four</value>
+<component id="9e93c15d-9473-363b-6179-ce02c1203756">
         <content-type>/component/feature</content-type>
         <display-template>/templates/web/components/feature.ftl</display-template>
         <no-template-required/>
@@ -133,26 +123,20 @@
         <lastModifiedDate>2019-12-20T13:38:53.950Z</lastModifiedDate>
         <lastModifiedDate_dt>2019-12-20T13:38:53.950Z</lastModifiedDate_dt>
       </component>
-    </item>
-  </features_o>
-  <header/>
-  <hero_image_s>/static-assets/images/strawberries.jpg</hero_image_s>
-  <left-rail_o item-list="true">
-    <item>
-      <key>/site/components/left-rails/left-rail-with-latest-articles.xml</key>
-      <value>Left Rail with Latest Articles</value>
-      <include>/site/components/left-rails/left-rail-with-latest-articles.xml</include>
-      <disableFlattening>false</disableFlattening>
-    </item>
-  </left-rail_o>
-  <features_title_t>Erat lacinia</features_title_t>
-  <disabled>false</disabled>
-  <header_o item-list="true"/>
-  <content_o item-list="true">
-    <item datasource="embeddedLayout" inline="true">
-      <key>9f162335-063c-817b-8fef-16f865de4900</key>
-      <value>Embedded Layout</value>
-      <component id="9f162335-063c-817b-8fef-16f865de4900">
+	</item></features_o>
+	<header/>
+	<hero_image_s>/static-assets/images/strawberries.jpg</hero_image_s>
+	<left-rail_o item-list="true">	<item>	<key>/site/components/left-rails/left-rail-with-latest-articles.xml</key>
+	<value>Left Rail with Latest Articles</value>
+	<include>/site/components/left-rails/left-rail-with-latest-articles.xml</include>
+	<disableFlattening>false</disableFlattening>
+	</item></left-rail_o>
+	<features_title_t>Erat lacinia</features_title_t>
+	<disabled>false</disabled>
+	<header_o item-list="true"/>
+	<content_o item-list="true">	<item datasource="embeddedLayout" inline="true">	<key>9f162335-063c-817b-8fef-16f865de4900</key>
+	<value>Embedded Layout</value>
+<component id="9f162335-063c-817b-8fef-16f865de4900">
         <content-type>/component/layout</content-type>
         <display-template>/templates/web/components/layout.ftl</display-template>
         <no-template-required/>
@@ -180,6 +164,5 @@
         <lastModifiedDate>2019-12-21T20:22:10.267Z</lastModifiedDate>
         <lastModifiedDate_dt>2019-12-21T20:22:10.267Z</lastModifiedDate_dt>
       </component>
-    </item>
-  </content_o>
+	</item></content_o>
 </page>

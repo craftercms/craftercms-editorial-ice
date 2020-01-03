@@ -1,17 +1,18 @@
 <#--import "/templates/system/common/cstudio-support.ftl" as studio /-->
 <#import "/templates/web/macros.ftl" as studio>
 
-<!DOCTYPE HTML>
 <!--
 	Editorial by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
+<!doctype html>
 <html>
 <head>
   <#include "/templates/web/fragments/head.ftl">
 </head>
 <body class="is-preload">
+
 <!-- Wrapper -->
 <div id="wrapper">
 
@@ -20,16 +21,8 @@
     <div class="inner">
 
       <!-- Header -->
-      <@studio.div $field="header_o">
-        <@renderComponent
-          component=contentModel.header_o.item
-          additionalModel={
-            '$index': 0,
-            '$model': contentModel,
-            '$field': 'header_o'
-          }
-        />
-      </@studio.div>
+      <@studio.renderComponentCollection $field="header_o"/>
+      <!-- /Header -->
 
       <!-- Banner -->
       <section id="banner">
@@ -45,6 +38,7 @@
           <@studio.img $field="hero_image_s" src=(contentModel.hero_image_s!"") alt=""/>
         </span>
       </section>
+      <!-- /Banner -->
 
       <!-- Section: Features -->
       <section>
@@ -53,41 +47,15 @@
             ${contentModel.features_title_t}
           </@studio.tag>
         </header>
-        <@studio.tag $field="features_o" class="features">
-          <#if contentModel.features_o?? && contentModel.features_o.item??>
-            <#list contentModel.features_o.item as feature>
-              <@renderComponent
-                component=feature
-                additionalModel={
-                  '$index': feature?index,
-                  '$model': contentModel,
-                  '$field': 'features_o'
-                }
-              />
-            </#list>
-          </#if>
-        </@studio.tag>
+        <@studio.renderComponentCollection $field="features_o" class="features" />
       </section>
       <!-- /Section: Features -->
 
       <!-- Section: Content -->
-      <@studio.section $field="content_o">
-      <#if contentModel.content_o?? && contentModel.content_o.item??>
-      <#list contentModel.content_o.item as component>
-        <@renderComponent
-          component=component
-          additionalModel={
-            '$index': component?index,
-            '$model': contentModel,
-            '$field': 'content_o'
-          }
-        />
-      </#list>
-      </#if>
-      </@studio.section>
+      <@studio.renderComponentCollection $field="content_o" $tag="section"/>
       <!-- /Section: Content -->
 
-      <!-- Section -->
+      <!-- Section: Articles -->
       <section>
         <header class="major">
           <h2>Featured Articles</h2>
@@ -111,7 +79,7 @@
                 />
               </a>
               <h3>
-                <@studio.a $field="title_t" href="${article.url}">
+                <@studio.a $model=article $field="title_t" href="${article.url}">
                   ${article.title}
                 </@studio.a>
               </h3>
@@ -127,14 +95,18 @@
           </#list>
         </div>
       </section>
+      <!-- /Section: Articles -->
 
     </div>
   </div>
+  <!-- /Main -->
 
   <!-- Left Rail -->
-  <@renderComponent component=contentModel.left\-rail_o.item />
+  <@studio.renderComponentCollection $field="left-rail_o" />
+  <!-- /Left Rail -->
 
 </div>
+<!-- /Wrapper -->
 
 <#include "/templates/web/fragments/scripts.ftl">
 

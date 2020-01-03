@@ -1,4 +1,6 @@
-<section>
+<#import "/templates/web/macros.ftl" as studio>
+
+<@studio.componentRootTag $tag="section">
   <header class="major">
     <h2>${contentModel.title_t}</h2>
   </header>
@@ -8,4 +10,4 @@
     <li class="fa-phone">${contentModel.phone_s}</li>
     <li class="fa-home">${contentModel.address_html}</li>
   </ul>
-</section>
+</@studio.componentRootTag>

@@ -1,7 +1,7 @@
 <#--<#import "/templates/system/common/cstudio-support.ftl" as studio />-->
 <#import "/templates/web/macros.ftl" as studio>
 
-<@studio.header id="header" $index=($index!"") $field=($field!"") $model=($model!contentModel)>
+<@studio.componentRootTag $tag="header" id="header">
   <a href="/" class="logo">
     <#--
     TODO/FYI For docs...
@@ -17,17 +17,17 @@
     </#if>
     Howdy, ${name}
   </a>
-
-  <@studio.ul $field="social_media_links_o" class="icons">
-    <#list contentModel.social_media_links_o.item as item>
-      <@studio.tag $tag="li" $field="social_media_links_o" $index="${item?index}">
-        <@studio.a
-          href="${item.url_s}"
-          class="icon ${item.social_media_s}"
-          $field="social_media_links_o.url_s,social_media_links_o.social_media_s"
-          $index="${item?index}"
-        />
-      </@studio.tag>
-    </#list>
-  </@studio.ul>
-</@studio.header>
+  <@studio.renderRepeatCollection
+    $field="social_media_links_o"
+    $containerAttributes={'class':'icons'};
+    <#-- Nested content values passed down by the macro: -->
+    item, index
+  >
+    <@studio.a
+      href="${item.url_s}"
+      class="icon ${item.social_media_s}"
+      $field="social_media_links_o.url_s,social_media_links_o.social_media_s"
+      $index=index
+    />
+  </@studio.renderRepeatCollection>
+</@studio.componentRootTag>

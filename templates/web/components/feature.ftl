@@ -1,7 +1,8 @@
 <#--<#import "/templates/system/common/cstudio-support.ftl" as studio />-->
 <#import "/templates/web/macros.ftl" as studio>
 
-<@studio.article $model=($model!contentModel) $field=($field!"") $index=($index!"") $label=($label!"")>
+<!-- Feature Component -->
+<@studio.componentRootTag $tag="article">
   <@studio.span class="icon ${contentModel.icon_s}" $field="icon_s"/>
   <div class="content">
     <@studio.h3 $field="title_t">
@@ -11,4 +12,5 @@
       ${contentModel.body_html}
     </@studio.span>
   </div>
-</@studio.article>
+</@studio.componentRootTag>
+<!-- /Feature Component -->

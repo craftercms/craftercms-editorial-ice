@@ -2,7 +2,7 @@
 <#import "/templates/web/macros.ftl" as studio>
 <#import "/templates/web/navigation2/navigation.ftl" as nav/>
 
-<div id="sidebar" <@studio.componentAttr component=contentModel ice=true iceGroup="left-rail"/>>
+<@studio.componentRootTag id="sidebar">
   <div class="inner">
 
     <!-- Search -->
@@ -23,24 +23,27 @@
     </nav>
 
     <!-- Widgets -->
-    <#if articleCategories?? && articlePath??>
-      <#assign additionalModel = {"articleCategories": articleCategories, "articlePath": articlePath } />
-    <#else>
-      <#assign additionalModel = {} />
-    </#if>
-
     <#if contentModel.widgets_o.item?has_content>
-      <#list contentModel.widgets_o.item as widget>
-        <@renderComponent component = widget additionalModel = additionalModel />
-      </#list>
+      <#if articleCategories?? && articlePath??>
+        <#assign additionalModel = {
+        <#---->"articleCategories": articleCategories,
+        <#---->"articlePath": articlePath
+        } />
+      <#else>
+        <#assign additionalModel = {} />
+      </#if>
+      <@studio.renderComponentCollection $field="widgets_o" arguments=additionalModel/>
     </#if>
+    <!-- /Widgets -->
 
     <!-- Footer -->
     <footer id="footer">
       <p class="copyright">
-        &copy; Untitled. All rights reserved. Demo Images: <a href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net">HTML5 UP</a>.
+        &copy; Untitled. All rights reserved. Demo Images:
+        <a href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net">HTML5 UP</a>.
       </p>
     </footer>
+    <!-- /Footer -->
 
   </div>
-</div>
+</@studio.componentRootTag>

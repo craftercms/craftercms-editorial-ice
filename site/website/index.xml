@@ -14,7 +14,7 @@
   <createdDate>2017-1-31T16:18:14.000Z</createdDate>
   <createdDate_dt>2017-1-31T16:18:14.000Z</createdDate_dt>
   <lastModifiedDate>2020-01-04T06:14:04.519Z</lastModifiedDate>
-  <lastModifiedDate_dt>2020-01-06T11:22:48.673Z</lastModifiedDate_dt>
+  <lastModifiedDate_dt>2020-01-06T11:22:56.783Z</lastModifiedDate_dt>
   <title_t>Editorial</title_t>
   <hero_text_html>&lt;p&gt;Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas. Pellentesque sapien ac quam. Lorem ipsum dolor sit nullam.&lt;/p&gt;</hero_text_html>
   <hero_title_html>&lt;h1&gt;Hi, I&amp;rsquo;m Editorial&lt;/h1&gt;
@@ -87,28 +87,6 @@
       </component>
     </item>
     <item datasource="features" inline="true">
-      <key>af1c108b-f7ae-26af-fbe1-a828e52d6a1f</key>
-      <value>Create Profiles</value>
-      <component id="af1c108b-f7ae-26af-fbe1-a828e52d6a1f">
-        <content-type>/component/feature</content-type>
-        <display-template>/templates/web/components/feature.ftl</display-template>
-        <no-template-required/>
-        <merge-strategy>inherit-levels</merge-strategy>
-        <objectGroupId>af1c</objectGroupId>
-        <objectId>af1c108b-f7ae-26af-fbe1-a828e52d6a1f</objectId>
-        <file-name>af1c108b-f7ae-26af-fbe1-a828e52d6a1f.xml</file-name>
-        <internal-name>Create Profiles</internal-name>
-        <title_t>Create Profiles</title_t>
-        <disabled>false</disabled>
-        <icon_s>fa-address-card far</icon_s>
-        <body_html>&lt;p&gt;Create profiles that donec ullamcorper nulla non metus auctor fringilla. Curabitur blandit tempus porttitor.&lt;/p&gt;</body_html>
-        <createdDate>2019-11-25T16:11:11.026Z</createdDate>
-        <createdDate_dt>2019-11-25T16:11:11.026Z</createdDate_dt>
-        <lastModifiedDate>2020-01-04T06:14:14.609Z</lastModifiedDate>
-        <lastModifiedDate_dt>2020-01-04T06:14:14.609Z</lastModifiedDate_dt>
-      </component>
-    </item>
-    <item datasource="features" inline="true">
       <key>9e93c15d-9473-363b-6179-ce02c1203756</key>
       <value>Schedule</value>
       <component id="9e93c15d-9473-363b-6179-ce02c1203756">
@@ -128,6 +106,28 @@
         <createdDate_dt>2019-10-11T19:21:00.910Z</createdDate_dt>
         <lastModifiedDate>2019-12-22T11:57:28.631Z</lastModifiedDate>
         <lastModifiedDate_dt>2019-12-22T11:57:28.631Z</lastModifiedDate_dt>
+      </component>
+    </item>
+    <item datasource="features" inline="true">
+      <key>af1c108b-f7ae-26af-fbe1-a828e52d6a1f</key>
+      <value>Create Profiles</value>
+      <component id="af1c108b-f7ae-26af-fbe1-a828e52d6a1f">
+        <content-type>/component/feature</content-type>
+        <display-template>/templates/web/components/feature.ftl</display-template>
+        <no-template-required/>
+        <merge-strategy>inherit-levels</merge-strategy>
+        <objectGroupId>af1c</objectGroupId>
+        <objectId>af1c108b-f7ae-26af-fbe1-a828e52d6a1f</objectId>
+        <file-name>af1c108b-f7ae-26af-fbe1-a828e52d6a1f.xml</file-name>
+        <internal-name>Create Profiles</internal-name>
+        <title_t>Create Profiles</title_t>
+        <disabled>false</disabled>
+        <icon_s>fa-address-card far</icon_s>
+        <body_html>&lt;p&gt;Create profiles that donec ullamcorper nulla non metus auctor fringilla. Curabitur blandit tempus porttitor.&lt;/p&gt;</body_html>
+        <createdDate>2019-11-25T16:11:11.026Z</createdDate>
+        <createdDate_dt>2019-11-25T16:11:11.026Z</createdDate_dt>
+        <lastModifiedDate>2020-01-04T06:14:14.609Z</lastModifiedDate>
+        <lastModifiedDate_dt>2020-01-04T06:14:14.609Z</lastModifiedDate_dt>
       </component>
     </item>
   </features_o>

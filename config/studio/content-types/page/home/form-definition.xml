@@ -193,7 +193,7 @@
 						</property>
 						<property>
 							<name>contentTypes</name>
-							<value>,/component/header</value>
+							<value>/component/header</value>
 							<type>contentTypes</type>
 						</property>
 						<property>
@@ -251,7 +251,7 @@
 						</property>
 						<property>
 							<name>contentTypes</name>
-							<value>,/component/left-rail</value>
+							<value>/component/left-rail</value>
 							<type>contentTypes</type>
 						</property>
 						<property>
@@ -530,7 +530,7 @@
 						</property>
 						<property>
 							<name>contentTypes</name>
-							<value>,/component/feature</value>
+							<value>/component/feature</value>
 							<type>contentTypes</type>
 						</property>
 						<property>
@@ -550,7 +550,7 @@
 			</fields>
 		</section>
 		<section>
-			<title>Default Section Title 1577012314802</title>
+			<title>Default Section Title 1578471269370</title>
 			<description></description>
 			<defaultOpen>true</defaultOpen>
 			<fields>

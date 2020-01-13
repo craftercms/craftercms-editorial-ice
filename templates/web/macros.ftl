@@ -1,6 +1,8 @@
 <#macro toolSupport>
   <#if modePreview>
+    <#--<script src="/studio/static-assets/modules/editors/tinymce/v5/5.1.5/tinymce.min.js"></script>-->
     <script src="/studio/static-assets/modules/editors/tinymce/v5/tinymce/tinymce.min.js"></script>
+    <#--<script src="https://cdn.tiny.cloud/1/tbd5nzpv71g4cshqwyww94h4982mllkhgzxgn5toh4ivhtqj/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>-->
     <script src="http://authoring.sample.com:3000/craftercms-guest.umd.js"></script>
     <#--
     <script
@@ -235,7 +237,22 @@ Should we put content types on the context so we can extract the content type na
   <@tag $tag="p" $model=$model $field=$field $index=$index $label=$label $attrs=$attributes><#nested></@tag>
 </#macro>
 
-<#macro dump_object object debug=true>
+<#macro ul $model=contentModel $field="" $index="" $label="" $attrs={} attrs...>
+  <#assign attributes = mergeAttributes(attrs, $attrs)>
+  <@tag $tag="ul" $model=$model $field=$field $index=$index $label=$label $attrs=$attributes><#nested></@tag>
+</#macro>
+
+<#macro ol $model=contentModel $field="" $index="" $label="" $attrs={} attrs...>
+  <#assign attributes = mergeAttributes(attrs, $attrs)>
+  <@tag $tag="ol" $model=$model $field=$field $index=$index $label=$label $attrs=$attributes><#nested></@tag>
+</#macro>
+
+<#macro li $model=contentModel $field="" $index="" $label="" $attrs={} attrs...>
+  <#assign attributes = mergeAttributes(attrs, $attrs)>
+  <@tag $tag="li" $model=$model $field=$field $index=$index $label=$label $attrs=$attributes><#nested></@tag>
+</#macro>
+
+<#macro dumpObject object debug=true>
   <#compress>
     <#if object??>
       <#attempt>

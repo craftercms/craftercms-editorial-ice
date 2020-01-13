@@ -19,16 +19,18 @@
     disables the macro from working. Need to explore possibilities
     around how to refactor the macro to possibly support.
      -->
-    <@studio.div $field="items_o.content_o" $index="${index}">
-      <#if component.content_o?? && component.content_o.item??>
-        <#list component.content_o.item as item>
-          <@renderComponent component=item additionalModel={
-            '$index': item?index,
-            '$model': contentModel,
-            '$field': 'items_o.content_o'
-          }/>
-        </#list>
-      </#if>
+    <#-- Root of the `content_o` node-selector -->
+    <@studio.div $field="items_o.content_o" $index=index>
+    <#if component.content_o?? && component.content_o.item??>
+      <#list component.content_o.item as item>
+        <#-- Item(s) of the `content_o` node-selector -->
+        <@renderComponent component=item additionalModel={
+          '$model': contentModel,
+          '$field': 'items_o.content_o',
+          '$index': '${index}.${item?index}'
+        }/>
+      </#list>
+    </#if>
     </@studio.div>
   </@studio.renderRepeatCollection>
   <#--

@@ -261,7 +261,7 @@
 						</property>
 						<property>
 							<name>contentTypes</name>
-							<value>,/component/left-rail</value>
+							<value>/component/left-rail</value>
 							<type>contentTypes</type>
 						</property>
 						<property>

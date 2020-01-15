@@ -418,6 +418,9 @@
       <tool>
          <name>encrypt-tool</name>
          <label>Encryption Tool</label>
+         <icon>
+            <class>fa-database</class>
+         </icon>
       </tool>
       <tool>
          <name>admin-configurations</name>

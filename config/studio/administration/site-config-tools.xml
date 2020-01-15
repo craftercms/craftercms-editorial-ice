@@ -416,6 +416,10 @@
          </objectTypes>
       </tool>
       <tool>
+         <name>encrypt-tool</name>
+         <label>Encryption Tool</label>
+      </tool>
+      <tool>
          <name>admin-configurations</name>
          <label>Configuration</label>
       </tool>

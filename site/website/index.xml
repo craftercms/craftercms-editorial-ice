@@ -14,7 +14,7 @@
   <createdDate>2017-1-31T16:18:14.000Z</createdDate>
   <createdDate_dt>2017-1-31T16:18:14.000Z</createdDate_dt>
   <lastModifiedDate>2020-01-04T06:14:04.519Z</lastModifiedDate>
-  <lastModifiedDate_dt>2020-01-24T12:18:40.079Z</lastModifiedDate_dt>
+  <lastModifiedDate_dt>2020-01-24T12:18:44.042Z</lastModifiedDate_dt>
   <title_t>Editorial</title_t>
   <hero_text_html>&lt;p&gt;Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas. Pellentesque sapien ac quam. Lorem ipsum dolor sit nullam.&lt;/p&gt;</hero_text_html>
   <hero_title_html>
@@ -109,6 +109,81 @@
         <lastModifiedDate_dt>2019-12-22T11:57:14.080Z</lastModifiedDate_dt>
       </component>
     </item>
+    <content_o item-list="true">
+      <item datasource="features" inline="true">
+        <key>9e93c15d-9473-363b-6179-ce02c1203756</key>
+        <value>Schedule</value>
+        <component id="9e93c15d-9473-363b-6179-ce02c1203756">
+          <content-type>/component/feature</content-type>
+          <display-template>/templates/web/components/feature.ftl</display-template>
+          <no-template-required/>
+          <merge-strategy>inherit-levels</merge-strategy>
+          <objectGroupId>9e93</objectGroupId>
+          <objectId>9e93c15d-9473-363b-6179-ce02c1203756</objectId>
+          <disabled>false</disabled>
+          <icon_s>fa-calendar-minus far</icon_s>
+          <file-name>9e93c15d-9473-363b-6179-ce02c1203756.xml</file-name>
+          <internal-name>Schedule</internal-name>
+          <title_t>Schedule</title_t>
+          <body_html>&lt;p&gt;Schedule velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.&lt;/p&gt;</body_html>
+          <createdDate>2019-10-11T19:21:00.910Z</createdDate>
+          <createdDate_dt>2019-10-11T19:21:00.910Z</createdDate_dt>
+          <lastModifiedDate>2019-12-22T11:57:28.631Z</lastModifiedDate>
+          <lastModifiedDate_dt>2019-12-22T11:57:28.631Z</lastModifiedDate_dt>
+        </component>
+      </item>
+      <item datasource="embeddedLayout" inline="true">
+        <key>9f162335-063c-817b-8fef-16f865de4900</key>
+        <value>Embedded Layout</value>
+        <component id="9f162335-063c-817b-8fef-16f865de4900">
+          <content-type>/component/layout</content-type>
+          <display-template>/templates/web/components/layout.ftl</display-template>
+          <no-template-required/>
+          <merge-strategy>inherit-levels</merge-strategy>
+          <objectGroupId>9f16</objectGroupId>
+          <objectId>9f162335-063c-817b-8fef-16f865de4900</objectId>
+          <file-name>9f162335-063c-817b-8fef-16f865de4900.xml</file-name>
+          <internal-name>Embedded Layout</internal-name>
+          <numberOfColumns_s>2</numberOfColumns_s>
+          <items_o item-list="true">
+            <item>
+              <content_o item-list="true">
+                <item>
+                  <datasource>sharedFeatures</datasource>
+                  <key>/site/components/features/72ef047f-02b7-89e2-bbd5-4763ac7dbca8.xml</key>
+                  <value>Six</value>
+                  <include>/site/components/features/72ef047f-02b7-89e2-bbd5-4763ac7dbca8.xml</include>
+                  <disableFlattening>false</disableFlattening>
+                </item>
+              </content_o>
+            </item>
+          </items_o>
+          <createdDate>2019-12-21T18:20:26.129Z</createdDate>
+          <createdDate_dt>2019-12-21T18:20:26.129Z</createdDate_dt>
+          <lastModifiedDate>2019-12-21T20:22:10.267Z</lastModifiedDate>
+          <lastModifiedDate_dt>2019-12-21T20:22:10.267Z</lastModifiedDate_dt>
+        </component>
+      </item>
+      <item datasource="features" inline="true">
+        <key>65d92caa-e3ab-418a-b7d0-c23389442e0b</key>
+        <value>New Feature</value>
+        <component id="65d92caa-e3ab-418a-b7d0-c23389442e0b">
+          <content-type>/component/feature</content-type>
+          <display-template>/templates/web/components/feature.ftl</display-template>
+          <internal-name>To the moon and back</internal-name>
+          <file-name>65d92caa-e3ab-418a-b7d0-c23389442e0b.xml</file-name>
+          <merge-strategy>inherit-levels</merge-strategy>
+          <createdDate_dt>2019-12-22T11:50:57.730Z</createdDate_dt>
+          <lastModifiedDate_dt>2019-12-22T11:50:57.730Z</lastModifiedDate_dt>
+          <objectId>65d92caa-e3ab-418a-b7d0-c23389442e0b</objectId>
+          <locale>en</locale>
+          <disabled>false</disabled>
+          <icon_s>fa-moon far</icon_s>
+          <title_t>To the moon and back</title_t>
+          <body_html>To the moon and back ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</body_html>
+        </component>
+      </item>
+    </content_o>
   </features_o>
   <header/>
   <hero_image_s>/static-assets/images/strawberries.jpg</hero_image_s>
@@ -123,79 +198,4 @@
   <features_title_t>Erat lacinia</features_title_t>
   <disabled>false</disabled>
   <header_o item-list="true"/>
-  <content_o item-list="true">
-    <item datasource="features" inline="true">
-      <key>9e93c15d-9473-363b-6179-ce02c1203756</key>
-      <value>Schedule</value>
-      <component id="9e93c15d-9473-363b-6179-ce02c1203756">
-        <content-type>/component/feature</content-type>
-        <display-template>/templates/web/components/feature.ftl</display-template>
-        <no-template-required/>
-        <merge-strategy>inherit-levels</merge-strategy>
-        <objectGroupId>9e93</objectGroupId>
-        <objectId>9e93c15d-9473-363b-6179-ce02c1203756</objectId>
-        <disabled>false</disabled>
-        <icon_s>fa-calendar-minus far</icon_s>
-        <file-name>9e93c15d-9473-363b-6179-ce02c1203756.xml</file-name>
-        <internal-name>Schedule</internal-name>
-        <title_t>Schedule</title_t>
-        <body_html>&lt;p&gt;Schedule velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.&lt;/p&gt;</body_html>
-        <createdDate>2019-10-11T19:21:00.910Z</createdDate>
-        <createdDate_dt>2019-10-11T19:21:00.910Z</createdDate_dt>
-        <lastModifiedDate>2019-12-22T11:57:28.631Z</lastModifiedDate>
-        <lastModifiedDate_dt>2019-12-22T11:57:28.631Z</lastModifiedDate_dt>
-      </component>
-    </item>
-    <item datasource="embeddedLayout" inline="true">
-      <key>9f162335-063c-817b-8fef-16f865de4900</key>
-      <value>Embedded Layout</value>
-      <component id="9f162335-063c-817b-8fef-16f865de4900">
-        <content-type>/component/layout</content-type>
-        <display-template>/templates/web/components/layout.ftl</display-template>
-        <no-template-required/>
-        <merge-strategy>inherit-levels</merge-strategy>
-        <objectGroupId>9f16</objectGroupId>
-        <objectId>9f162335-063c-817b-8fef-16f865de4900</objectId>
-        <file-name>9f162335-063c-817b-8fef-16f865de4900.xml</file-name>
-        <internal-name>Embedded Layout</internal-name>
-        <numberOfColumns_s>2</numberOfColumns_s>
-        <items_o item-list="true">
-          <item>
-            <content_o item-list="true">
-              <item>
-                <datasource>sharedFeatures</datasource>
-                <key>/site/components/features/72ef047f-02b7-89e2-bbd5-4763ac7dbca8.xml</key>
-                <value>Six</value>
-                <include>/site/components/features/72ef047f-02b7-89e2-bbd5-4763ac7dbca8.xml</include>
-                <disableFlattening>false</disableFlattening>
-              </item>
-            </content_o>
-          </item>
-        </items_o>
-        <createdDate>2019-12-21T18:20:26.129Z</createdDate>
-        <createdDate_dt>2019-12-21T18:20:26.129Z</createdDate_dt>
-        <lastModifiedDate>2019-12-21T20:22:10.267Z</lastModifiedDate>
-        <lastModifiedDate_dt>2019-12-21T20:22:10.267Z</lastModifiedDate_dt>
-      </component>
-    </item>
-    <item datasource="features" inline="true">
-      <key>65d92caa-e3ab-418a-b7d0-c23389442e0b</key>
-      <value>New Feature</value>
-      <component id="65d92caa-e3ab-418a-b7d0-c23389442e0b">
-        <content-type>/component/feature</content-type>
-        <display-template>/templates/web/components/feature.ftl</display-template>
-        <internal-name>To the moon and back</internal-name>
-        <file-name>65d92caa-e3ab-418a-b7d0-c23389442e0b.xml</file-name>
-        <merge-strategy>inherit-levels</merge-strategy>
-        <createdDate_dt>2019-12-22T11:50:57.730Z</createdDate_dt>
-        <lastModifiedDate_dt>2019-12-22T11:50:57.730Z</lastModifiedDate_dt>
-        <objectId>65d92caa-e3ab-418a-b7d0-c23389442e0b</objectId>
-        <locale>en</locale>
-        <disabled>false</disabled>
-        <icon_s>fa-moon far</icon_s>
-        <title_t>To the moon and back</title_t>
-        <body_html>To the moon and back ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</body_html>
-      </component>
-    </item>
-  </content_o>
 </page>

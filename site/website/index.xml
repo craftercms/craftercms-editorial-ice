@@ -14,7 +14,7 @@
   <createdDate>2017-1-31T16:18:14.000Z</createdDate>
   <createdDate_dt>2017-1-31T16:18:14.000Z</createdDate_dt>
   <lastModifiedDate>2020-01-04T06:14:04.519Z</lastModifiedDate>
-  <lastModifiedDate_dt>2020-01-24T13:11:55.501Z</lastModifiedDate_dt>
+  <lastModifiedDate_dt>2020-01-24T15:21:32.092Z</lastModifiedDate_dt>
   <title_t>Editorial</title_t>
   <hero_text_html>
     <![CDATA[<p>All the world's a stage. And all the men and women merely players; They have their exits and their entrances, and one man in his time plays many parts, his acts being seven ages. At first, the infant, mewling and puking in the nurse's arms.&nbsp;<br /><br />Then the whining schoolboy, with his satchel<br />And shining morning face, creeping like a snail<br />Unwillingly to school.</p>]]>
@@ -111,6 +111,21 @@
         <lastModifiedDate_dt>2019-12-22T11:57:14.080Z</lastModifiedDate_dt>
       </component>
     </item>
+  </features_o>
+  <header/>
+  <hero_image_s>/static-assets/images/strawberries.jpg</hero_image_s>
+  <left-rail_o item-list="true">
+    <item>
+      <key>/site/components/left-rails/left-rail-with-latest-articles.xml</key>
+      <value>Left Rail with Latest Articles</value>
+      <include>/site/components/left-rails/left-rail-with-latest-articles.xml</include>
+      <disableFlattening>false</disableFlattening>
+    </item>
+  </left-rail_o>
+  <features_title_t>Erat lacinia</features_title_t>
+  <disabled>false</disabled>
+  <header_o item-list="true"/>
+  <content_o item-list="true">
     <item datasource="features" inline="true">
       <key>9e93c15d-9473-363b-6179-ce02c1203756</key>
       <value>Schedule</value>
@@ -133,21 +148,6 @@
         <lastModifiedDate_dt>2019-12-22T11:57:28.631Z</lastModifiedDate_dt>
       </component>
     </item>
-  </features_o>
-  <header/>
-  <hero_image_s>/static-assets/images/strawberries.jpg</hero_image_s>
-  <left-rail_o item-list="true">
-    <item>
-      <key>/site/components/left-rails/left-rail-with-latest-articles.xml</key>
-      <value>Left Rail with Latest Articles</value>
-      <include>/site/components/left-rails/left-rail-with-latest-articles.xml</include>
-      <disableFlattening>false</disableFlattening>
-    </item>
-  </left-rail_o>
-  <features_title_t>Erat lacinia</features_title_t>
-  <disabled>false</disabled>
-  <header_o item-list="true"/>
-  <content_o item-list="true">
     <item datasource="embeddedLayout" inline="true">
       <key>9f162335-063c-817b-8fef-16f865de4900</key>
       <value>Embedded Layout</value>

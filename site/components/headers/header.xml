@@ -14,12 +14,12 @@
   <logo/>
   <social_media_links_o item-list="true">
     <item>
-      <social_media_s>brands fa-facebook</social_media_s>
-      <url_s>http://facebook.com</url_s>
-    </item>
-    <item>
       <url_s>http://twitter.com</url_s>
       <social_media_s>brands fa-twitter</social_media_s>
+    </item>
+    <item>
+      <social_media_s>brands fa-facebook</social_media_s>
+      <url_s>http://facebook.com</url_s>
     </item>
     <item>
       <social_media_s>brands fa-google-plus</social_media_s>
@@ -29,7 +29,7 @@
   <createdDate>2017-2-3T23:27:50.000Z</createdDate>
   <createdDate_dt>2017-2-3T23:27:50.000Z</createdDate_dt>
   <lastModifiedDate>2019-12-20T13:47:32.168Z</lastModifiedDate>
-  <lastModifiedDate_dt>2019-12-20T13:47:32.168Z</lastModifiedDate_dt>
+  <lastModifiedDate_dt>2020-01-24T17:00:51.467Z</lastModifiedDate_dt>
   <logo_s>/static-assets/images/1-gear.png</logo_s>
   <logo_text_t/>
   <disabled>false</disabled>

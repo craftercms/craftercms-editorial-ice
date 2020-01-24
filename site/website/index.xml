@@ -14,11 +14,11 @@
   <createdDate>2017-1-31T16:18:14.000Z</createdDate>
   <createdDate_dt>2017-1-31T16:18:14.000Z</createdDate_dt>
   <lastModifiedDate>2020-01-04T06:14:04.519Z</lastModifiedDate>
-  <lastModifiedDate_dt>2020-01-24T11:44:29.331Z</lastModifiedDate_dt>
+  <lastModifiedDate_dt>2020-01-24T11:45:29.097Z</lastModifiedDate_dt>
   <title_t>Editorial</title_t>
   <hero_text_html>&lt;p&gt;Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas. Pellentesque sapien ac quam. Lorem ipsum dolor sit nullam.&lt;/p&gt;</hero_text_html>
   <hero_title_html>
-    <![CDATA[<h1>Simply Editorial</h1>]]>
+    <![CDATA[<h1>Hi, I&rsquo;m Editorial<br />by HTML5 UP</h1>]]>
   </hero_title_html>
   <features_o item-list="true">
     <item datasource="features" inline="true">

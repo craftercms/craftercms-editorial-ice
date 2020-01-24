@@ -90,6 +90,25 @@
       </component>
     </item>
     <item datasource="features" inline="true">
+      <key>1d28e198-793c-4732-b70c-4193596deff1</key>
+      <value>New Feature</value>
+      <component id="1d28e198-793c-4732-b70c-4193596deff1">
+        <content-type>/component/feature</content-type>
+        <display-template>/templates/web/components/feature.ftl</display-template>
+        <internal-name>New Feature</internal-name>
+        <file-name>1d28e198-793c-4732-b70c-4193596deff1.xml</file-name>
+        <merge-strategy>inherit-levels</merge-strategy>
+        <createdDate_dt>2020-01-24T17:01:23.927Z</createdDate_dt>
+        <lastModifiedDate_dt>2020-01-24T17:01:23.927Z</lastModifiedDate_dt>
+        <objectId>1d28e198-793c-4732-b70c-4193596deff1</objectId>
+        <locale>en</locale>
+        <disabled>false</disabled>
+        <icon_s>fa-closed-captioning far</icon_s>
+        <title_t>Feature Title</title_t>
+        <body_html>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</body_html>
+      </component>
+    </item>
+    <item datasource="features" inline="true">
       <key>9e93c15d-9473-363b-6179-ce02c1203756</key>
       <value>Schedule</value>
       <component id="9e93c15d-9473-363b-6179-ce02c1203756">

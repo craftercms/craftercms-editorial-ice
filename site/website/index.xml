@@ -190,7 +190,7 @@
               <item>
                 <datasource>sharedFeatures</datasource>
                 <key>/site/components/features/72ef047f-02b7-89e2-bbd5-4763ac7dbca8.xml</key>
-                <value>Six</value>
+                <value>Closed captioning</value>
                 <include>/site/components/features/72ef047f-02b7-89e2-bbd5-4763ac7dbca8.xml</include>
                 <disableFlattening>false</disableFlattening>
               </item>

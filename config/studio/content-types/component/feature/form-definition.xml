@@ -114,7 +114,7 @@
 				<field>
 					<type>dropdown</type>
 					<id>icon_s</id>
-					<iceId></iceId>
+					<iceId>icon_s</iceId>
 					<title>Icon</title>
 					<description></description>
 					<defaultValue>fa-closed-captioning far</defaultValue>

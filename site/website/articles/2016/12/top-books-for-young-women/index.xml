@@ -35,6 +35,6 @@
 	<image_s>/static-assets/images/book-woman-pic.jpg</image_s>
 	<disabled>false</disabled>
 	<header_o item-list="true"/>
-	<left-rail_o item-list="true"/>
+	<left_rail_o item-list="true"/>
 	<date_dt_tz>EST5EDT</date_dt_tz>
 </page>

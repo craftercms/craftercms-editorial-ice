@@ -102,7 +102,7 @@
   <!-- /Main -->
 
   <!-- Left Rail -->
-  <@studio.renderComponentCollection $field="left-rail_o" />
+  <@studio.renderComponentCollection $field="left_rail_o" />
   <!-- /Left Rail -->
 
 </div>

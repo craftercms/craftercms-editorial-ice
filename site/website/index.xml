@@ -135,14 +135,14 @@
   <hero_image_s>
     <![CDATA[/static-assets/images/smartphone-pic.jpg]]>
   </hero_image_s>
-  <left-rail_o item-list="true">
+  <left_rail_o item-list="true">
     <item>
       <key>/site/components/left-rails/left-rail-with-latest-articles.xml</key>
       <value>Left Rail with Latest Articles</value>
       <include>/site/components/left-rails/left-rail-with-latest-articles.xml</include>
       <disableFlattening>false</disableFlattening>
     </item>
-  </left-rail_o>
+  </left_rail_o>
   <features_title_t>
     <![CDATA[Erat lacinia]]>
   </features_title_t>

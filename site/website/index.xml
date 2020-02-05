@@ -14,7 +14,7 @@
   <createdDate>2017-1-31T16:18:14.000Z</createdDate>
   <createdDate_dt>2017-1-31T16:18:14.000Z</createdDate_dt>
   <lastModifiedDate>2020-01-04T06:14:04.519Z</lastModifiedDate>
-  <lastModifiedDate_dt>2020-02-05T17:32:01.926Z</lastModifiedDate_dt>
+  <lastModifiedDate_dt>2020-02-05T17:34:16.113Z</lastModifiedDate_dt>
   <title_t>Editorial</title_t>
   <hero_text_html>
     <![CDATA[<p>All the world's a stage. And all the men and women merely players; They have their exits and their entrances, and one man in his time plays many parts, his acts being seven ages. At first, the infant, mewling and puking in the nurse's arms.&nbsp;<br /><br />Then the whining schoolboy, with his satchel<br />And shining morning face, creeping like a snail<br />Unwillingly to school.</p>]]>
@@ -66,6 +66,12 @@
         <lastModifiedDate>2019-12-22T11:56:51.172Z</lastModifiedDate>
         <lastModifiedDate_dt>2019-12-22T11:56:51.172Z</lastModifiedDate_dt>
       </component>
+    </item>
+    <item datasource="sharedFeatures">
+      <key>/site/components/features/4be0a368-783c-8f73-7469-63a62636bd4c.xml</key>
+      <value>Smile</value>
+      <include>/site/components/features/4be0a368-783c-8f73-7469-63a62636bd4c.xml</include>
+      <disableFlattening>false</disableFlattening>
     </item>
     <item datasource="features" inline="true">
       <key>a89386c4-a205-2681-2db1-c3606f714411</key>

@@ -1,6 +1,6 @@
 <#macro toolSupport>
   <#if modePreview>
-    <#--<script src="/studio/static-assets/modules/editors/tinymce/v5/5.1.5/tinymce.min.js"></script>-->
+    <#--<script src="/studio/static-assets/modules/editors/tinymce/v5/5.1.6/tinymce.min.js"></script>-->
     <script src="/studio/static-assets/modules/editors/tinymce/v5/tinymce/tinymce.min.js"></script>
     <#--<script src="https://cdn.tiny.cloud/1/tbd5nzpv71g4cshqwyww94h4982mllkhgzxgn5toh4ivhtqj/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>-->
     <script src="http://authoring.sample.com:3000/craftercms-guest.umd.js"></script>

@@ -14,7 +14,7 @@
   <createdDate>2017-1-31T16:18:14.000Z</createdDate>
   <createdDate_dt>2017-1-31T16:18:14.000Z</createdDate_dt>
   <lastModifiedDate>2020-01-04T06:14:04.519Z</lastModifiedDate>
-  <lastModifiedDate_dt>2020-02-05T17:57:11.179Z</lastModifiedDate_dt>
+  <lastModifiedDate_dt>2020-02-05T17:58:12.035Z</lastModifiedDate_dt>
   <title_t>Editorial</title_t>
   <hero_text_html>
     <![CDATA[<p>All the world's a stage. And all the men and women merely players; They have their exits and their entrances, and one man in his time plays many parts, his acts being seven ages. At first, the infant, mewling and puking in the nurse's arms.&nbsp;<br /><br />Then the whining schoolboy, with his satchel<br />And shining morning face, creeping like a snail<br />Unwillingly to school.</p>]]>
@@ -128,6 +128,25 @@
         <createdDate_dt>2019-10-11T19:21:00.910Z</createdDate_dt>
         <lastModifiedDate>2019-12-22T11:57:28.631Z</lastModifiedDate>
         <lastModifiedDate_dt>2019-12-22T11:57:28.631Z</lastModifiedDate_dt>
+      </component>
+    </item>
+    <item datasource="features" inline="true">
+      <key>41d439eb-6d32-4670-8280-264e20e42b39</key>
+      <value>New Feature</value>
+      <component id="41d439eb-6d32-4670-8280-264e20e42b39">
+        <content-type>/component/feature</content-type>
+        <display-template>/templates/web/components/feature.ftl</display-template>
+        <internal-name>New Feature</internal-name>
+        <file-name>41d439eb-6d32-4670-8280-264e20e42b39.xml</file-name>
+        <merge-strategy>inherit-levels</merge-strategy>
+        <createdDate_dt>2020-02-05T17:58:12.034Z</createdDate_dt>
+        <lastModifiedDate_dt>2020-02-05T17:58:12.034Z</lastModifiedDate_dt>
+        <objectId>41d439eb-6d32-4670-8280-264e20e42b39</objectId>
+        <locale>en</locale>
+        <disabled>false</disabled>
+        <icon_s>fa-closed-captioning far</icon_s>
+        <title_t>Feature Title</title_t>
+        <body_html>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</body_html>
       </component>
     </item>
   </features_o>

@@ -49,7 +49,7 @@
 	<#assign additionalModel = {"articleCategories": articleCategories, "articlePath": articlePath }/>
 
 	<!-- Left Rail -->
-	<@renderComponent component = contentModel.left\-rail_o.item additionalModel = additionalModel />
+	<@renderComponent component = contentModel.left_rail_o.item additionalModel = additionalModel />
 
 </div>
 

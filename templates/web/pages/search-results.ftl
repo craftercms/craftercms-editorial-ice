@@ -47,7 +47,7 @@
 	</div>
 
 	<!-- Left Rail -->
-	<@renderComponent component=contentModel.left\-rail_o.item />
+	<@renderComponent component=contentModel.left_rail_o.item />
 
 </div>
 

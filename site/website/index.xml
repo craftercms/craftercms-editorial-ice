@@ -16,12 +16,8 @@
   <lastModifiedDate>2020-01-04T06:14:04.519Z</lastModifiedDate>
   <lastModifiedDate_dt>2020-02-05T18:50:44.848Z</lastModifiedDate_dt>
   <title_t>Editorial</title_t>
-  <hero_text_html>
-    <![CDATA[<p>All the world's a stage. And all the men and women merely players; They have their exits and their entrances, and one man in his time plays many parts, his acts being seven ages. At first, the infant, mewling and puking in the nurse's arms.&nbsp;<br /><br />Then the whining schoolboy, with his satchel<br />And shining morning face, creeping like a snail<br />Unwillingly to school.</p>]]>
-  </hero_text_html>
-  <hero_title_html>
-    <![CDATA[<h1>Simply Editorial</h1>]]>
-  </hero_title_html>
+  <hero_text_html><![CDATA[<p>All the world's a stage. And all the men and women merely players; They have their exits and their entrances, and one man in his time plays many parts, his acts being seven ages. At first, the infant, mewling and puking in the nurse's arms.&nbsp;<br /><br />Then the whining schoolboy, with his satchel<br />And shining morning face, creeping like a snail<br />Unwillingly to school.</p>]]></hero_text_html>
+  <hero_title_html><![CDATA[<h1>Simply Editorial</h1>]]></hero_title_html>
   <features_o item-list="true">
     <item datasource="features" inline="true">
       <key>310b0c87-c3ca-4da0-4aa2-7002a318d7ce</key>
@@ -97,9 +93,7 @@
         <objectGroupId>9f6b</objectGroupId>
         <objectId>9f6b80da-21c8-9232-5175-2b1b97db1ed0</objectId>
         <internal-name>Ring the bell</internal-name>
-        <title_t>
-          <![CDATA[Ring the bell]]>
-        </title_t>
+        <title_t><![CDATA[Ring the bell]]></title_t>
         <disabled>false</disabled>
         <icon_s>fa-bell far</icon_s>
         <file-name>9f6b80da-21c8-9232-5175-2b1b97db1ed0.xml</file-name>
@@ -144,9 +138,7 @@
         <objectId>af1c108b-f7ae-26af-fbe1-a828e52d6a1f</objectId>
         <file-name>af1c108b-f7ae-26af-fbe1-a828e52d6a1f.xml</file-name>
         <internal-name>Create Profiles</internal-name>
-        <title_t>
-          <![CDATA[Profiles]]>
-        </title_t>
+        <title_t><![CDATA[Profiles]]></title_t>
         <disabled>false</disabled>
         <icon_s>fa-address-card far</icon_s>
         <body_html>&lt;p&gt;Create profiles that donec ullamcorper nulla non metus auctor fringilla. Curabitur blandit tempus porttitor.&lt;/p&gt;</body_html>
@@ -158,9 +150,7 @@
     </item>
   </features_o>
   <header/>
-  <hero_image_s>
-    <![CDATA[/static-assets/images/six-pack-pic.jpg]]>
-  </hero_image_s>
+  <hero_image_s><![CDATA[/static-assets/images/six-pack-pic.jpg]]></hero_image_s>
   <left_rail_o item-list="true">
     <item>
       <key>/site/components/left-rails/left-rail-with-latest-articles.xml</key>
@@ -169,9 +159,7 @@
       <disableFlattening>false</disableFlattening>
     </item>
   </left_rail_o>
-  <features_title_t>
-    <![CDATA[Erat lacinia]]>
-  </features_title_t>
+  <features_title_t><![CDATA[Erat lacinia]]></features_title_t>
   <disabled>false</disabled>
   <header_o item-list="true"/>
   <content_o item-list="true">

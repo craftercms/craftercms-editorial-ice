@@ -36,11 +36,7 @@ Now supports JSON too!
 <panel>
   <modules>
     <module>
-      <moduleName>ice-tools-panel</moduleName>
-      <title>inContextEditing</title>
-    </module>
-    <module>
-      <moduleName>component-panel</moduleName>
+      <moduleName>craftercms.ice.components</moduleName>
       <title>pageComponents</title>
     </module>
     <module>

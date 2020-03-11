@@ -49,7 +49,7 @@ Now supports JSON too!
     </module>
     <module>
       <moduleName>craftercms.ice.contentTree</moduleName>
-      <title>contentTree</title>
+      <title>contentTreePanel</title>
     </module>
     <!--
     <module>

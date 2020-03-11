@@ -37,7 +37,7 @@ Now supports JSON too!
   <modules>
     <module>
       <moduleName>craftercms.ice.components</moduleName>
-      <title>pageComponents</title>
+      <title>componentsPanel</title>
     </module>
     <module>
       <moduleName>craftercms.ice.assets</moduleName>

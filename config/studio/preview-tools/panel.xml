@@ -48,7 +48,7 @@ Now supports JSON too!
       <title>audiencesPanel</title>
     </module>
     <module>
-      <moduleName>craftercms.ice.contentTree.title</moduleName>
+      <moduleName>craftercms.ice.contentTree</moduleName>
       <title></title>
     </module>
     <!--

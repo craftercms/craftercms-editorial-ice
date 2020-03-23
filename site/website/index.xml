@@ -14,32 +14,14 @@
   <createdDate>2017-1-31T16:18:14.000Z</createdDate>
   <createdDate_dt>2017-1-31T16:18:14.000Z</createdDate_dt>
   <lastModifiedDate>2020-01-04T06:14:04.519Z</lastModifiedDate>
-  <lastModifiedDate_dt>2020-03-23T20:39:33.779Z</lastModifiedDate_dt>
+  <lastModifiedDate_dt>2020-03-23T20:39:45.152Z</lastModifiedDate_dt>
   <title_t>Editorial</title_t>
   <hero_text_html><![CDATA[<p>All the world's a stage. And all the men and women merely players; They have their exits and their entrances, and one man in his time plays many parts, his acts being seven ages. At first, the infant, mewling and puking in the nurse's arms.&nbsp;<br /><br />Then the whining schoolboy, with his satchel<br />And shining morning face, creeping like a snail<br />Unwillingly to school.</p>]]></hero_text_html>
   <hero_title_html><![CDATA[<h1>Simply Editorial</h1>]]></hero_title_html>
   <features_o item-list="true">
     
     
-    <item datasource="features" inline="true">
-      <key>1d28e198-793c-4732-b70c-4193596deff1</key>
-      <value>New Feature</value>
-      <component id="1d28e198-793c-4732-b70c-4193596deff1">
-        <content-type>/component/feature</content-type>
-        <display-template>/templates/web/components/feature.ftl</display-template>
-        <internal-name>New Feature</internal-name>
-        <file-name>1d28e198-793c-4732-b70c-4193596deff1.xml</file-name>
-        <merge-strategy>inherit-levels</merge-strategy>
-        <createdDate_dt>2020-01-24T17:01:23.927Z</createdDate_dt>
-        <lastModifiedDate_dt>2020-01-24T17:01:23.927Z</lastModifiedDate_dt>
-        <objectId>1d28e198-793c-4732-b70c-4193596deff1</objectId>
-        <locale>en</locale>
-        <disabled>false</disabled>
-        <icon_s>fa-closed-captioning far</icon_s>
-        <title_t>Feature Title</title_t>
-        <body_html>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</body_html>
-      </component>
-    </item>
+    
     <item datasource="features" inline="true">
       <key>9f6b80da-21c8-9232-5175-2b1b97db1ed0</key>
       <value>Ring the bell</value>
@@ -81,6 +63,24 @@
         <createdDate_dt>2019-10-11T19:19:53.590Z</createdDate_dt>
         <lastModifiedDate>2019-12-22T11:56:34.603Z</lastModifiedDate>
         <lastModifiedDate_dt>2019-12-22T11:56:34.603Z</lastModifiedDate_dt>
+      </component>
+    </item><item datasource="features" inline="true">
+      <key>1d28e198-793c-4732-b70c-4193596deff1</key>
+      <value>New Feature</value>
+      <component id="1d28e198-793c-4732-b70c-4193596deff1">
+        <content-type>/component/feature</content-type>
+        <display-template>/templates/web/components/feature.ftl</display-template>
+        <internal-name>New Feature</internal-name>
+        <file-name>1d28e198-793c-4732-b70c-4193596deff1.xml</file-name>
+        <merge-strategy>inherit-levels</merge-strategy>
+        <createdDate_dt>2020-01-24T17:01:23.927Z</createdDate_dt>
+        <lastModifiedDate_dt>2020-01-24T17:01:23.927Z</lastModifiedDate_dt>
+        <objectId>1d28e198-793c-4732-b70c-4193596deff1</objectId>
+        <locale>en</locale>
+        <disabled>false</disabled>
+        <icon_s>fa-closed-captioning far</icon_s>
+        <title_t>Feature Title</title_t>
+        <body_html>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</body_html>
       </component>
     </item><item datasource="features" inline="true">
       <key>310b0c87-c3ca-4da0-4aa2-7002a318d7ce</key>

@@ -733,7 +733,7 @@
 						</property>
 						<property>
 							<name>enableSearchExisting</name>
-							<value>false</value>
+							<value>true</value>
 								<type>undefined</type>
 						</property>
 						<property>

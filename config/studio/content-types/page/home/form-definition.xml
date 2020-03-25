@@ -698,6 +698,21 @@
 							<value></value>
 								<type>undefined</type>
 						</property>
+						<property>
+							<name>enableCreateNew</name>
+							<value>true</value>
+								<type>boolean</type>
+						</property>
+						<property>
+							<name>enableBrowseExisting</name>
+							<value>true</value>
+								<type>boolean</type>
+						</property>
+						<property>
+							<name>enableSearchExisting</name>
+							<value>true</value>
+								<type>boolean</type>
+						</property>
 					</properties>
 				</datasource>
 				<datasource>

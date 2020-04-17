@@ -36,6 +36,10 @@ Now supports JSON too!
 <panel>
   <modules>
     <module>
+      <moduleName>craftercms.ice.search</moduleName>
+      <title>searchPanel</title>
+    </module>
+    <module>
       <moduleName>craftercms.ice.components</moduleName>
       <title>componentsPanel</title>
     </module>

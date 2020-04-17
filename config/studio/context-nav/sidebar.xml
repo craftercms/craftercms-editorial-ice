@@ -33,16 +33,15 @@
                   </params>
                 </modulehook>
 
-                <!-- Site IA Pages -->
+                <!-- CrafterCMSNext Components -->
                 <modulehook>
-                  <name>wcm-root-folder</name>
-                  <params>
-                    <label>Pages</label>
-                    <path>/site/website</path>
-                    <showRootItem>true</showRootItem>
-                    <onClick>preview</onClick>
-                  </params>
+                  <render>PagesWidget</render>
+                  <props>
+                    <path>site/website</path>
+                    <locale>en</locale>
+                  </props>
                 </modulehook>
+
 
                 <!-- Components -->
                 <modulehook>

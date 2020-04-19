@@ -181,7 +181,7 @@
             <datasource>
                <name>receptacles</name>
                <icon>
-                  <class>fa-tasks</class>
+                  <class>fa-object-group</class>
                </icon>
             </datasource>
             <datasource>

@@ -168,7 +168,7 @@
 						</property>
 						<property>
 							<name>itemManager</name>
-							<value>embeddedFeaturesDS</value>
+							<value>receptacle</value>
 							<type>datasource:item</type>
 						</property>
 						<property>
@@ -234,14 +234,49 @@
 					</properties>
 				</datasource>
 				<datasource>
-					<type>embedded-content</type>
-					<id>embeddedFeaturesDS</id>
-					<title>Embedded Features</title>
+					<type>receptacles</type>
+					<id>receptacle</id>
+					<title>Receptacle</title>
 					<interface>item</interface>
 					<properties>
 						<property>
-							<name>contentType</name>
+							<name>allowShared</name>
+							<value>true</value>
+								<type>undefined</type>
+						</property>
+						<property>
+							<name>allowEmbedded</name>
+							<value>true</value>
+								<type>undefined</type>
+						</property>
+						<property>
+							<name>enableBrowse</name>
+							<value>false</value>
+								<type>undefined</type>
+						</property>
+						<property>
+							<name>enableSearch</name>
+							<value>false</value>
+								<type>undefined</type>
+						</property>
+						<property>
+							<name>baseRepositoryPath</name>
+							<value>/site/components</value>
+								<type>undefined</type>
+						</property>
+						<property>
+							<name>baseBrowsePath</name>
+							<value>/site/components</value>
+								<type>undefined</type>
+						</property>
+						<property>
+							<name>contentTypes</name>
 							<value>/component/feature</value>
+								<type>undefined</type>
+						</property>
+						<property>
+							<name>tags</name>
+							<value></value>
 								<type>undefined</type>
 						</property>
 					</properties>

@@ -179,9 +179,9 @@
          </controls>
          <datasources>
             <datasource>
-               <name>child-content</name>
+               <name>receptacles</name>
                <icon>
-                  <class>fa-child</class>
+                  <class>fa-object-group</class>
                </icon>
             </datasource>
             <datasource>

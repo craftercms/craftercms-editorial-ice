@@ -510,7 +510,7 @@
 						</property>
 						<property>
 							<name>itemManager</name>
-							<value>features,sharedFeatures</value>
+							<value>receptacles</value>
 							<type>datasource:item</type>
 						</property>
 						<property>
@@ -565,17 +565,17 @@
 					<properties>
 						<property>
 							<name>minSize</name>
-							<value>0</value>
+							<value></value>
 							<type>int</type>
 						</property>
 						<property>
 							<name>maxSize</name>
-							<value>1</value>
+							<value></value>
 							<type>int</type>
 						</property>
 						<property>
 							<name>itemManager</name>
-							<value>features,embeddedLayout</value>
+							<value>dynamicReceptacle</value>
 							<type>datasource:item</type>
 						</property>
 						<property>
@@ -665,19 +665,6 @@
 					</properties>
 				</datasource>
 				<datasource>
-					<type>embedded-content</type>
-					<id>features</id>
-					<title>Features</title>
-					<interface>item</interface>
-					<properties>
-						<property>
-							<name>contentType</name>
-							<value>/component/feature</value>
-								<type>undefined</type>
-						</property>
-					</properties>
-				</datasource>
-				<datasource>
 					<type>shared-content</type>
 					<id>components-left-rail</id>
 					<title>Components Left Rail</title>
@@ -716,52 +703,97 @@
 					</properties>
 				</datasource>
 				<datasource>
-					<type>shared-content</type>
-					<id>sharedFeatures</id>
-					<title>Shared Features</title>
+					<type>receptacles</type>
+					<id>receptacles</id>
+					<title>Features Receptacle</title>
 					<interface>item</interface>
 					<properties>
 						<property>
-							<name>enableCreateNew</name>
+							<name>allowShared</name>
 							<value>true</value>
 								<type>undefined</type>
 						</property>
 						<property>
-							<name>enableBrowseExisting</name>
+							<name>allowEmbedded</name>
 							<value>true</value>
 								<type>undefined</type>
 						</property>
 						<property>
-							<name>enableSearchExisting</name>
-							<value>true</value>
+							<name>enableBrowse</name>
+							<value>false</value>
 								<type>undefined</type>
 						</property>
 						<property>
-							<name>repoPath</name>
-							<value>/site/components/features</value>
+							<name>enableSearch</name>
+							<value>false</value>
 								<type>undefined</type>
 						</property>
 						<property>
-							<name>browsePath</name>
-							<value>/site/components/features</value>
+							<name>baseRepositoryPath</name>
+							<value>/site/components</value>
 								<type>undefined</type>
 						</property>
 						<property>
-							<name>type</name>
+							<name>baseBrowsePath</name>
+							<value>/site/components</value>
+								<type>undefined</type>
+						</property>
+						<property>
+							<name>contentTypes</name>
+							<value>/component/feature</value>
+								<type>undefined</type>
+						</property>
+						<property>
+							<name>tags</name>
 							<value></value>
 								<type>undefined</type>
 						</property>
 					</properties>
 				</datasource>
 				<datasource>
-					<type>embedded-content</type>
-					<id>embeddedLayout</id>
-					<title>Embedded Layout</title>
+					<type>receptacles</type>
+					<id>dynamicReceptacle</id>
+					<title>Dynamic Content Receptacle</title>
 					<interface>item</interface>
 					<properties>
 						<property>
-							<name>contentType</name>
-							<value>/component/layout</value>
+							<name>allowShared</name>
+							<value>true</value>
+								<type>undefined</type>
+						</property>
+						<property>
+							<name>allowEmbedded</name>
+							<value>true</value>
+								<type>undefined</type>
+						</property>
+						<property>
+							<name>enableBrowse</name>
+							<value>false</value>
+								<type>undefined</type>
+						</property>
+						<property>
+							<name>enableSearch</name>
+							<value>false</value>
+								<type>undefined</type>
+						</property>
+						<property>
+							<name>baseRepositoryPath</name>
+							<value>/site/components</value>
+								<type>undefined</type>
+						</property>
+						<property>
+							<name>baseBrowsePath</name>
+							<value>/site/components</value>
+								<type>undefined</type>
+						</property>
+						<property>
+							<name>contentTypes</name>
+							<value>/component/feature,/component/layout</value>
+								<type>undefined</type>
+						</property>
+						<property>
+							<name>tags</name>
+							<value></value>
 								<type>undefined</type>
 						</property>
 					</properties>

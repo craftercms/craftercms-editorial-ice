@@ -6,12 +6,19 @@ printRelative() {
   echo "${VALUE//$SANDBOX_DIR/$REPLACE}"
 }
 
+# Directory which this script was ran from
+readonly RAN_FROM_DIR=$(pwd)
+
+# Move to the "sources" directory (currently this script lives there)
 cd "$(dirname "$0")" || {
   echo "Unable to cd into current directory."
   exit 1
 }
 
+# The "{site}/sources" directory
 readonly SOURCES_DIR=$(pwd)
+
+# Move to the "sandbox" directory
 cd ../ || {
   echo "Unable to cd into sandbox directory."
   exit 1
@@ -26,7 +33,7 @@ cd $SANDBOX_DIR/sources || {
 DEFAULT_TYPE=apps
 TYPE_ARG=
 NAME_ARG=
-BLANK="{site}"
+BUILD_DIR_NAME=build
 
 PLUGINS_DIR=$SANDBOX_DIR/config/studio/plugins
 TYPE_DIR=$PLUGINS_DIR/$DEFAULT_TYPE
@@ -46,6 +53,12 @@ for ARG in "$@"; do
     ;;
   --target=*)
     BUILD_TARGET=${ARG#--target=}
+    if [ "$BUILD_TARGET" == "." ]; then
+      BUILD_TARGET=${RAN_FROM_DIR/$SOURCES_DIR\//}
+    fi
+    ;;
+  --build=*)
+    BUILD_DIR_NAME=${ARG#--build=}
     ;;
   *)
     echo "Unknown option $ARG."
@@ -69,11 +82,13 @@ if [ -z "$NAME_ARG" ]; then
 fi
 
 if [ -z "$TYPE_ARG" ]; then
-  echo "[INFO] Category not supplied, assuming \`apps\` as the category. You may call this script with \`--category={categoryName}\` to modify."
+  echo "[INFO] Category not supplied, assuming \`apps\` as the category."
+  echo "       You may call this script with \`--category={categoryName}\` to modify."
 fi
 
 if [ -z "$NAME_ARG" ]; then
-  echo "[INFO] Plugin name wasn't supplied. Using \`$BUILD_TARGET\` as the name. You may call this script with \`--name={pluginName}\` to modify."
+  echo "[INFO] Plugin name wasn't supplied. Using \`$BUILD_TARGET\` as the name."
+  echo "       You may call this script with \`--name={pluginName}\` to modify."
 fi
 
 printRelative "[INFO] Your plugin will be at deployed at \`$TARGET_DIR\`."
@@ -129,19 +144,21 @@ else
 
   echo "• Running package.json build script"
   if [ "$PKG_MAN" == "yarn" ]; then
-    yarn build
+    yarn build || exit 1
   else
-    npm run build
+    npm run build || exit 1
   fi
   echo ""
 
-  if [[ ! -d "$BUILD_TARGET_DIR/build" ]]; then
-    echo "[ERROR] Oops. No build folder found. Make sure your $PKG_MAN build creates a \`build\` directory with the full plugin build to deploy. Bye."
+  if [[ ! -d "$BUILD_TARGET_DIR/$BUILD_DIR_NAME}" ]]; then
+    echo "[ERROR] Oops. No build folder found. Make sure your $PKG_MAN build creates a \`$BUILD_DIR_NAME\` directory with the full plugin build to deploy."
+    echo "        Run this script with \`--build={yourBuildDirName}\` to modify."
+    echo "        Bye."
     exit 1
   fi
 
-  printRelative "• Copying $BUILD_TARGET_DIR/build/* to $TARGET_DIR"
-  cp -r "$BUILD_TARGET_DIR/build/." "$TARGET_DIR" || {
+  printRelative "• Copying $BUILD_TARGET_DIR/$BUILD_DIR_NAME/* to $TARGET_DIR"
+  cp -r "$BUILD_TARGET_DIR/$BUILD_DIR_NAME/." "$TARGET_DIR" || {
     echo "[ERROR] Copy operation failed"
     exit 0
   }
@@ -162,3 +179,5 @@ echo ""
 echo "All done. Arrivederci!️ 🙂"
 echo "<============"
 echo ""
+
+cd "$RAN_FROM_DIR" || exit

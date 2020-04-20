@@ -33,7 +33,17 @@
                   </params>
                 </modulehook>
 
-                <!-- CrafterCMSNext Components -->
+                <!-- Pages -->
+                <modulehook>
+                  <name>wcm-root-folder</name>
+                  <params>
+                    <label>Pages</label>
+                    <path>/site/website</path>
+                    <showRootItem>true</showRootItem>
+                  </params>
+                </modulehook>
+
+                <!-- Navigator -->
                 <modulehook>
                   <render>PagesWidget</render>
                   <props>
@@ -41,7 +51,6 @@
                     <locale>en</locale>
                   </props>
                 </modulehook>
-
 
                 <!-- Components -->
                 <modulehook>
@@ -53,16 +62,6 @@
                   </params>
                 </modulehook>
                 
-                <!-- Pages -->
-                <modulehook>
-                  <name>wcm-root-folder</name>
-                  <params>
-                    <label>Pages</label>
-                    <path>/site/website</path>
-                    <showRootItem>true</showRootItem>
-                  </params>
-                </modulehook>
-
                 <!-- Taxonomy -->
                 <modulehook>
                   <name>wcm-root-folder</name>

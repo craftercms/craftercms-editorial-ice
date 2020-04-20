@@ -150,7 +150,7 @@ else
   fi
   echo ""
 
-  if [[ ! -d "$BUILD_TARGET_DIR/$BUILD_DIR_NAME}" ]]; then
+  if [[ ! -d "$BUILD_TARGET_DIR/$BUILD_DIR_NAME" ]]; then
     echo "[ERROR] Oops. No build folder found. Make sure your $PKG_MAN build creates a \`$BUILD_DIR_NAME\` directory with the full plugin build to deploy."
     echo "        Run this script with \`--build={yourBuildDirName}\` to modify."
     echo "        Bye."

@@ -1,5 +1,37 @@
 #!/usr/bin/env bash
 
+# NAME
+#
+#     plugin_deploy.sh -- build & deploy a studio plugin
+#
+# SYNOPSIS
+#
+#     plugin_deploy.sh [options]
+#
+# DESCRIPTION
+#
+#     Builds or copies a studio plugin.
+#     If there's a package.json in the root, it executes the yarn|npm build script
+#     and copies the build to the right plugin location.
+#
+#     The following options are available:
+#
+#     --category  The plugin category name — the name of the folder inside `/config/studio/`.
+#     --name      The name of the plugin — the name of the folder inside `/config/studio/{category}`.
+#     --target    The name of the plugin source folder — name of the folder inside the
+#                 `{sandbox}/sources` folder.
+#     --build     The name of the directory inside `{sandbox}/sources/{target}` which will contain
+#                 the build to be deployed once ran the package.json "build" script is complete.
+#
+# Usage samples:
+#
+#     ./plugin_deploy.sh --target=studio-plugin-cra --name=react-app
+#     ./plugin_deploy.sh --target=studio-plugin-cra --name=react-app --category=apps
+#     ./plugin_deploy.sh --target=studio-plugin-modern --name=modern
+#     ./plugin_deploy.sh --target=studio-plugin-modern --name=modern --category=apps
+#     ./plugin_deploy.sh --target=studio-plugin-vanilla --name=vanilla
+#     ./plugin_deploy.sh --target=studio-plugin-vanilla --name=vanilla --category=apps
+
 printRelative() {
   VALUE=$1
   REPLACE="{site}"

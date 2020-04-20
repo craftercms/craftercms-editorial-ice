@@ -52,6 +52,16 @@
                     <showRootItem>true</showRootItem>
                   </params>
                 </modulehook>
+                
+                <!-- Pages -->
+                <modulehook>
+                  <name>wcm-root-folder</name>
+                  <params>
+                    <label>Pages</label>
+                    <path>/site/website</path>
+                    <showRootItem>true</showRootItem>
+                  </params>
+                </modulehook>
 
                 <!-- Taxonomy -->
                 <modulehook>

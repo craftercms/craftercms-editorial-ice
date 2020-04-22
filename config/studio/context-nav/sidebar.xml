@@ -54,6 +54,7 @@
                     <style>
                       <padding-left>9px</padding-left>
                     </style>
+                    <class>next-pages-widget</class>
                   </container>
                 </modulehook>
 

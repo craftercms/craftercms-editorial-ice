@@ -50,6 +50,11 @@
                     <path>site/website</path>
                     <locale>en</locale>
                   </props>
+                  <container>
+                    <style>
+                      <padding-left>9px</padding-left>
+                    </style>
+                  </container>
                 </modulehook>
 
                 <!-- Components -->
@@ -61,7 +66,7 @@
                     <showRootItem>true</showRootItem>
                   </params>
                 </modulehook>
-                
+
                 <!-- Taxonomy -->
                 <modulehook>
                   <name>wcm-root-folder</name>

@@ -40,6 +40,7 @@
                     <label>Pages</label>
                     <path>/site/website</path>
                     <showRootItem>true</showRootItem>
+                    <onClick>preview</onClick>
                   </params>
                 </modulehook>
 

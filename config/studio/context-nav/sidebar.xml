@@ -23,6 +23,7 @@
           <menuItems>
             <menuItem>
               <modulehooks>
+
                 <!-- Dashboard -->
                 <modulehook>
                   <name>dashboard</name>
@@ -33,18 +34,20 @@
                   </params>
                 </modulehook>
 
-                <!-- Pages -->
+                <!-- Site Config -->
                 <modulehook>
-                  <name>wcm-root-folder</name>
+                  <name>site-config</name>
                   <params>
-                    <label>Pages</label>
-                    <path>/site/website</path>
-                    <showRootItem>true</showRootItem>
-                    <onClick>preview</onClick>
+                    <roles>
+                      <role>admin</role>
+                      <role>developer</role>
+                    </roles>
+                    <label>Site Config</label>
+                    <path>/site-config</path>
                   </params>
                 </modulehook>
 
-                <!-- Navigator -->
+                <!-- Path Navigator: Pages -->
                 <modulehook>
                   <render>PagesWidget</render>
                   <props>
@@ -61,73 +64,92 @@
                   </container>
                 </modulehook>
 
-                <!-- Components -->
+                <!-- Path Navigator: Components -->
                 <modulehook>
-                  <name>wcm-root-folder</name>
-                  <params>
-                    <label>Components</label>
+                  <render>PagesWidget</render>
+                  <props>
+                    <title>Components</title>
+                    <icon>fa </icon>
                     <path>/site/components</path>
-                    <showRootItem>true</showRootItem>
-                  </params>
+                    <locale>en</locale>
+                  </props>
+                  <container>
+                    <style>
+                      <padding-left>9px</padding-left>
+                    </style>
+                    <class>next-pages-widget</class>
+                  </container>
                 </modulehook>
 
-                <!-- Taxonomy -->
+                <!-- Path Navigator: Taxonomy -->
                 <modulehook>
-                  <name>wcm-root-folder</name>
-                  <params>
-                    <label>Taxonomy</label>
+                  <render>PagesWidget</render>
+                  <props>
+                    <title>Taxonomy</title>
+                    <icon>fa fa-puzzle-piece</icon>
                     <path>/site/taxonomy</path>
-                    <showRootItem>true</showRootItem>
-                  </params>
+                    <locale>en</locale>
+                  </props>
+                  <container>
+                    <style>
+                      <padding-left>9px</padding-left>
+                    </style>
+                    <class>next-pages-widget</class>
+                  </container>
                 </modulehook>
 
-                <!-- Static Assets -->
+                <!-- Path Navigator: Static Assets -->
                 <modulehook>
-                  <name>wcm-assets-folder</name>
-                  <params>
-                    <label>Static Assets</label>
+                  <render>PagesWidget</render>
+                  <props>
+                    <title>Static Assets</title>
+                    <icon>fa fa-image</icon>
                     <path>/static-assets</path>
-                    <showRootItem>true</showRootItem>
-                    <onClick>none</onClick>
-                  </params>
+                    <locale>en</locale>
+                  </props>
+                  <container>
+                    <style>
+                      <padding-left>9px</padding-left>
+                    </style>
+                    <class>next-pages-widget</class>
+                  </container>
                 </modulehook>
 
-                <!-- Templates -->
+                <!-- Path Navigator: Templates -->
                 <modulehook>
-                  <name>wcm-assets-folder</name>
-                  <params>
-                    <label>Templates</label>
+                  <render>PagesWidget</render>
+                  <props>
+                    <title>Templates</title>
+                    <icon>fa fa-file-code-o</icon>
                     <path>/templates</path>
-                    <showRootItem>true</showRootItem>
-                    <onClick>none</onClick>
-                  </params>
+                    <locale>en</locale>
+                  </props>
+                  <container>
+                    <style>
+                      <padding-left>9px</padding-left>
+                    </style>
+                    <class>next-pages-widget</class>
+                  </container>
                 </modulehook>
 
-                <!-- Scripts -->
+                <!-- Path Navigator: Scripts -->
                 <modulehook>
-                  <name>wcm-assets-folder</name>
-                  <params>
-                    <label>Scripts</label>
+                  <render>PagesWidget</render>
+                  <props>
+                    <title>Scripts</title>
+                    <icon>fa fa-code</icon>
                     <path>/scripts</path>
-                    <showRootItem>true</showRootItem>
-                    <onClick>none</onClick>
-                  </params>
+                    <locale>en</locale>
+                  </props>
+                  <container>
+                    <style>
+                      <padding-left>9px</padding-left>
+                    </style>
+                    <class>next-pages-widget</class>
+                  </container>
                 </modulehook>
 
-                <!-- Site Config -->
-                <modulehook>
-                  <name>site-config</name>
-                  <params>
-                    <roles>
-                      <role>admin</role>
-                      <role>developer</role>
-                    </roles>
-                    <label>Site Config</label>
-                    <path>/site-config</path>
-                  </params>
-                </modulehook>
               </modulehooks>
-
             </menuItem>
           </menuItems>
         </group>

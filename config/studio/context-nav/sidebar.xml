@@ -69,7 +69,7 @@
                   <render>PagesWidget</render>
                   <props>
                     <title>Components</title>
-                    <icon>fa </icon>
+                    <icon>fa fa-puzzle-piece</icon>
                     <path>/site/components</path>
                     <locale>en</locale>
                   </props>
@@ -86,7 +86,7 @@
                   <render>PagesWidget</render>
                   <props>
                     <title>Taxonomy</title>
-                    <icon>fa fa-puzzle-piece</icon>
+                    <icon>fa fa-tags</icon>
                     <path>/site/taxonomy</path>
                     <locale>en</locale>
                   </props>

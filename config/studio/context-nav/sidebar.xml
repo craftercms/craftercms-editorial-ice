@@ -48,7 +48,9 @@
                 <modulehook>
                   <render>PagesWidget</render>
                   <props>
-                    <path>site/website</path>
+                    <title>Pages</title>
+                    <icon>fa fa-file-text-o</icon>
+                    <path>/site/website</path>
                     <locale>en</locale>
                   </props>
                   <container>

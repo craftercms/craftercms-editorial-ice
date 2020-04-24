@@ -37,6 +37,7 @@
                 <!-- Site Config -->
                 <modulehook>
                   <name>site-config</name>
+                  <divider>true</divider>
                   <params>
                     <roles>
                       <role>admin</role>

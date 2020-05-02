@@ -34,14 +34,13 @@
   services: {
     auth,
     sites: sitesServices
-  },
-  system: { store }
+  }
 }) {
 
   let createElement = React.createElement;
   let elem = document.createElement('div');
-  let state = store.getState();
   let sites;
+  let user;
 
   document.body.appendChild(elem);
 
@@ -52,8 +51,8 @@
     render();
   });
 
-  store.subscribe(() => {
-    state = store.getState();
+  auth.me().subscribe((response) => {
+    user = response;
     render();
   });
 
@@ -78,7 +77,7 @@
               graphicUrl: '/studio/static-assets/images/content_creation.svg',
               error: {
                 title: 'Vanilla Plugin',
-                message: `Hello, ${state.user ? (state.user.firstName || state.user.username) : 'anonymous'}`
+                message: `Hello, ${user ? (user.firstName || user.username) : 'anonymous'}`
               }
             }
           ),
@@ -109,16 +108,11 @@
             onClick() {
               auth.logout().subscribe(
                 () => {
-                  store.dispatch({ type: 'VALIDATE_SESSION' });
+                  user = null;
+                  sites = null;
                 },
                 () => {
-                  store.dispatch({
-                    type: 'SHOW_CONFIRM_DIALOG',
-                    payload: {
-                      title: 'Error',
-                      body: 'Error occurred logging out.'
-                    }
-                  });
+                  console.error('Error occurred logging out.');
                 }
               );
             }

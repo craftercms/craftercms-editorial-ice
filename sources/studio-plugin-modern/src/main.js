@@ -14,7 +14,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { render } from 'react-dom';
 import { makeStyles, ThemeProvider } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
@@ -29,7 +29,6 @@ import List from '@material-ui/core/List';
 import Link from '@material-ui/core/Link';
 
 const { CrafterCMSNextBridge, AuthMonitor } = components;
-const { useDispatch, useSelector } = util.redux;
 
 const useStyles = makeStyles(() => ({
   '@global': {
@@ -63,78 +62,68 @@ function App() {
 function UI() {
 
   const classes = useStyles();
-
+  const [active, setActive] = useState(true);
   const [sites, setSites] = useState(null);
+  const [user, setUser] = useState(null);
 
-  const active = useSelector(state => state.auth.active);
-  const user = useSelector(state => state.user);
-  const dispatch = useDispatch();
+  const loadSites = () => services.sites.fetchSites().subscribe(setSites);
+  const logout = () => services.auth.logout().subscribe(() => {
+    setUser(null);
+    setActive(false);
+  });
 
-  const loadSites = () => {
-    services.sites.fetchSites().subscribe(setSites);
-  };
-
-  const logout = () => {
-    services.auth.logout().subscribe(() => {
-      setSites(null);
-      dispatch({ type: 'VALIDATE_SESSION' });
-      // If you like to redirect, simply refresh. Upon login, the
-      // system would redirect right back here when this batch of work is complete
-      // https://github.com/craftercms/craftercms/issues/3841
-      // window.location.reload();
-    });
-  };
+  useEffect(() => {
+    services.auth.me().subscribe(setUser);
+  }, []);
 
   return (
     <>
-      <ThemeProvider theme={system.theme}>
-        <section className={classes.root}>
-          <h2>Hello, {user?.username ?? 'anonymous'}</h2>
-          {
-            user &&
-            <div className={classes.logoutContainer}>
-              <Link onClick={logout}>
-                Log Out
-              </Link>
-            </div>
-          }
-          {
-            sites ? (
-              <>
-                <div className={classes.mainContent}>
-                  <List className={classes.root}>
-                    {
-                      sites.map(site =>
-                        <ListItem key={site.id} divider>
-                          <ListItemAvatar>
-                            <Avatar>
-                              <WorkRounded />
-                            </Avatar>
-                          </ListItemAvatar>
-                          <ListItemText
-                            primary={site.name}
-                            secondary={site.description ?? '(no description)'}
-                          />
-                        </ListItem>
-                      )
-                    }
-                  </List>
-                </div>
-              </>
+      <section className={classes.root}>
+        <h2>Hello, {user?.username ?? 'anonymous'}</h2>
+        {
+          user &&
+          <div className={classes.logoutContainer}>
+            <Link onClick={logout}>
+              Log Out
+            </Link>
+          </div>
+        }
+        {
+          sites ? (
+            <>
+              <div className={classes.mainContent}>
+                <List className={classes.root}>
+                  {
+                    sites.map(site =>
+                      <ListItem key={site.id} divider>
+                        <ListItemAvatar>
+                          <Avatar>
+                            <WorkRounded />
+                          </Avatar>
+                        </ListItemAvatar>
+                        <ListItemText
+                          primary={site.name}
+                          secondary={site.description ?? '(no description)'}
+                        />
+                      </ListItem>
+                    )
+                  }
+                </List>
+              </div>
+            </>
+          ) : (
+            active ? (
+              <Button variant="contained" color="primary" onClick={loadSites}>
+                Load Sites
+              </Button>
             ) : (
-              active ? (
-                <Button variant="contained" color="primary" onClick={loadSites}>
-                  Load Sites
-                </Button>
-              ) : (
-                <Typography variant="body">
-                  Your session expired.
-                </Typography>
-              )
+              <Typography variant="body">
+                Your session expired.
+              </Typography>
             )
-          }
-        </section>
-      </ThemeProvider>
+          )
+        }
+      </section>
       <AuthMonitor />
     </>
   );

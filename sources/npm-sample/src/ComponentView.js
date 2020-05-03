@@ -1,15 +1,42 @@
+/*
+ * Copyright (C) 2007-2020 Crafter Software Corporation. All Rights Reserved.
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License version 3 as published by
+ * the Free Software Foundation.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
 import React, { useState } from 'react';
 import IconButton from '@material-ui/core/IconButton';
-import { ArrowBackRounded } from '@material-ui/icons';
+import { ArrowBackRounded, PublishRounded } from '@material-ui/icons';
 import Typography from '@material-ui/core/Typography';
 import Paper from '@material-ui/core/Paper';
 import Input from '@material-ui/core/Input';
 import Button from '@material-ui/core/Button';
 import { updateField } from '@rart/25d0661d/services/content';
 import Snackbar from '@material-ui/core/Snackbar';
+import { useDispatch } from 'react-redux';
+import { showPublishDialog } from '@rart/25d0661d/state/actions/dialogs';
+import Tooltip from '@material-ui/core/Tooltip';
 
 export default function ComponentView({ onBack, classes, resource, siteId }) {
-  const { content, contentType } = resource.read();
+  const { content, contentType, item } = resource.read();
+
+  const dispatch = useDispatch();
+  const onShowPublishDialog = () => dispatch(
+    showPublishDialog({
+      items: [item]
+    })
+  );
+
   return (
     <section className={classes.siteView}>
       <header className={classes.siteViewHeader}>
@@ -18,6 +45,15 @@ export default function ComponentView({ onBack, classes, resource, siteId }) {
             <ArrowBackRounded />
           </IconButton>
           <Typography variant="h5" component="h2" children={content.craftercms.label} />
+          <Tooltip title="Publish">
+            <IconButton
+              color="primary"
+              onClick={onShowPublishDialog}
+              style={{ marginLeft: 'auto' }}
+            >
+              <PublishRounded />
+            </IconButton>
+          </Tooltip>
         </div>
         <Typography
           color="textSecondary"
@@ -44,11 +80,19 @@ export default function ComponentView({ onBack, classes, resource, siteId }) {
         }
       </Paper>
       <Paper className={classes.codePaper}>
+        <Typography
+          color="textSecondary"
+          children="Content Model"
+        />
         <pre className={classes.code}>
           {JSON.stringify(content, null, '  ')}
         </pre>
       </Paper>
       <Paper className={classes.codePaper}>
+        <Typography
+          color="textSecondary"
+          children="Content Type"
+        />
         <pre className={classes.code}>
           {JSON.stringify(contentType, null, '  ')}
         </pre>

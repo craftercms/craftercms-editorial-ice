@@ -1,21 +1,41 @@
+/*
+ * Copyright (C) 2007-2020 Crafter Software Corporation. All Rights Reserved.
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License version 3 as published by
+ * the Free Software Foundation.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
 import React, { Suspense, useCallback, useEffect, useRef, useState } from 'react';
 import { fetchSites } from '@rart/25d0661d/services/sites';
-import { logout, me } from '@rart/25d0661d/services/auth';
-import Link from '@material-ui/core/Link';
-import CircularProgress from '@material-ui/core/CircularProgress';
+import { logout } from '@rart/25d0661d/services/auth';
 import { HashRouter, Route, Switch, withRouter } from 'react-router-dom';
 import SiteList from './SiteList';
 import Site from './Site';
 import { createResource } from '@rart/25d0661d/utils/hooks';
-import { fetchContentType, fetchLegacyContentTypes } from '@rart/25d0661d/services/content';
-import { theme } from '@rart/25d0661d/styles/theme';
+import {
+  fetchContentType,
+  fetchLegacyContentTypes,
+  getLegacyItem
+} from '@rart/25d0661d/services/content';
 import { map, switchMap } from 'rxjs/operators';
 import { search } from '@rart/25d0661d/services/search';
 import { setSiteCookie } from '@rart/25d0661d/utils/auth';
 import { useStyles } from './styles';
 import { getItem, parseDescriptor } from '@craftercms/content';
 import ComponentView from './ComponentView';
-import { ThemeProvider } from '@material-ui/core/styles'
+import Loader from './Loader';
+import Header from './Header';
+import { forkJoin } from 'rxjs';
+import { me } from '@rart/25d0661d/services/users';
 
 const createUserResource = () => createResource(() => me().toPromise());
 const createSitesResource = () => createResource(() => fetchSites().toPromise());
@@ -38,13 +58,18 @@ const createComponentsResource = (site) => createResource(() =>
   ).toPromise()
 );
 const createComponentResource = (site, path) => createResource(() =>
-  getItem(path, { site }).pipe(map(parseDescriptor)).pipe(
-    switchMap((item) => fetchContentType(site, item.craftercms.contentTypeId).pipe(
-      map((contentType) => ({
-        content: item,
-        contentType
-      }))
-    ))
+  forkJoin([
+    getLegacyItem(site, path),
+    getItem(path, { site }).pipe(map(parseDescriptor)).pipe(
+      switchMap((item) => fetchContentType(site, item.craftercms.contentTypeId).pipe(
+        map((contentType) => ({
+          content: item,
+          contentType
+        }))
+      ))
+    )
+  ]).pipe(
+    map(([item, resource]) => ({ ...resource, item }))
   ).toPromise()
 );
 
@@ -71,7 +96,9 @@ function App() {
   const [componentsResource, setComponentsResource] = useState(neverResource);
   const [componentResource, setComponentResource] = useState(neverResource);
 
-  const onLogout = () => logout().toPromise();
+  const onLogout = () => logout().subscribe(() => {
+    window.location.reload();
+  });
   const onRefreshSites = () => setSitesResource(createSitesResource);
   const onRouteChange = useCallback((props) => {
     const { match: { params } } = props;
@@ -84,102 +111,69 @@ function App() {
   }, []);
 
   return (
-    <ThemeProvider theme={theme}>
-      <section className={classes.root}>
-        <Suspense fallback={<Loader classes={classes} />}>
-          <Header classes={classes} resource={userResource} onLogout={onLogout} />
-        </Suspense>
-        <HashRouter>
-          <Switch>
-            <Route
-              path="/:siteId/:path"
-              render={({ history, match: { params } }) =>
-                <>
-                  <RouteMonitor onChange={onRouteChange} />
-                  <Suspense fallback={<Loader classes={classes} />}>
-                    <ComponentView
-                      siteId={params.siteId}
-                      classes={classes}
-                      onBack={() => history.push(`/${params.siteId}`)}
-                      path={decodeURIComponent(params.path)}
-                      resource={componentResource}
-                    />
-                  </Suspense>
-                </>
-              }
-            />
-            <Route
-              path="/:siteId"
-              render={({ history, match: { params } }) =>
-                <>
-                  <RouteMonitor onChange={onRouteChange} />
-                  <Suspense fallback={<Loader classes={classes} />}>
-                    <Site
-                      classes={classes}
-                      onBack={() => history.push('/')}
-                      siteId={params.siteId}
-                      onComponentSelected={(component) => history.push(`/${params.siteId}/${encodeURIComponent(component.path)}`)}
-                      resource={{
-                        sites: sitesResource,
-                        components: componentsResource
-                      }}
-                    />
-                  </Suspense>
-                </>
-              }
-            />
-            <Route
-              exact
-              path="/"
-              render={(props) =>
-                <>
-                  <RouteMonitor onChange={onRouteChange} />
-                  <Suspense fallback={<Loader classes={classes} />}>
-                    <SiteList
-                      classes={classes}
-                      resource={sitesResource}
-                      onRefreshSites={onRefreshSites}
-                      onSiteSelected={(site) => props.history.push(`/${site.id}`)}
-                    />
-                  </Suspense>
-                </>
-              }
-            />
-          </Switch>
-        </HashRouter>
-      </section>
-    </ThemeProvider>
-  );
-}
-
-function Loader(props) {
-  const { classes } = props;
-  return (
-    <div className={classes.spinner}>
-      <CircularProgress />
-    </div>
-  );
-}
-
-function Header(props) {
-  const {
-    classes,
-    onLogout,
-    resource
-  } = props;
-  const user = resource.read();
-  return (
-    <header className={classes.header}>
-      <h2>Hello, {user?.username ?? 'anonymous'}</h2>
-      {
-        user &&
-        <div className={classes.logoutContainer}>
-          <Link onClick={onLogout}>
-            Log Out
-          </Link>
-        </div>
-      }
-    </header>
+    <section className={classes.root}>
+      <Suspense fallback={<Loader classes={classes} />}>
+        <Header classes={classes} resource={userResource} onLogout={onLogout} />
+      </Suspense>
+      <HashRouter>
+        <Switch>
+          <Route
+            path="/:siteId/:path"
+            render={({ history, match: { params } }) =>
+              <>
+                <RouteMonitor onChange={onRouteChange} />
+                <Suspense fallback={<Loader classes={classes} />}>
+                  <ComponentView
+                    siteId={params.siteId}
+                    classes={classes}
+                    onBack={() => history.push(`/${params.siteId}`)}
+                    path={decodeURIComponent(params.path)}
+                    resource={componentResource}
+                  />
+                </Suspense>
+              </>
+            }
+          />
+          <Route
+            path="/:siteId"
+            render={({ history, match: { params } }) =>
+              <>
+                <RouteMonitor onChange={onRouteChange} />
+                <Suspense fallback={<Loader classes={classes} />}>
+                  <Site
+                    classes={classes}
+                    onBack={() => history.push('/')}
+                    siteId={params.siteId}
+                    onComponentSelected={(component) => history.push(`/${params.siteId}/${encodeURIComponent(component.path)}`)}
+                    resource={{
+                      sites: sitesResource,
+                      components: componentsResource
+                    }}
+                  />
+                </Suspense>
+              </>
+            }
+          />
+          <Route
+            exact
+            path="/"
+            render={(props) =>
+              <>
+                <RouteMonitor onChange={onRouteChange} />
+                <Suspense fallback={<Loader classes={classes} />}>
+                  <SiteList
+                    classes={classes}
+                    resource={sitesResource}
+                    onRefreshSites={onRefreshSites}
+                    onSiteSelected={(site) => props.history.push(`/${site.id}`)}
+                  />
+                </Suspense>
+              </>
+            }
+          />
+        </Switch>
+      </HashRouter>
+    </section>
   );
 }
 

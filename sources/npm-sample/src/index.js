@@ -16,10 +16,10 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { setRequestForgeryToken } from '@rart/25d0661d/utils/auth';
-import CrafterCMSNextBridge from '@rart/25d0661d/components/CrafterCMSNextBridge';
-import AuthMonitor from '@rart/25d0661d/components/SystemStatus/AuthMonitor';
-import { validateSession } from '@rart/25d0661d/services/auth';
+import { setRequestForgeryToken } from '@craftercms/studio-ui/utils/auth';
+import CrafterCMSNextBridge from '@craftercms/studio-ui/components/CrafterCMSNextBridge';
+import AuthMonitor from '@craftercms/studio-ui/components/SystemStatus/AuthMonitor';
+import { validateSession } from '@craftercms/studio-ui/services/auth';
 
 setRequestForgeryToken();
 

@@ -15,7 +15,7 @@
  */
 
 import React from 'react';
-import { capitalize } from '@rart/25d0661d/utils/string';
+import { capitalize } from '@craftercms/studio-ui/utils/string';
 import { ArrowBackRounded } from '@material-ui/icons';
 import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
@@ -24,7 +24,7 @@ import ListItemAvatar from '@material-ui/core/ListItemAvatar';
 import Avatar from '@material-ui/core/Avatar';
 import ListItemText from '@material-ui/core/ListItemText';
 import List from '@material-ui/core/List';
-import Component from '@rart/25d0661d/components/Icons/Component';
+import Component from '@craftercms/studio-ui/components/Icons/Component';
 
 export default function (props) {
   const {

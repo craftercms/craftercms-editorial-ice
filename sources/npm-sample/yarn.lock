@@ -995,6 +995,27 @@
   dependencies:
     tslib "^1.10.0"
 
+"@craftercms/studio-ui@^1.0.0-alpha":
+  version "1.0.0-alpha"
+  resolved "https://registry.yarnpkg.com/@craftercms/studio-ui/-/studio-ui-1.0.0-alpha.tgz#cdc023d693ca4105b6482ab09e7e6332239f7298"
+  integrity sha512-r3aSgLvoIRgY+d41hcn2llOnz54jgrzxUVe/XlfTZrFQijOn5u51pLY3rotI3n9vORTetJDE+bN+dfngL/rJRw==
+  dependencies:
+    "@videojs/http-streaming" "^1.11.2"
+    graphiql "^0.17.5"
+    graphiql-explorer "^0.4.4"
+    graphql "^14.5.4"
+    jquery "^3.5.0"
+    js-cookie "^2.2.1"
+    moment-timezone "^0.5.27"
+    notistack "^0.9.9"
+    prettier "^1.19.1"
+    query-string "^6.9.0"
+    react-animations "^1.0.0"
+    react-swipeable-views "^0.13.3"
+    react-swipeable-views-utils "^0.13.3"
+    uppy "^1.6.0"
+    video.js "^7.6.6"
+
 "@craftercms/utils@1.2.2":
   version "1.2.2"
   resolved "https://registry.yarnpkg.com/@craftercms/utils/-/utils-1.2.2.tgz#d9437b98957d85ee1a469bcfb319cb20ceea2fa8"
@@ -1381,27 +1402,6 @@
   dependencies:
     "@xml-tools/parser" "^1.0.2"
     prettier ">=1.10"
-
-"@rart/25d0661d@0.0.5":
-  version "0.0.5"
-  resolved "https://registry.yarnpkg.com/@rart/25d0661d/-/25d0661d-0.0.5.tgz#51348e16a7d6a6941aec3227d50a700c6c2ec450"
-  integrity sha512-roA3xkX8WdIP71j1zr/5JJivqo3YYrBluVd7RCgTZg6rw5TNgi/i1AIo0ypHGICsRAjnbFXRahceoMQ9u3PA1Q==
-  dependencies:
-    "@videojs/http-streaming" "^1.11.2"
-    graphiql "^0.17.5"
-    graphiql-explorer "^0.4.4"
-    graphql "^14.5.4"
-    jquery "^3.5.0"
-    js-cookie "^2.2.1"
-    moment-timezone "^0.5.27"
-    notistack "^0.9.9"
-    prettier "^1.19.1"
-    query-string "^6.9.0"
-    react-animations "^1.0.0"
-    react-swipeable-views "^0.13.3"
-    react-swipeable-views-utils "^0.13.3"
-    uppy "^1.6.0"
-    video.js "^7.6.6"
 
 "@reduxjs/toolkit@^1.1.0":
   version "1.3.5"
@@ -7277,9 +7277,9 @@ jest@24.9.0:
     jest-cli "^24.9.0"
 
 jquery@^3.5.0:
-  version "3.5.0"
-  resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.5.0.tgz#9980b97d9e4194611c36530e7dc46a58d7340fc9"
-  integrity sha512-Xb7SVYMvygPxbFMpTFQiHh1J7HClEaThguL15N/Gg37Lri/qKyhRGZYzHRyLH8Stq3Aow0LsHO2O2ci86fCrNQ==
+  version "3.5.1"
+  resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.5.1.tgz#d7b4d08e1bfdb86ad2f1a3d039ea17304717abb5"
+  integrity sha512-XwIBPqcMn57FxfT+Go5pzySnm4KWkT1Tv7gjrpT1srtf8Weynl6R273VJ5GjkRb51IzMp5nbaPjJXMWeju2MKg==
 
 js-base64@^2.1.8, js-base64@^2.4.9:
   version "2.5.2"

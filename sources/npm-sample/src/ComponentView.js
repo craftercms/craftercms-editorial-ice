@@ -21,10 +21,10 @@ import Typography from '@material-ui/core/Typography';
 import Paper from '@material-ui/core/Paper';
 import Input from '@material-ui/core/Input';
 import Button from '@material-ui/core/Button';
-import { updateField } from '@rart/25d0661d/services/content';
+import { updateField } from '@craftercms/studio-ui/services/content';
 import Snackbar from '@material-ui/core/Snackbar';
 import { useDispatch } from 'react-redux';
-import { showPublishDialog } from '@rart/25d0661d/state/actions/dialogs';
+import { showPublishDialog } from '@craftercms/studio-ui/state/actions/dialogs';
 import Tooltip from '@material-ui/core/Tooltip';
 
 export default function ComponentView({ onBack, classes, resource, siteId }) {

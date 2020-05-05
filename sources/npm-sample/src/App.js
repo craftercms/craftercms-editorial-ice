@@ -15,27 +15,27 @@
  */
 
 import React, { Suspense, useCallback, useEffect, useRef, useState } from 'react';
-import { fetchSites } from '@rart/25d0661d/services/sites';
-import { logout } from '@rart/25d0661d/services/auth';
+import { fetchSites } from '@craftercms/studio-ui/services/sites';
+import { logout } from '@craftercms/studio-ui/services/auth';
 import { HashRouter, Route, Switch, withRouter } from 'react-router-dom';
 import SiteList from './SiteList';
 import Site from './Site';
-import { createResource } from '@rart/25d0661d/utils/hooks';
+import { createResource } from '@craftercms/studio-ui/utils/hooks';
 import {
   fetchContentType,
   fetchLegacyContentTypes,
   getLegacyItem
-} from '@rart/25d0661d/services/content';
+} from '@craftercms/studio-ui/services/content';
 import { map, switchMap } from 'rxjs/operators';
-import { search } from '@rart/25d0661d/services/search';
-import { setSiteCookie } from '@rart/25d0661d/utils/auth';
+import { search } from '@craftercms/studio-ui/services/search';
+import { setSiteCookie } from '@craftercms/studio-ui/utils/auth';
 import { useStyles } from './styles';
 import { getItem, parseDescriptor } from '@craftercms/content';
 import ComponentView from './ComponentView';
 import Loader from './Loader';
 import Header from './Header';
 import { forkJoin } from 'rxjs';
-import { me } from '@rart/25d0661d/services/users';
+import { me } from '@craftercms/studio-ui/services/users';
 
 const createUserResource = () => createResource(() => me().toPromise());
 const createSitesResource = () => createResource(() => fetchSites().toPromise());

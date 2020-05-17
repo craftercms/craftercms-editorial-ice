@@ -28,8 +28,6 @@
    <default-timezone>EST5EDT</default-timezone>
    <published-repository>
       <enable-staging-environment>false</enable-staging-environment>
-      <staging-environment>staging</staging-environment>
-      <live-environment>live</live-environment>
    </published-repository>
    <publishing>
       <comments>
@@ -79,10 +77,22 @@
         Items that match the paths specified will be grouped together in the dashboard widget
         -->
       <folders>
-         <folder name="Pages" path="/website" read-direct-children="false" attach-root-prefix="true"/>
-         <folder name="Components" path="/components" read-direct-children="false" attach-root-prefix="true"/>
-         <folder name="Assets" path="/static-assets" read-direct-children="false" attach-root-prefix="false"/>
-         <folder name="Templates" path="/templates" read-direct-children="false" attach-root-prefix="false"/>
+         <folder name="Pages"
+                 path="/website"
+                 read-direct-children="false"
+                 attach-root-prefix="true"/>
+         <folder name="Components"
+                 path="/components"
+                 read-direct-children="false"
+                 attach-root-prefix="true"/>
+         <folder name="Assets"
+                 path="/static-assets"
+                 read-direct-children="false"
+                 attach-root-prefix="false"/>
+         <folder name="Templates"
+                 path="/templates"
+                 read-direct-children="false"
+                 attach-root-prefix="false"/>
       </folders>
       <!-- Item Patterns -->
       <patterns>
@@ -180,4 +190,9 @@
          </paths>
       </monitor>
    </contentMonitoring>
+   <site-urls>
+      <authoring-url/>
+      <staging-url/>
+      <live-url/>
+   </site-urls>
 </site-config>

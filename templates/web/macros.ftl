@@ -1,16 +1,40 @@
-<#macro toolSupport>
-  <#if modePreview>
-    <script src="/studio/static-assets/modules/editors/tinymce/v5/tinymce/tinymce.min.js"></script>
-    <#--<script src="https://cdn.tiny.cloud/1/tbd5nzpv71g4cshqwyww94h4982mllkhgzxgn5toh4ivhtqj/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>-->
-    <script src="/studio/static-assets/scripts/craftercms-guest.umd.js"></script>
-    <#--
-    <script
-      src="/studio/static-assets/libs/requirejs/require.js"
-      data-main="/studio/overlayhook"
-    ></script>
-    -->
-  </#if>
+<#macro addAuthoringSupport isAuthoring=(modePreview) addReact=false>
+<#if isAuthoring>
+<!--
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Crafter CMS Authoring Scripts
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+-->
+<script src="/studio/static-assets/modules/editors/tinymce/v5/tinymce/tinymce.min.js"></script>
+<#if addReact>
+<#-- TODO: Import minified script -->
+<#else>
+<#-- TODO: Create Reactless build -->
+<script src="/studio/static-assets/scripts/craftercms-guest.umd.js"></script>
+</#if>
+<script>
+  window.craftercms.guest.addAuthoringSupport({
+    path: '${model.getItem().descriptorUrl!''}',
+    modelId: '${model.objectId!''}'
+  });
+</script>
+<!--
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+-->
+</#if>
 </#macro>
+
+<#--
+<#macro addAuthoringSupport path=(model.getItem().descriptorUrl!'') model=(model)>
+  <script>
+    window.craftercms.guest.addAuthoringSupport({
+      path: '${path}',
+      modelId: '${model.objectId!''}'
+    });
+  </script>
+</#macro>
+-->
 
 <#macro cstudioOverlaySupport>
   <@toolSupport />

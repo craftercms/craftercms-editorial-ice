@@ -7,7 +7,7 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-<html>
+<html lang="en">
 <head>
 	<#include "/templates/web/fragments/head.ftl">
 </head>
@@ -55,6 +55,6 @@
 
 <#include "/templates/web/fragments/scripts.ftl">
 
-<@studio.toolSupport/>
+<@studio.addAuthoringSupport/>
 </body>
 </html>

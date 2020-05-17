@@ -7,7 +7,7 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <!doctype html>
-<html>
+<html lang="en">
 <head>
   <#include "/templates/web/fragments/head.ftl">
 </head>
@@ -109,7 +109,7 @@
 <!-- /Wrapper -->
 
 <#include "/templates/web/fragments/scripts.ftl">
+<@studio.addAuthoringSupport/>
 
-<@studio.toolSupport/>
 </body>
 </html>

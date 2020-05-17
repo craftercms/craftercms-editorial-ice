@@ -7,7 +7,7 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-<html>
+<html lang="en">
 <head>
   <title>${contentModel.title_t}</title>
   <meta charset="utf-8"/>
@@ -127,7 +127,7 @@
 <script src="/static-assets/js/util.js"></script>
 <script src="/static-assets/js/main.js?v=${siteContext.siteName}"></script>
 
-<@studio.toolSupport/>
+<@studio.addAuthoringSupport/>
 
 </body>
 </html>

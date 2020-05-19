@@ -220,7 +220,7 @@
          <path>proxy-config.xml</path>
          <title>Proxy Config</title>
          <description>Proxy Config</description>
-         <samplePath>sample-blob-stores-config.xml</samplePath>
+         <samplePath>sample-proxy-config.xml</samplePath>
       </file>
    </files>
 </config>

@@ -13,7 +13,7 @@ Crafter CMS Authoring Scripts
 <script src="/studio/static-assets/scripts/craftercms-guest.umd.js"></script>
 </#if>
 <script>
-  window.craftercms.guest.addAuthoringSupport({
+  window.craftercms.guest.initPageBuilder({
     path: '${model.getItem().descriptorUrl!''}',
     modelId: '${model.objectId!''}'
   });

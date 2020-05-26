@@ -13,13 +13,14 @@
 	<folder-name/>
 	<createdDate>2017-1-31T16:18:14.000Z</createdDate>
 	<createdDate_dt>2017-1-31T16:18:14.000Z</createdDate_dt>
-	<lastModifiedDate>2020-05-26T16:46:53.688Z</lastModifiedDate>
-	<lastModifiedDate_dt>2020-05-26T21:28:36.149Z</lastModifiedDate_dt>
+	<lastModifiedDate>2020-05-26T21:32:18.413Z</lastModifiedDate>
+	<lastModifiedDate_dt>2020-05-26T21:32:18.413Z</lastModifiedDate_dt>
 	<title_t>Editorial</title_t>
 	<hero_text_html>&lt;p&gt;All the world's a stage. And all the men and women merely players; They have &lt;em&gt;their&lt;/em&gt; exits and their entrances, and one man in his time plays many parts, his acts being seven ages. At first, the infant, mewling and puking in the nurse's arms.&amp;nbsp;&lt;br /&gt;&lt;br /&gt;Then the whining schoolboy, with his satchel&lt;br /&gt;And shining morning face, creeping like a snail&lt;br /&gt;Unwillingly to school.&lt;/p&gt;</hero_text_html>
 	<hero_title_html>&lt;h1&gt;Simply Editorial&lt;/h1&gt;</hero_title_html>
 	<features_o item-list="true">	<item datasource="features" inline="true">	<key>310b0c87-c3ca-4da0-4aa2-7002a318d7ce</key>
 	<value>Download</value>
+	<disableFlattening>false</disableFlattening>
 <component id="310b0c87-c3ca-4da0-4aa2-7002a318d7ce">
         <content-type>/component/feature</content-type>
         <display-template>/templates/web/components/feature.ftl</display-template>
@@ -38,9 +39,9 @@
         <lastModifiedDate>2019-12-22T11:56:51.172Z</lastModifiedDate>
         <lastModifiedDate_dt>2019-12-22T11:56:51.172Z</lastModifiedDate_dt>
       </component>
-	<disableFlattening>false</disableFlattening>
 	</item>	<item datasource="features" inline="true">	<key>a89386c4-a205-2681-2db1-c3606f714411</key>
 	<value>Build</value>
+	<disableFlattening>false</disableFlattening>
 <component id="a89386c4-a205-2681-2db1-c3606f714411">
         <content-type>/component/feature</content-type>
         <display-template>/templates/web/components/feature.ftl</display-template>
@@ -59,9 +60,9 @@
         <lastModifiedDate>2019-12-22T11:56:34.603Z</lastModifiedDate>
         <lastModifiedDate_dt>2019-12-22T11:56:34.603Z</lastModifiedDate_dt>
       </component>
-	<disableFlattening>false</disableFlattening>
 	</item>	<item datasource="features" inline="true">	<key>9e93c15d-9473-363b-6179-ce02c1203756</key>
 	<value>Schedule</value>
+	<disableFlattening>false</disableFlattening>
 <component id="9e93c15d-9473-363b-6179-ce02c1203756">
         <content-type>/component/feature</content-type>
         <display-template>/templates/web/components/feature.ftl</display-template>
@@ -80,9 +81,9 @@
         <lastModifiedDate>2019-12-22T11:57:28.631Z</lastModifiedDate>
         <lastModifiedDate_dt>2019-12-22T11:57:28.631Z</lastModifiedDate_dt>
       </component>
-	<disableFlattening>false</disableFlattening>
 	</item>	<item datasource="features" inline="true">	<key>af1c108b-f7ae-26af-fbe1-a828e52d6a1f</key>
 	<value>Create Profiles</value>
+	<disableFlattening>false</disableFlattening>
 <component id="af1c108b-f7ae-26af-fbe1-a828e52d6a1f">
         <content-type>/component/feature</content-type>
         <display-template>/templates/web/components/feature.ftl</display-template>
@@ -101,7 +102,6 @@
         <lastModifiedDate>2020-01-04T06:14:14.609Z</lastModifiedDate>
         <lastModifiedDate_dt>2020-02-05T18:42:53.920Z</lastModifiedDate_dt>
       </component>
-	<disableFlattening>false</disableFlattening>
 	</item></features_o>
 	<header/>
 	<hero_image_s>/static-assets/images/six-pack-pic.jpg</hero_image_s>
@@ -115,6 +115,7 @@
 	<header_o item-list="true"/>
 	<content_o item-list="true">	<item inline="true">	<key>9f162335-063c-817b-8fef-16f865de4900</key>
 	<value>Embedded Layout</value>
+	<disableFlattening>false</disableFlattening>
 <component id="9f162335-063c-817b-8fef-16f865de4900">
 	<content-type>/component/layout</content-type>
 	<display-template>/templates/web/components/layout.ftl</display-template>
@@ -129,35 +130,16 @@
 	<value>Closed captioning</value>
 	<include>/site/components/features/72ef047f-02b7-89e2-bbd5-4763ac7dbca8.xml</include>
 	<disableFlattening>false</disableFlattening>
-	</item>	<item datasource="TODO" inline="true"><key>827f3687-34a6-4ccf-bf65-e0fc7f669d23</key><value>New Feature</value><component id="827f3687-34a6-4ccf-bf65-e0fc7f669d23"><content-type>/component/feature</content-type><display-template>/templates/web/components/feature.ftl</display-template><internal-name>New Feature</internal-name><file-name>827f3687-34a6-4ccf-bf65-e0fc7f669d23.xml</file-name><merge-strategy>inherit-levels</merge-strategy><createdDate_dt>2020-05-26T21:28:09.404Z</createdDate_dt><lastModifiedDate_dt>2020-05-26T21:28:09.404Z</lastModifiedDate_dt><objectId>827f3687-34a6-4ccf-bf65-e0fc7f669d23</objectId><locale>en</locale><disabled>false</disabled><icon_s>fa-closed-captioning far</icon_s><title_t>Feature Title</title_t><body_html>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</body_html></component></item><item datasource="TODO" inline="true"><key>c087ed15-c3b8-4e24-a15a-ae5f2c1f85bc</key><value>New Feature</value><component id="c087ed15-c3b8-4e24-a15a-ae5f2c1f85bc"><content-type>/component/feature</content-type><display-template>/templates/web/components/feature.ftl</display-template><internal-name>New Feature</internal-name><file-name>c087ed15-c3b8-4e24-a15a-ae5f2c1f85bc.xml</file-name><merge-strategy>inherit-levels</merge-strategy><createdDate_dt>2020-05-26T20:59:45.147Z</createdDate_dt><lastModifiedDate_dt>2020-05-26T20:59:45.147Z</lastModifiedDate_dt><objectId>c087ed15-c3b8-4e24-a15a-ae5f2c1f85bc</objectId><locale>en</locale><disabled>false</disabled><icon_s>fa-closed-captioning far</icon_s><title_t>Feature Title</title_t><body_html>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</body_html></component></item><item datasource="TODO"><key>/site/components/features/4be0a368-783c-8f73-7469-63a62636bd4c.xml</key><value>Smile</value><include>/site/components/features/4be0a368-783c-8f73-7469-63a62636bd4c.xml</include><disableFlattening>false</disableFlattening></item><item datasource="TODO"><key>/site/components/features/96706861-be9b-fd46-2463-62bb5710c070.xml</key><value>testingfeature</value><include>/site/components/features/96706861-be9b-fd46-2463-62bb5710c070.xml</include><disableFlattening>false</disableFlattening></item><item datasource="TODO" inline="true"><key>7f1e7d70-6ca0-4249-977b-b5322f44969a</key><value>New Feature</value><component id="7f1e7d70-6ca0-4249-977b-b5322f44969a"><content-type>/component/feature</content-type><display-template>/templates/web/components/feature.ftl</display-template><internal-name>New Feature</internal-name><file-name>7f1e7d70-6ca0-4249-977b-b5322f44969a.xml</file-name><merge-strategy>inherit-levels</merge-strategy><createdDate_dt>2020-05-26T20:27:30.527Z</createdDate_dt><lastModifiedDate_dt>2020-05-26T20:27:30.527Z</lastModifiedDate_dt><objectId>7f1e7d70-6ca0-4249-977b-b5322f44969a</objectId><locale>en</locale><disabled>false</disabled><icon_s>fa-closed-captioning far</icon_s><title_t>Feature Title</title_t><body_html>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</body_html></component></item></content_o>
+	</item></content_o>
 	</item></items_o>
 	<createdDate>2019-12-21T18:20:26.129Z</createdDate>
 	<createdDate_dt>2019-12-21T18:20:26.129Z</createdDate_dt>
-	<lastModifiedDate>2020-05-26T16:46:58.559Z</lastModifiedDate>
-	<lastModifiedDate_dt>2020-05-26T21:28:36.149Z</lastModifiedDate_dt>
+	<lastModifiedDate>2020-05-26T21:32:32.293Z</lastModifiedDate>
+	<lastModifiedDate_dt>2020-05-26T21:32:32.293Z</lastModifiedDate_dt>
 </component>
-	<disableFlattening>false</disableFlattening>
-	</item>	<item datasource="features" inline="true">	<key>65d92caa-e3ab-418a-b7d0-c23389442e0b</key>
-	<value>New Feature</value>
-<component id="65d92caa-e3ab-418a-b7d0-c23389442e0b">
-        <content-type>/component/feature</content-type>
-        <display-template>/templates/web/components/feature.ftl</display-template>
-        <internal-name>To the moon and back</internal-name>
-        <file-name>65d92caa-e3ab-418a-b7d0-c23389442e0b.xml</file-name>
-        <merge-strategy>inherit-levels</merge-strategy>
-        <createdDate_dt>2019-12-22T11:50:57.730Z</createdDate_dt>
-        <lastModifiedDate_dt>2019-12-22T11:50:57.730Z</lastModifiedDate_dt>
-        <objectId>65d92caa-e3ab-418a-b7d0-c23389442e0b</objectId>
-        <locale>en</locale>
-        <disabled>false</disabled>
-        <icon_s>fa-moon far</icon_s>
-        <title_t>To the moon and back</title_t>
-        <body_html>To the moon and back ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</body_html>
-      </component>
-	<disableFlattening>false</disableFlattening>
-	</item><item datasource="TODO" inline="true"><key>ec96abf3-83f0-41ff-84cf-992a84e74d43</key><value>New Feature</value><component id="ec96abf3-83f0-41ff-84cf-992a84e74d43"><content-type>/component/feature</content-type><display-template>/templates/web/components/feature.ftl</display-template><internal-name>New Feature</internal-name><file-name>ec96abf3-83f0-41ff-84cf-992a84e74d43.xml</file-name><merge-strategy>inherit-levels</merge-strategy><createdDate_dt>2020-05-26T21:28:13.007Z</createdDate_dt><lastModifiedDate_dt>2020-05-26T21:28:13.007Z</lastModifiedDate_dt><objectId>ec96abf3-83f0-41ff-84cf-992a84e74d43</objectId><locale>en</locale><disabled>false</disabled><icon_s>fa-closed-captioning far</icon_s><title_t>Feature Title</title_t><body_html>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</body_html></component></item><item datasource="TODO"><key>/site/components/features/4be0a368-783c-8f73-7469-63a62636bd4c.xml</key><value>Smile</value><include>/site/components/features/4be0a368-783c-8f73-7469-63a62636bd4c.xml</include><disableFlattening>false</disableFlattening></item><item datasource="TODO" inline="true"><key>ddf3c0e7-7a2d-41c7-b78b-a6d361ddf055</key><value>New Feature</value><component id="ddf3c0e7-7a2d-41c7-b78b-a6d361ddf055"><content-type>/component/feature</content-type><display-template>/templates/web/components/feature.ftl</display-template><internal-name>New Feature</internal-name><file-name>ddf3c0e7-7a2d-41c7-b78b-a6d361ddf055.xml</file-name><merge-strategy>inherit-levels</merge-strategy><createdDate_dt>2020-05-26T21:28:25.655Z</createdDate_dt><lastModifiedDate_dt>2020-05-26T21:28:25.655Z</lastModifiedDate_dt><objectId>ddf3c0e7-7a2d-41c7-b78b-a6d361ddf055</objectId><locale>en</locale><disabled>false</disabled><icon_s>fa-closed-captioning far</icon_s><title_t>Feature Title</title_t><body_html>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</body_html></component></item><item datasource="TODO" inline="true"><key>d5b08a9a-6d09-4341-8c15-2222a9b96fd8</key><value>New Feature</value><component id="d5b08a9a-6d09-4341-8c15-2222a9b96fd8"><content-type>/component/feature</content-type><display-template>/templates/web/components/feature.ftl</display-template><internal-name>New Feature</internal-name><file-name>d5b08a9a-6d09-4341-8c15-2222a9b96fd8.xml</file-name><merge-strategy>inherit-levels</merge-strategy><createdDate_dt>2020-05-26T21:27:38.669Z</createdDate_dt><lastModifiedDate_dt>2020-05-26T21:27:38.669Z</lastModifiedDate_dt><objectId>d5b08a9a-6d09-4341-8c15-2222a9b96fd8</objectId><locale>en</locale><disabled>false</disabled><icon_s>fa-closed-captioning far</icon_s><title_t>Feature Title</title_t><body_html>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</body_html></component></item><item datasource="TODO" inline="true"><key>32112d93-6800-4b96-9b89-4a59c7fbf208</key><value>New Feature</value><component id="32112d93-6800-4b96-9b89-4a59c7fbf208"><content-type>/component/feature</content-type><display-template>/templates/web/components/feature.ftl</display-template><internal-name>New Feature</internal-name><file-name>32112d93-6800-4b96-9b89-4a59c7fbf208.xml</file-name><merge-strategy>inherit-levels</merge-strategy><createdDate_dt>2020-05-26T21:27:56.715Z</createdDate_dt><lastModifiedDate_dt>2020-05-26T21:27:56.715Z</lastModifiedDate_dt><objectId>32112d93-6800-4b96-9b89-4a59c7fbf208</objectId><locale>en</locale><disabled>false</disabled><icon_s>fa-closed-captioning far</icon_s><title_t>Feature Title</title_t><body_html>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</body_html></component></item><item datasource="TODO" inline="true"><key>0b382536-a92b-42f3-8e35-df91812e5e09</key><value>New Feature</value><component id="0b382536-a92b-42f3-8e35-df91812e5e09"><content-type>/component/feature</content-type><display-template>/templates/web/components/feature.ftl</display-template><internal-name>New Feature</internal-name><file-name>0b382536-a92b-42f3-8e35-df91812e5e09.xml</file-name><merge-strategy>inherit-levels</merge-strategy><createdDate_dt>2020-05-26T20:31:24.632Z</createdDate_dt><lastModifiedDate_dt>2020-05-26T20:31:24.632Z</lastModifiedDate_dt><objectId>0b382536-a92b-42f3-8e35-df91812e5e09</objectId><locale>en</locale><disabled>false</disabled><icon_s>fa-closed-captioning far</icon_s><title_t>Feature Title</title_t><body_html>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</body_html></component></item><item datasource="TODO" inline="true"><key>f04824ef-3103-4a97-ba68-8b2fde326fcc</key><value>New Feature</value><component id="f04824ef-3103-4a97-ba68-8b2fde326fcc"><content-type>/component/feature</content-type><display-template>/templates/web/components/feature.ftl</display-template><internal-name>New Feature</internal-name><file-name>f04824ef-3103-4a97-ba68-8b2fde326fcc.xml</file-name><merge-strategy>inherit-levels</merge-strategy><createdDate_dt>2020-05-26T20:47:14.963Z</createdDate_dt><lastModifiedDate_dt>2020-05-26T20:47:14.963Z</lastModifiedDate_dt><objectId>f04824ef-3103-4a97-ba68-8b2fde326fcc</objectId><locale>en</locale><disabled>false</disabled><icon_s>fa-closed-captioning far</icon_s><title_t>Feature Title</title_t><body_html>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</body_html></component></item><item>	<key>/site/components/component_feature/96706861-be9b-fd46-2463-62bb5710c070.xml</key>
-	<value>testingfeature</value>
-	<include>/site/components/component_feature/96706861-be9b-fd46-2463-62bb5710c070.xml</include>
+	</item>	<item datasource="TODO">	<key>/site/components/features/4be0a368-783c-8f73-7469-63a62636bd4c.xml</key>
+	<value>Smile</value>
+	<include>/site/components/features/4be0a368-783c-8f73-7469-63a62636bd4c.xml</include>
 	<disableFlattening>false</disableFlattening>
 	</item></content_o>
 </page>

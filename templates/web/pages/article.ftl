@@ -55,6 +55,6 @@
 
 <#include "/templates/web/fragments/scripts.ftl">
 
-<@studio.addAuthoringSupport/>
+<@studio.initPageBuilder/>
 </body>
 </html>

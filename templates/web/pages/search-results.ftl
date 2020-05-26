@@ -69,6 +69,6 @@
 <script src="/static-assets/js/handlebars.min-latest.js"></script>
 <script src="/static-assets/js/search.js"></script>
 
-<@studio.addAuthoringSupport/>
+<@studio.initPageBuilder/>
 </body>
 </html>

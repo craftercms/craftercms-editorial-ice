@@ -19,9 +19,6 @@
   <hero_text_html><![CDATA[<p>All the world's a stage. And all the men and women merely players; They have <em>their</em> exits and their entrances, and one man in his time plays many parts, his acts being seven ages. At first, the infant, mewling and puking in the nurse's arms.&nbsp;<br /><br />Then the whining schoolboy, with his satchel<br />And shining morning face, creeping like a snail<br />Unwillingly to school.</p>]]></hero_text_html>
   <hero_title_html><![CDATA[<h1>Simply Editorial</h1>]]></hero_title_html>
   <features_o item-list="true">
-    
-    
-    
     <item datasource="features" inline="true">
       <key>9f6b80da-21c8-9232-5175-2b1b97db1ed0</key>
       <value>Ring the bell</value>
@@ -37,13 +34,16 @@
         <disabled>false</disabled>
         <icon_s>fa-bell far</icon_s>
         <file-name>9f6b80da-21c8-9232-5175-2b1b97db1ed0.xml</file-name>
-        <body_html>&lt;p&gt;Ring the bell ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.&lt;/p&gt;</body_html>
+        <body_html>&lt;p&gt;Ring the bell ornare velit lacus, ac varius enim lorem ullamcorper
+          dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus
+          aliquam.&lt;/p&gt;</body_html>
         <createdDate>2019-10-11T19:20:49.115Z</createdDate>
         <createdDate_dt>2019-10-11T19:20:49.115Z</createdDate_dt>
         <lastModifiedDate>2019-12-22T11:57:14.080Z</lastModifiedDate>
         <lastModifiedDate_dt>2020-02-05T17:51:56.587Z</lastModifiedDate_dt>
       </component>
-    </item><item datasource="features" inline="true">
+    </item>
+    <item datasource="features" inline="true">
       <key>310b0c87-c3ca-4da0-4aa2-7002a318d7ce</key>
       <value>Download</value>
       <component id="310b0c87-c3ca-4da0-4aa2-7002a318d7ce">
@@ -64,7 +64,8 @@
         <lastModifiedDate>2019-12-22T11:56:51.172Z</lastModifiedDate>
         <lastModifiedDate_dt>2019-12-22T11:56:51.172Z</lastModifiedDate_dt>
       </component>
-    </item><item datasource="features" inline="true">
+    </item>
+    <item datasource="features" inline="true">
       <key>a89386c4-a205-2681-2db1-c3606f714411</key>
       <value>Build</value>
       <component id="a89386c4-a205-2681-2db1-c3606f714411">

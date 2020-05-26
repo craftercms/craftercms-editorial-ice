@@ -127,7 +127,7 @@
 <script src="/static-assets/js/util.js"></script>
 <script src="/static-assets/js/main.js?v=${siteContext.siteName}"></script>
 
-<@studio.addAuthoringSupport/>
+<@studio.initPageBuilder/>
 
 </body>
 </html>

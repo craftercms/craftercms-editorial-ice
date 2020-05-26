@@ -14,7 +14,7 @@
   <createdDate>2017-1-31T16:18:14.000Z</createdDate>
   <createdDate_dt>2017-1-31T16:18:14.000Z</createdDate_dt>
   <lastModifiedDate>2020-01-04T06:14:04.519Z</lastModifiedDate>
-  <lastModifiedDate_dt>2020-05-26T16:45:07.691Z</lastModifiedDate_dt>
+  <lastModifiedDate_dt>2020-05-26T16:45:25.050Z</lastModifiedDate_dt>
   <title_t>Editorial</title_t>
   <hero_text_html><![CDATA[<p>All the world's a stage. And all the men and women merely players; They have <em>their</em> exits and their entrances, and one man in his time plays many parts, his acts being seven ages. At first, the infant, mewling and puking in the nurse's arms.&nbsp;<br /><br />Then the whining schoolboy, with his satchel<br />And shining morning face, creeping like a snail<br />Unwillingly to school.</p>]]></hero_text_html>
   <hero_title_html><![CDATA[<h1>Simply Editorial</h1>]]></hero_title_html>
@@ -86,7 +86,7 @@
         <lastModifiedDate_dt>2019-12-22T11:57:28.631Z</lastModifiedDate_dt>
       </component>
     </item>
-    <item datasource="TODO" inline="true"><key>a02a21fd-3df4-4e4e-a1b3-174d346dc28c</key><value>New Feature</value><component id="a02a21fd-3df4-4e4e-a1b3-174d346dc28c"><content-type>/component/feature</content-type><display-template>/templates/web/components/feature.ftl</display-template><internal-name>New Feature</internal-name><file-name>a02a21fd-3df4-4e4e-a1b3-174d346dc28c.xml</file-name><merge-strategy>inherit-levels</merge-strategy><createdDate_dt>2020-05-26T16:45:07.691Z</createdDate_dt><lastModifiedDate_dt>2020-05-26T16:45:07.691Z</lastModifiedDate_dt><objectId>a02a21fd-3df4-4e4e-a1b3-174d346dc28c</objectId><locale>en</locale><disabled>false</disabled><icon_s>fa-closed-captioning far</icon_s><title_t>Feature Title</title_t><body_html>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</body_html></component></item><item datasource="features" inline="true">
+    <item datasource="features" inline="true">
       <key>af1c108b-f7ae-26af-fbe1-a828e52d6a1f</key>
       <value>Create Profiles</value>
       <component id="af1c108b-f7ae-26af-fbe1-a828e52d6a1f">

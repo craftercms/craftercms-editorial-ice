@@ -14,35 +14,12 @@
   <createdDate>2017-1-31T16:18:14.000Z</createdDate>
   <createdDate_dt>2017-1-31T16:18:14.000Z</createdDate_dt>
   <lastModifiedDate>2020-01-04T06:14:04.519Z</lastModifiedDate>
-  <lastModifiedDate_dt>2020-05-26T16:42:16.697Z</lastModifiedDate_dt>
+  <lastModifiedDate_dt>2020-05-26T16:42:18.763Z</lastModifiedDate_dt>
   <title_t>Editorial</title_t>
   <hero_text_html><![CDATA[<p>All the world's a stage. And all the men and women merely players; They have <em>their</em> exits and their entrances, and one man in his time plays many parts, his acts being seven ages. At first, the infant, mewling and puking in the nurse's arms.&nbsp;<br /><br />Then the whining schoolboy, with his satchel<br />And shining morning face, creeping like a snail<br />Unwillingly to school.</p>]]></hero_text_html>
   <hero_title_html><![CDATA[<h1>Simply Editorial</h1>]]></hero_title_html>
   <features_o item-list="true">
-    <item datasource="TODO" inline="true"><key>c763ebef-9680-4715-82ef-998e5b6bf5a6</key><value>New Feature</value><component id="c763ebef-9680-4715-82ef-998e5b6bf5a6"><content-type>/component/feature</content-type><display-template>/templates/web/components/feature.ftl</display-template><internal-name>New Feature</internal-name><file-name>c763ebef-9680-4715-82ef-998e5b6bf5a6.xml</file-name><merge-strategy>inherit-levels</merge-strategy><createdDate_dt>2020-05-26T16:41:29.770Z</createdDate_dt><lastModifiedDate_dt>2020-05-26T16:41:29.770Z</lastModifiedDate_dt><objectId>c763ebef-9680-4715-82ef-998e5b6bf5a6</objectId><locale>en</locale><disabled>false</disabled><icon_s>fa-closed-captioning far</icon_s><title_t>Feature Title</title_t><body_html>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</body_html></component></item><item datasource="features" inline="true">
-      <key>9f6b80da-21c8-9232-5175-2b1b97db1ed0</key>
-      <value>Ring the bell</value>
-      <component id="9f6b80da-21c8-9232-5175-2b1b97db1ed0">
-        <content-type>/component/feature</content-type>
-        <display-template>/templates/web/components/feature.ftl</display-template>
-        <no-template-required/>
-        <merge-strategy>inherit-levels</merge-strategy>
-        <objectGroupId>9f6b</objectGroupId>
-        <objectId>9f6b80da-21c8-9232-5175-2b1b97db1ed0</objectId>
-        <internal-name>Ring the bell</internal-name>
-        <title_t><![CDATA[Ring the bell]]></title_t>
-        <disabled>false</disabled>
-        <icon_s>fa-bell far</icon_s>
-        <file-name>9f6b80da-21c8-9232-5175-2b1b97db1ed0.xml</file-name>
-        <body_html>&lt;p&gt;Ring the bell ornare velit lacus, ac varius enim lorem ullamcorper
-          dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus
-          aliquam.&lt;/p&gt;</body_html>
-        <createdDate>2019-10-11T19:20:49.115Z</createdDate>
-        <createdDate_dt>2019-10-11T19:20:49.115Z</createdDate_dt>
-        <lastModifiedDate>2019-12-22T11:57:14.080Z</lastModifiedDate>
-        <lastModifiedDate_dt>2020-02-05T17:51:56.587Z</lastModifiedDate_dt>
-      </component>
-    </item>
+    <item datasource="TODO" inline="true"><key>c763ebef-9680-4715-82ef-998e5b6bf5a6</key><value>New Feature</value><component id="c763ebef-9680-4715-82ef-998e5b6bf5a6"><content-type>/component/feature</content-type><display-template>/templates/web/components/feature.ftl</display-template><internal-name>New Feature</internal-name><file-name>c763ebef-9680-4715-82ef-998e5b6bf5a6.xml</file-name><merge-strategy>inherit-levels</merge-strategy><createdDate_dt>2020-05-26T16:41:29.770Z</createdDate_dt><lastModifiedDate_dt>2020-05-26T16:41:29.770Z</lastModifiedDate_dt><objectId>c763ebef-9680-4715-82ef-998e5b6bf5a6</objectId><locale>en</locale><disabled>false</disabled><icon_s>fa-closed-captioning far</icon_s><title_t>Feature Title</title_t><body_html>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</body_html></component></item>
     <item datasource="TODO" inline="true"><key>f6a934c8-7a55-4377-ba44-22a280231619</key><value>New Feature</value><component id="f6a934c8-7a55-4377-ba44-22a280231619"><content-type>/component/feature</content-type><display-template>/templates/web/components/feature.ftl</display-template><internal-name>New Feature</internal-name><file-name>f6a934c8-7a55-4377-ba44-22a280231619.xml</file-name><merge-strategy>inherit-levels</merge-strategy><createdDate_dt>2020-05-26T16:42:00.722Z</createdDate_dt><lastModifiedDate_dt>2020-05-26T16:42:00.722Z</lastModifiedDate_dt><objectId>f6a934c8-7a55-4377-ba44-22a280231619</objectId><locale>en</locale><disabled>false</disabled><icon_s>fa-closed-captioning far</icon_s><title_t>Feature Title</title_t><body_html>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</body_html></component></item><item datasource="features" inline="true">
       <key>310b0c87-c3ca-4da0-4aa2-7002a318d7ce</key>
       <value>Download</value>

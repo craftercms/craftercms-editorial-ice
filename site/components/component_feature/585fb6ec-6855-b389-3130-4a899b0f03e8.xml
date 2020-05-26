@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+	<content-type>/component/feature</content-type>
+	<display-template>/templates/web/components/feature.ftl</display-template>
+	<no-template-required/>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>585f</objectGroupId>
+	<objectId>585fb6ec-6855-b389-3130-4a899b0f03e8</objectId>
+	<file-name>585fb6ec-6855-b389-3130-4a899b0f03e8.xml</file-name>
+	<internal-name>sharedFeature</internal-name>
+	<title_t>sharedFeature</title_t>
+	<disabled>false</disabled>
+	<icon_s>fa-closed-captioning far</icon_s>
+	<body_html>&lt;p&gt;sharedFeature&lt;/p&gt;</body_html>
+	<createdDate>2020-05-26T22:57:13.921Z</createdDate>
+	<createdDate_dt>2020-05-26T22:57:13.921Z</createdDate_dt>
+	<lastModifiedDate>2020-05-26T22:57:13.921Z</lastModifiedDate>
+	<lastModifiedDate_dt>2020-05-26T22:57:13.921Z</lastModifiedDate_dt>
+</component>

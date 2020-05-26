@@ -1,1 +1,0 @@
-<@studio.componentRootTag $tag="img" $field="image_s" src=(contentModel.image_s!"") alt=""/>

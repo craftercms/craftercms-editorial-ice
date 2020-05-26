@@ -13,8 +13,8 @@
 	<folder-name/>
 	<createdDate>2017-1-31T16:18:14.000Z</createdDate>
 	<createdDate_dt>2017-1-31T16:18:14.000Z</createdDate_dt>
-	<lastModifiedDate>2020-05-26T22:57:03.948Z</lastModifiedDate>
-	<lastModifiedDate_dt>2020-05-26T23:08:37.443Z</lastModifiedDate_dt>
+	<lastModifiedDate>2020-05-26T23:08:49.082Z</lastModifiedDate>
+	<lastModifiedDate_dt>2020-05-26T23:08:49.082Z</lastModifiedDate_dt>
 	<title_t>Editorial</title_t>
 	<hero_text_html>&lt;p&gt;All the world's a stage. And all the men and women merely players; They have &lt;em&gt;their&lt;/em&gt; exits and their entrances, and one man in his time plays many parts, his acts being seven ages. At first, the infant, mewling and puking in the nurse's arms.&amp;nbsp;&lt;br /&gt;&lt;br /&gt;Then the whining schoolboy, with his satchel&lt;br /&gt;And shining morning face, creeping like a snail&lt;br /&gt;Unwillingly to school.&lt;/p&gt;</hero_text_html>
 	<hero_title_html>&lt;h1&gt;Simply Editorial&lt;/h1&gt;</hero_title_html>
@@ -85,7 +85,7 @@
         <lastModifiedDate>2019-12-22T11:56:34.603Z</lastModifiedDate>
         <lastModifiedDate_dt>2019-12-22T11:56:34.603Z</lastModifiedDate_dt>
       </component>
-	</item>	<item datasource="TODO"><key>/site/components/features/585fb6ec-6855-b389-3130-4a899b0f03e8.xml</key><value>sharedFeature</value><include>/site/components/features/585fb6ec-6855-b389-3130-4a899b0f03e8.xml</include><disableFlattening>false</disableFlattening></item><item datasource="features" inline="true">	<key>af1c108b-f7ae-26af-fbe1-a828e52d6a1f</key>
+	</item>	<item datasource="features" inline="true">	<key>af1c108b-f7ae-26af-fbe1-a828e52d6a1f</key>
 	<value>Create Profiles</value>
 	<disableFlattening>false</disableFlattening>
 <component id="af1c108b-f7ae-26af-fbe1-a828e52d6a1f">
@@ -163,6 +163,7 @@
 	<disableFlattening>false</disableFlattening>
 	</item>	<item inline="true">	<key>8aa5e473-eb3e-23f0-7994-277de431f4de</key>
 	<value>embeddedFeature</value>
+	<disableFlattening>false</disableFlattening>
 <component id="8aa5e473-eb3e-23f0-7994-277de431f4de">
 	<content-type>/component/feature</content-type>
 	<display-template>/templates/web/components/feature.ftl</display-template>
@@ -181,8 +182,11 @@
 	<lastModifiedDate>2020-05-26T22:56:37.564Z</lastModifiedDate>
 	<lastModifiedDate_dt>2020-05-26T22:56:37.564Z</lastModifiedDate_dt>
 </component>
+	</item>	<item datasource="TODO">	<key>/site/components/features/585fb6ec-6855-b389-3130-4a899b0f03e8.xml</key>
+	<value>sharedFeature</value>
+	<include>/site/components/features/585fb6ec-6855-b389-3130-4a899b0f03e8.xml</include>
 	<disableFlattening>false</disableFlattening>
-	</item>	<item datasource="TODO"><key>/site/components/features/585fb6ec-6855-b389-3130-4a899b0f03e8.xml</key><value>sharedFeature</value><include>/site/components/features/585fb6ec-6855-b389-3130-4a899b0f03e8.xml</include><disableFlattening>false</disableFlattening></item><item>	<key>/site/components/component_feature/585fb6ec-6855-b389-3130-4a899b0f03e8.xml</key>
+	</item>	<item>	<key>/site/components/component_feature/585fb6ec-6855-b389-3130-4a899b0f03e8.xml</key>
 	<value>sharedFeature</value>
 	<include>/site/components/component_feature/585fb6ec-6855-b389-3130-4a899b0f03e8.xml</include>
 	<disableFlattening>false</disableFlattening>

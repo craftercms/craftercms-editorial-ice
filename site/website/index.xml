@@ -14,7 +14,7 @@
   <createdDate>2017-1-31T16:18:14.000Z</createdDate>
   <createdDate_dt>2017-1-31T16:18:14.000Z</createdDate_dt>
   <lastModifiedDate>2020-01-04T06:14:04.519Z</lastModifiedDate>
-  <lastModifiedDate_dt>2020-05-26T16:42:21.009Z</lastModifiedDate_dt>
+  <lastModifiedDate_dt>2020-05-26T16:42:23.758Z</lastModifiedDate_dt>
   <title_t>Editorial</title_t>
   <hero_text_html><![CDATA[<p>All the world's a stage. And all the men and women merely players; They have <em>their</em> exits and their entrances, and one man in his time plays many parts, his acts being seven ages. At first, the infant, mewling and puking in the nurse's arms.&nbsp;<br /><br />Then the whining schoolboy, with his satchel<br />And shining morning face, creeping like a snail<br />Unwillingly to school.</p>]]></hero_text_html>
   <hero_title_html><![CDATA[<h1>Simply Editorial</h1>]]></hero_title_html>
@@ -42,7 +42,7 @@
         <lastModifiedDate_dt>2019-12-22T11:56:51.172Z</lastModifiedDate_dt>
       </component>
     </item>
-    <item datasource="TODO" inline="true"><key>7aa6c28e-e211-4378-8d36-e18f8871bdc7</key><value>New Feature</value><component id="7aa6c28e-e211-4378-8d36-e18f8871bdc7"><content-type>/component/feature</content-type><display-template>/templates/web/components/feature.ftl</display-template><internal-name>New Feature</internal-name><file-name>7aa6c28e-e211-4378-8d36-e18f8871bdc7.xml</file-name><merge-strategy>inherit-levels</merge-strategy><createdDate_dt>2020-05-26T16:42:08.676Z</createdDate_dt><lastModifiedDate_dt>2020-05-26T16:42:08.676Z</lastModifiedDate_dt><objectId>7aa6c28e-e211-4378-8d36-e18f8871bdc7</objectId><locale>en</locale><disabled>false</disabled><icon_s>fa-closed-captioning far</icon_s><title_t>Feature Title</title_t><body_html>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</body_html></component></item><item datasource="features" inline="true">
+    <item datasource="features" inline="true">
       <key>a89386c4-a205-2681-2db1-c3606f714411</key>
       <value>Build</value>
       <component id="a89386c4-a205-2681-2db1-c3606f714411">

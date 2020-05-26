@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+	<content-type>/component/feature</content-type>
+	<display-template>/templates/web/components/feature.ftl</display-template>
+	<no-template-required/>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>9670</objectGroupId>
+	<objectId>96706861-be9b-fd46-2463-62bb5710c070</objectId>
+	<file-name>96706861-be9b-fd46-2463-62bb5710c070.xml</file-name>
+	<internal-name>testingfeature</internal-name>
+	<title_t>testingfeature</title_t>
+	<disabled>false</disabled>
+	<icon_s>fa-closed-captioning far</icon_s>
+	<body_html>&lt;p&gt;testingfeature&lt;/p&gt;</body_html>
+	<createdDate>2020-05-26T16:47:11.297Z</createdDate>
+	<createdDate_dt>2020-05-26T16:47:11.297Z</createdDate_dt>
+	<lastModifiedDate>2020-05-26T16:47:11.297Z</lastModifiedDate>
+	<lastModifiedDate_dt>2020-05-26T16:47:11.297Z</lastModifiedDate_dt>
+</component>

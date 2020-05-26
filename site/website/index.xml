@@ -13,8 +13,8 @@
 	<folder-name/>
 	<createdDate>2017-1-31T16:18:14.000Z</createdDate>
 	<createdDate_dt>2017-1-31T16:18:14.000Z</createdDate_dt>
-	<lastModifiedDate>2020-05-26T23:18:44.508Z</lastModifiedDate>
-	<lastModifiedDate_dt>2020-05-26T23:47:29.672Z</lastModifiedDate_dt>
+	<lastModifiedDate>2020-05-26T23:49:58.463Z</lastModifiedDate>
+	<lastModifiedDate_dt>2020-05-26T23:49:58.463Z</lastModifiedDate_dt>
 	<title_t>Editorial</title_t>
 	<hero_text_html>&lt;p&gt;All the world's a stage. And all the men and women merely players; They have &lt;em&gt;their&lt;/em&gt; exits and their entrances, and one man in his time plays many parts, his acts being seven ages. At first, the infant, mewling and puking in the nurse's arms.&amp;nbsp;&lt;br /&gt;&lt;br /&gt;Then the whining schoolboy, with his satchel&lt;br /&gt;And shining morning face, creeping like a snail&lt;br /&gt;Unwillingly to school.&lt;/p&gt;</hero_text_html>
 	<hero_title_html>&lt;h1&gt;Simply Editorial&lt;/h1&gt;</hero_title_html>
@@ -85,7 +85,7 @@
         <lastModifiedDate>2019-12-22T11:56:34.603Z</lastModifiedDate>
         <lastModifiedDate_dt>2019-12-22T11:56:34.603Z</lastModifiedDate_dt>
       </component>
-	</item>	</features_o>
+	</item></features_o>
 	<header/>
 	<hero_image_s>/static-assets/images/six-pack-pic.jpg</hero_image_s>
 	<left_rail_o item-list="true">	<item>	<key>/site/components/left-rails/left-rail-with-latest-articles.xml</key>
@@ -141,7 +141,15 @@
 	<lastModifiedDate>2020-05-26T21:37:43.112Z</lastModifiedDate>
 	<lastModifiedDate_dt>2020-05-26T23:30:25.112Z</lastModifiedDate_dt>
 </component>
-	</item>		<item datasource="TODO"><key>/site/components/component_feature/96706861-be9b-fd46-2463-62bb5710c070.xml</key><value>testingfeature</value><include>/site/components/component_feature/96706861-be9b-fd46-2463-62bb5710c070.xml</include><disableFlattening>false</disableFlattening></item><item datasource="TODO" inline="true"><key>7f82846e-a72f-40b6-95eb-745d15c7804e</key><value>New image</value><component id="7f82846e-a72f-40b6-95eb-745d15c7804e"><content-type>/component/image</content-type><display-template>/templates/web/image.ftl</display-template><internal-name>New image</internal-name><file-name>7f82846e-a72f-40b6-95eb-745d15c7804e.xml</file-name><merge-strategy>inherit-levels</merge-strategy><createdDate_dt>2020-05-26T23:47:29.670Z</createdDate_dt><lastModifiedDate_dt>2020-05-26T23:47:29.670Z</lastModifiedDate_dt><objectId>7f82846e-a72f-40b6-95eb-745d15c7804e</objectId><locale>en</locale><image_s/></component></item><item datasource="TODO"><key>/site/components/component_feature/585fb6ec-6855-b389-3130-4a899b0f03e8.xml</key><value>sharedFeature</value><include>/site/components/component_feature/585fb6ec-6855-b389-3130-4a899b0f03e8.xml</include><disableFlattening>false</disableFlattening></item><item datasource="TODO">	<key>/site/components/features/4be0a368-783c-8f73-7469-63a62636bd4c.xml</key>
+	</item>	<item datasource="TODO">	<key>/site/components/component_feature/96706861-be9b-fd46-2463-62bb5710c070.xml</key>
+	<value>testingfeature</value>
+	<include>/site/components/component_feature/96706861-be9b-fd46-2463-62bb5710c070.xml</include>
+	<disableFlattening>false</disableFlattening>
+	</item>	<item datasource="TODO">	<key>/site/components/component_feature/585fb6ec-6855-b389-3130-4a899b0f03e8.xml</key>
+	<value>sharedFeature</value>
+	<include>/site/components/component_feature/585fb6ec-6855-b389-3130-4a899b0f03e8.xml</include>
+	<disableFlattening>false</disableFlattening>
+	</item>	<item datasource="TODO">	<key>/site/components/features/4be0a368-783c-8f73-7469-63a62636bd4c.xml</key>
 	<value>Smile</value>
 	<include>/site/components/features/4be0a368-783c-8f73-7469-63a62636bd4c.xml</include>
 	<disableFlattening>false</disableFlattening>

@@ -14,7 +14,7 @@
 	<createdDate>2017-1-31T16:18:14.000Z</createdDate>
 	<createdDate_dt>2017-1-31T16:18:14.000Z</createdDate_dt>
 	<lastModifiedDate>2020-05-26T21:32:18.413Z</lastModifiedDate>
-	<lastModifiedDate_dt>2020-05-26T21:32:54.959Z</lastModifiedDate_dt>
+	<lastModifiedDate_dt>2020-05-26T21:37:14.503Z</lastModifiedDate_dt>
 	<title_t>Editorial</title_t>
 	<hero_text_html>&lt;p&gt;All the world's a stage. And all the men and women merely players; They have &lt;em&gt;their&lt;/em&gt; exits and their entrances, and one man in his time plays many parts, his acts being seven ages. At first, the infant, mewling and puking in the nurse's arms.&amp;nbsp;&lt;br /&gt;&lt;br /&gt;Then the whining schoolboy, with his satchel&lt;br /&gt;And shining morning face, creeping like a snail&lt;br /&gt;Unwillingly to school.&lt;/p&gt;</hero_text_html>
 	<hero_title_html>&lt;h1&gt;Simply Editorial&lt;/h1&gt;</hero_title_html>
@@ -130,12 +130,12 @@
 	<value>Closed captioning</value>
 	<include>/site/components/features/72ef047f-02b7-89e2-bbd5-4763ac7dbca8.xml</include>
 	<disableFlattening>false</disableFlattening>
-	</item></content_o>
+	</item><item datasource="TODO"><key>/site/components/features/4be0a368-783c-8f73-7469-63a62636bd4c.xml</key><value>Smile</value><include>/site/components/features/4be0a368-783c-8f73-7469-63a62636bd4c.xml</include><disableFlattening>false</disableFlattening></item></content_o>
 	</item></items_o>
 	<createdDate>2019-12-21T18:20:26.129Z</createdDate>
 	<createdDate_dt>2019-12-21T18:20:26.129Z</createdDate_dt>
 	<lastModifiedDate>2020-05-26T21:32:32.293Z</lastModifiedDate>
-	<lastModifiedDate_dt>2020-05-26T21:32:32.293Z</lastModifiedDate_dt>
+	<lastModifiedDate_dt>2020-05-26T21:37:14.503Z</lastModifiedDate_dt>
 </component>
 	</item>	<item datasource="TODO"><key>/site/components/features/96706861-be9b-fd46-2463-62bb5710c070.xml</key><value>testingfeature</value><include>/site/components/features/96706861-be9b-fd46-2463-62bb5710c070.xml</include><disableFlattening>false</disableFlattening></item><item datasource="TODO"><key>/site/components/features/72ef047f-02b7-89e2-bbd5-4763ac7dbca8.xml</key><value>Closed captioning</value><include>/site/components/features/72ef047f-02b7-89e2-bbd5-4763ac7dbca8.xml</include><disableFlattening>false</disableFlattening></item><item datasource="TODO">	<key>/site/components/features/4be0a368-783c-8f73-7469-63a62636bd4c.xml</key>
 	<value>Smile</value>

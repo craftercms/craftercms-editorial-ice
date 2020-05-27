@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+	<content-type>/component/feature</content-type>
+	<display-template>/templates/web/components/feature.ftl</display-template>
+	<no-template-required/>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>aa7c</objectGroupId>
+	<objectId>aa7cf4c8-56a0-9d8e-43d3-72858b5e0b82</objectId>
+	<file-name>aa7cf4c8-56a0-9d8e-43d3-72858b5e0b82.xml</file-name>
+	<internal-name>blabla</internal-name>
+	<title_t>blabla</title_t>
+	<disabled>false</disabled>
+	<icon_s>fa-closed-captioning far</icon_s>
+	<body_html>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&lt;/p&gt;</body_html>
+	<createdDate>2020-05-27T15:16:52.688Z</createdDate>
+	<createdDate_dt>2020-05-27T15:16:52.688Z</createdDate_dt>
+	<lastModifiedDate>2020-05-27T15:16:52.688Z</lastModifiedDate>
+	<lastModifiedDate_dt>2020-05-27T15:16:52.688Z</lastModifiedDate_dt>
+</component>

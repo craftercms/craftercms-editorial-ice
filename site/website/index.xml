@@ -14,7 +14,7 @@
 	<createdDate>2017-1-31T16:18:14.000Z</createdDate>
 	<createdDate_dt>2017-1-31T16:18:14.000Z</createdDate_dt>
 	<lastModifiedDate>2020-05-27T00:00:43.304Z</lastModifiedDate>
-	<lastModifiedDate_dt>2020-05-27T00:10:57.991Z</lastModifiedDate_dt>
+	<lastModifiedDate_dt>2020-05-27T00:28:32.532Z</lastModifiedDate_dt>
 	<title_t>Editorial</title_t>
 	<hero_text_html>&lt;p&gt;All the world's a stage. And all the men and women merely players; They have &lt;em&gt;their&lt;/em&gt; exits and their entrances, and one man in his time plays many parts, his acts being seven ages. At first, the infant, mewling and puking in the nurse's arms.&amp;nbsp;&lt;br /&gt;&lt;br /&gt;Then the whining schoolboy, with his satchel&lt;br /&gt;And shining morning face, creeping like a snail&lt;br /&gt;Unwillingly to school.&lt;/p&gt;</hero_text_html>
 	<hero_title_html>&lt;h1&gt;Simply Editorial&lt;/h1&gt;</hero_title_html>
@@ -145,7 +145,7 @@
 	<value>testingfeature</value>
 	<include>/site/components/component_feature/96706861-be9b-fd46-2463-62bb5710c070.xml</include>
 	<disableFlattening>false</disableFlattening>
-	</item>	<item datasource="TODO">	<key>/site/components/component_feature/585fb6ec-6855-b389-3130-4a899b0f03e8.xml</key>
+	</item>	<item datasource="TODO" inline="true"><key>b657d63c-e02c-46b3-a830-f1587ba41745</key><value>New image</value><component id="b657d63c-e02c-46b3-a830-f1587ba41745"><content-type>/component/image</content-type><display-template>/templates/web/image.ftl</display-template><internal-name>New image</internal-name><file-name>b657d63c-e02c-46b3-a830-f1587ba41745.xml</file-name><merge-strategy>inherit-levels</merge-strategy><createdDate_dt>2020-05-27T00:28:32.529Z</createdDate_dt><lastModifiedDate_dt>2020-05-27T00:28:32.529Z</lastModifiedDate_dt><objectId>b657d63c-e02c-46b3-a830-f1587ba41745</objectId><locale>en</locale><image_s>https://via.placeholder.com/150</image_s></component></item><item datasource="TODO">	<key>/site/components/component_feature/585fb6ec-6855-b389-3130-4a899b0f03e8.xml</key>
 	<value>sharedFeature</value>
 	<include>/site/components/component_feature/585fb6ec-6855-b389-3130-4a899b0f03e8.xml</include>
 	<disableFlattening>false</disableFlattening>

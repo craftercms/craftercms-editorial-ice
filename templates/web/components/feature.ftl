@@ -1,5 +1,4 @@
-<#--<#import "/templates/system/common/cstudio-support.ftl" as studio />-->
-<#import "/templates/web/macros.ftl" as studio>
+<#import "/templates/system/common/ice.ftl" as studio />
 
 <!-- Feature Component -->
 <@studio.componentRootTag $tag="article">

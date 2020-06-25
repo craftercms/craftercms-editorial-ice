@@ -1,4 +1,4 @@
-<#import "/templates/web/macros.ftl" as studio>
+<#import "/templates/system/common/ice.ftl" as studio />
 
 <@studio.componentRootTag $tag="section">
   <header class="major">

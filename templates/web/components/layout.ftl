@@ -1,4 +1,4 @@
-<#import "/templates/web/macros.ftl" as studio>
+<#import "/templates/system/common/ice.ftl" as studio />
 
 <#assign numOfColumns = (contentModel.numberOfColumns_s!1)?number>
 <#assign factor = 12 / numOfColumns>

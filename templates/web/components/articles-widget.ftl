@@ -1,4 +1,4 @@
-<#import "/templates/web/macros.ftl" as studio>
+<#import "/templates/system/common/ice.ftl" as studio />
 
 <#if articles?? && articles?size &gt; 0>
   <@studio.componentRootTag $tag="section">

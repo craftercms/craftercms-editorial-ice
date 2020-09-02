@@ -14,7 +14,6 @@
     ~ You should have received a copy of the GNU General Public License
     ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 -->
-
 <!--
         This file configures the proxy servers for preview.
 
@@ -34,28 +33,28 @@
    <servers>
       <server>
          <id>static-assets</id>
-         <url>http://localhost:8080</url>
+         <url/>
          <patterns>
             <pattern>/static-assets/.*</pattern>
          </patterns>
       </server>
       <server>
          <id>graphql</id>
-         <url>http://localhost:8080</url>
+         <url/>
          <patterns>
             <pattern>/api/1/site/graphql.*</pattern>
          </patterns>
       </server>
       <server>
          <id>engine</id>
-         <url>http://localhost:8080</url>
+         <url/>
          <patterns>
-            <pattern>/api/1/.*</pattern>
+            <pattern>/api/.*</pattern>
          </patterns>
       </server>
       <server>
          <id>preview</id>
-         <url>http://localhost:8080</url>
+         <url/>
          <patterns>
             <pattern>.*</pattern>
          </patterns>

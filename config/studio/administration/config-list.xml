@@ -15,7 +15,6 @@
   ~ You should have received a copy of the GNU General Public License
   ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   -->
-
 <!--
     This file configures the list of configurations available in the SiteConfig section for this site/blueprint.
 
@@ -221,6 +220,13 @@
          <title>Proxy Config</title>
          <description>Proxy Config</description>
          <samplePath>sample-proxy-config.xml</samplePath>
+      </file>
+      <file>
+         <module>studio</module>
+         <path>translation-config.xml</path>
+         <title>confTabTranslationConf</title>
+         <description>confTabTranslationConfDesc</description>
+         <samplePath>sample-translation-config.xml</samplePath>
       </file>
    </files>
 </config>

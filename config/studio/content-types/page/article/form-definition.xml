@@ -723,7 +723,7 @@
 					<properties>
 						<property>
 							<name>repoPath</name>
-							<value>/sites/components/headers/</value>
+							<value>/something/sites/components/headers/</value>
 								<type>undefined</type>
 						</property>
 						<property>

@@ -13,8 +13,8 @@
 	<folder-name/>
 	<createdDate>2017-1-31T16:18:14.000Z</createdDate>
 	<createdDate_dt>2017-1-31T16:18:14.000Z</createdDate_dt>
-	<lastModifiedDate>2020-09-14T07:32:17.547Z</lastModifiedDate>
-	<lastModifiedDate_dt>2020-09-14T07:32:17.547Z</lastModifiedDate_dt>
+	<lastModifiedDate>2020-09-14T13:23:46.843Z</lastModifiedDate>
+	<lastModifiedDate_dt>2020-09-14T13:23:46.843Z</lastModifiedDate_dt>
 	<title_t>Editorial</title_t>
 	<hero_text_html>&lt;p&gt;All the world's a stage. And all the men and women merely players; They have &lt;em&gt;their&lt;/em&gt; exits and their entrances, and one man in his time plays many parts, his acts being seven ages. At first, the infant, mewling and puking in the nurse's arms.&amp;nbsp;&lt;br /&gt;&lt;br /&gt;Then the whining schoolboy, with his satchel&lt;br /&gt;And shining morning face, creeping like a snail&lt;br /&gt;Unwillingly to school.&lt;/p&gt;</hero_text_html>
 	<hero_title_html>&lt;h1&gt;Simply Editorial&lt;/h1&gt;</hero_title_html>
@@ -185,6 +185,7 @@
 	<disableFlattening>false</disableFlattening>
 	</item>	<item datasource="TODO" inline="true">	<key>dc6a9814-6717-4b9d-ae01-cef59bacd36a</key>
 	<value>New image</value>
+	<disableFlattening>false</disableFlattening>
 <component id="dc6a9814-6717-4b9d-ae01-cef59bacd36a">
         <content-type>/component/image</content-type>
         <display-template>/templates/web/image.ftl</display-template>
@@ -197,9 +198,9 @@
         <locale>en</locale>
         <image_s>https://via.placeholder.com/150</image_s>
       </component>
-	<disableFlattening>false</disableFlattening>
 	</item>	<item datasource="TODO" inline="true">	<key>a5ed1d0e-527f-42b9-aee4-c32de5c5eb0b</key>
 	<value>New Feature</value>
+	<disableFlattening>false</disableFlattening>
 <component id="a5ed1d0e-527f-42b9-aee4-c32de5c5eb0b">
         <content-type>/component/feature</content-type>
         <display-template>/templates/web/components/feature.ftl</display-template>
@@ -218,7 +219,6 @@
           exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
         </body_html>
       </component>
-	<disableFlattening>false</disableFlattening>
 	</item>	<item datasource="TODO">	<key>/site/components/component_feature/aa7cf4c8-56a0-9d8e-43d3-72858b5e0b82.xml</key>
 	<value>blabla</value>
 	<include>/site/components/component_feature/aa7cf4c8-56a0-9d8e-43d3-72858b5e0b82.xml</include>

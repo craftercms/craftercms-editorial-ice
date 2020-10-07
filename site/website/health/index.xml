@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <page>
-	<savedAsDraft>true</savedAsDraft>
 	<content-type>/page/category-landing</content-type>
 	<display-template>/templates/web/pages/category-landing.ftl</display-template>
 	<no-template-required/>

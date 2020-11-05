@@ -56,7 +56,7 @@
                     <icon>
                         <baseClass>fa fa-file-text-o</baseClass>
                     </icon>
-                    <path>/site/website</path>
+                    <rootPath>/site/website</rootPath>
                     <locale>en</locale>
                   </props>
                   <container>
@@ -75,7 +75,7 @@
                     <icon>
                         <baseClass>fa fa-puzzle-piece</baseClass>
                     </icon>
-                    <path>/site/components</path>
+                    <rootPath>/site/components</rootPath>
                     <locale>en</locale>
                   </props>
                   <container>
@@ -94,7 +94,7 @@
                     <icon>
                         <baseClass>fa fa-tags</baseClass>
                     </icon>
-                    <path>/site/taxonomy</path>
+                    <rootPath>/site/taxonomy</rootPath>
                     <locale>en</locale>
                   </props>
                   <container>
@@ -113,7 +113,7 @@
                     <icon>
                         <baseClass>fa fa-image</baseClass>
                     </icon>
-                    <path>/static-assets</path>
+                    <rootPath>/static-assets</rootPath>
                     <locale>en</locale>
                   </props>
                   <container>
@@ -132,7 +132,7 @@
                     <icon>
                         <baseClass>fa fa-file-code-o</baseClass>
                     </icon>
-                    <path>/templates</path>
+                    <rootPath>/templates</rootPath>
                     <locale>en</locale>
                   </props>
                   <container>
@@ -151,7 +151,7 @@
                     <icon>
                         <baseClass>fa fa-code</baseClass>
                     </icon>
-                    <path>/scripts</path>
+                    <rootPath>/scripts</rootPath>
                     <locale>en</locale>
                   </props>
                   <container>

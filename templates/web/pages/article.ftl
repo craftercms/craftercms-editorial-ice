@@ -23,7 +23,7 @@
 
 			<!-- Content -->
 			<section>
-				<header class="main" <@studio.iceAttr iceGroup="subject"/>>
+				<header class="main">
 					<h1>${contentModel.subject_t!""}</h1>
 					<h2>by ${contentModel.author_s!""}</h2>
 				</header>
@@ -34,7 +34,7 @@
 				</#if>
 				<span class="image main"><img src="${image}" alt="" /></span>
 				<#list contentModel.sections_o.item as item>
-					<div <@studio.iceAttr iceGroup="article"/>>
+					<div>
 						${item.section_html}
 					</div>
 					<hr class="major" />

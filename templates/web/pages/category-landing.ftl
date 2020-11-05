@@ -22,7 +22,7 @@
       <@renderComponent component=contentModel.header_o.item />
 
       <!-- Section -->
-      <section <@studio.iceAttr iceGroup="articles"/>>
+      <section>
         <header class="main">
           <h1>${contentModel.articles_title_t}</h1>
         </header>

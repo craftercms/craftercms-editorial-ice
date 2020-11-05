@@ -53,7 +53,9 @@
                   <render>PagesWidget</render>
                   <props>
                     <label>Pages</label>
-                    <icon baseClass="fa fa-file-text-o" />
+                    <icon>
+                        <baseClass>fa fa-file-text-o</baseClass>
+                    </icon>
                     <path>/site/website</path>
                     <locale>en</locale>
                   </props>
@@ -89,7 +91,9 @@
                   <render>PagesWidget</render>
                   <props>
                     <label>Taxonomy</label>
-                    <icon baseClass="fa fa-tags"/>
+                    <icon>
+                        <baseClass>fa fa-tags</baseClass>
+                    </icon>
                     <path>/site/taxonomy</path>
                     <locale>en</locale>
                   </props>
@@ -106,7 +110,9 @@
                   <render>PagesWidget</render>
                   <props>
                     <label>Static Assets</label>
-                    <icon baseClass="fa fa-image"/>
+                    <icon>
+                        <baseClass>fa fa-image</baseClass>
+                    </icon>
                     <path>/static-assets</path>
                     <locale>en</locale>
                   </props>
@@ -123,7 +129,9 @@
                   <render>PagesWidget</render>
                   <props>
                     <label>Templates</label>
-                    <ico baseClass="fa fa-file-code-o"/>
+                    <icon>
+                        <baseClass>fa fa-file-code-o</baseClass>
+                    </icon>
                     <path>/templates</path>
                     <locale>en</locale>
                   </props>
@@ -140,7 +148,9 @@
                   <render>PagesWidget</render>
                   <props>
                     <label>Scripts</label>
-                    <icon baseClass="fa fa-code"/>
+                    <icon>
+                        <baseClass>fa fa-code</baseClass>
+                    </icon>
                     <path>/scripts</path>
                     <locale>en</locale>
                   </props>

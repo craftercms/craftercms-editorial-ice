@@ -70,7 +70,9 @@
                   <render>PagesWidget</render>
                   <props>
                     <label>Components</label>
-                    <icon baseClass="fa fa-puzzle-piece"/>
+                    <icon>
+                        <baseClass>fa fa-puzzle-piece</baseClass>
+                    </icon>
                     <path>/site/components</path>
                     <locale>en</locale>
                   </props>

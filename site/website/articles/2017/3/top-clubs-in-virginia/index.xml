@@ -41,7 +41,6 @@
 	</item>	<item>	<key>gal</key>
 	<value_smv>Gal</value_smv>
 	</item></segments_o>
-	<header/>
 	<featured_b>true</featured_b>
 	<summary_t>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Etiam a elit justo. Morbi sagittis pulvinar tristique. Aenean pharetra risus a libero faucibus, iaculis porta mi ornare.</summary_t>
 	<image_s>/static-assets/images/clubs-virginia-pic.jpg</image_s>

@@ -4,7 +4,6 @@
   <display-template>/templates/web/pages/home.ftl</display-template>
   <no-template-required/>
   <merge-strategy>inherit-levels</merge-strategy>
-  <placeInNav>false</placeInNav>
   <file-name>index.xml</file-name>
   <internal-name>Home</internal-name>
   <orderDefault_f>-1</orderDefault_f>
@@ -32,7 +31,6 @@
         <createdDate_dt>2020-05-26T22:34:32.153Z</createdDate_dt>
         <lastModifiedDate_dt>2020-05-26T22:34:32.153Z</lastModifiedDate_dt>
         <objectId>27fdcf05-f6d8-4813-9c62-0300a804853b</objectId>
-        <locale>en</locale>
         <disabled>false</disabled>
         <icon_s>fa-closed-captioning far</icon_s>
         <title_t>Feature Title</title_t>
@@ -143,7 +141,6 @@
                   <createdDate_dt>2020-05-26T22:22:56.532Z</createdDate_dt>
                   <lastModifiedDate_dt>2020-05-26T22:22:56.532Z</lastModifiedDate_dt>
                   <objectId>add29780-b466-4803-a016-8ad87bc63fd0</objectId>
-                  <locale>en</locale>
                   <disabled>false</disabled>
                   <icon_s>fa-closed-captioning far</icon_s>
                   <title_t>Feature Title</title_t>
@@ -214,7 +211,6 @@
         <createdDate_dt>2020-05-27T15:23:00.586Z</createdDate_dt>
         <lastModifiedDate_dt>2020-05-27T15:26:56.342Z</lastModifiedDate_dt>
         <objectId>dc6a9814-6717-4b9d-ae01-cef59bacd36a</objectId>
-        <locale>en</locale>
         <image_s>https://via.placeholder.com/150</image_s>
       </component>
     </item>
@@ -231,7 +227,6 @@
         <createdDate_dt>2020-05-27T15:19:54.594Z</createdDate_dt>
         <lastModifiedDate_dt>2020-05-27T15:19:54.594Z</lastModifiedDate_dt>
         <objectId>a5ed1d0e-527f-42b9-aee4-c32de5c5eb0b</objectId>
-        <locale>en</locale>
         <disabled>false</disabled>
         <icon_s>fa-closed-captioning far</icon_s>
         <title_t>Feature Title</title_t>

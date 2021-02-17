@@ -155,6 +155,7 @@ class SearchHelper {
             article.id = doc.objectId
             article.objectId = doc.objectId
             article.path = doc.localId
+            article.storeUrl = doc.localId
             article.title = doc.subject_t
             article.summary = doc.summary_t
             article.url = urlTransformationService.transform("storeUrlToRenderUrl", doc.localId)

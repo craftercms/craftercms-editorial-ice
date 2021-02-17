@@ -40,7 +40,7 @@
           <@studio.img $field='image_s' src="${image}" alt=""/>
         </span>
 				<#list contentModel.sections_o.item as item>
-					<div <@studio.iceAttr iceGroup="article"/>>
+					<div>
 						${item.section_html}
 					</div>
 					<hr class="major" />

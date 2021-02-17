@@ -4,7 +4,6 @@
   <display-template>/templates/web/pages/home.ftl</display-template>
   <no-template-required/>
   <merge-strategy>inherit-levels</merge-strategy>
-  <placeInNav>false</placeInNav>
   <file-name>index.xml</file-name>
   <internal-name>Home</internal-name>
   <orderDefault_f>-1</orderDefault_f>
@@ -13,16 +12,11 @@
   <folder-name/>
   <createdDate>2017-1-31T16:18:14.000Z</createdDate>
   <createdDate_dt>2017-1-31T16:18:14.000Z</createdDate_dt>
-  <lastModifiedDate>2020-05-27T15:16:15.688Z</lastModifiedDate>
-  <lastModifiedDate_dt>2020-05-27T15:26:56.342Z</lastModifiedDate_dt>
+  <lastModifiedDate>2020-10-07T12:11:16.707Z</lastModifiedDate>
+  <lastModifiedDate_dt>2020-10-24T08:42:10.961Z</lastModifiedDate_dt>
   <title_t>Editorial</title_t>
-  <hero_text_html>&lt;p&gt;All the world's a stage. And all the men and women merely players; They
-    have &lt;em&gt;their&lt;/em&gt; exits and their entrances, and one man in his time plays many
-    parts, his acts being seven ages. At first, the infant, mewling and puking in the nurse's arms.&amp;nbsp;&lt;br
-    /&gt;&lt;br /&gt;Then the whining schoolboy, with his satchel&lt;br /&gt;And shining morning
-    face, creeping like a snail&lt;br /&gt;Unwillingly to school.&lt;/p&gt;
-  </hero_text_html>
-  <hero_title_html>&lt;h1&gt;Simply Editorial&lt;/h1&gt;</hero_title_html>
+  <hero_text_html>&lt;p&gt;All the world's a stage. And all the men and women merely players; They have &lt;em&gt;their&lt;/em&gt; exits and their entrances, and one man in his time plays many parts, his acts being seven ages. At first, the infant, mewling and puking in the nurse's arms.&amp;nbsp;&lt;br /&gt;&lt;br /&gt;Then the whining schoolboy, with his satchel&lt;br /&gt;And shining morning face, creeping like a snail&lt;br /&gt;Unwillingly to school.&lt;/p&gt;</hero_text_html>
+  <hero_title_html><![CDATA[<h1>Hello, world</h1>]]></hero_title_html>
   <features_o item-list="true">
     <item datasource="TODO" inline="true">
       <key>27fdcf05-f6d8-4813-9c62-0300a804853b</key>
@@ -37,11 +31,11 @@
         <createdDate_dt>2020-05-26T22:34:32.153Z</createdDate_dt>
         <lastModifiedDate_dt>2020-05-26T22:34:32.153Z</lastModifiedDate_dt>
         <objectId>27fdcf05-f6d8-4813-9c62-0300a804853b</objectId>
-        <locale>en</locale>
         <disabled>false</disabled>
         <icon_s>fa-closed-captioning far</icon_s>
         <title_t>Feature Title</title_t>
-        <body_html>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+        <body_html>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
           incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
           exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
         </body_html>
@@ -104,7 +98,6 @@
       <disableFlattening>false</disableFlattening>
     </item>
   </features_o>
-  <header/>
   <hero_image_s>/static-assets/images/six-pack-pic.jpg</hero_image_s>
   <left_rail_o item-list="true">
     <item>
@@ -147,11 +140,11 @@
                   <createdDate_dt>2020-05-26T22:22:56.532Z</createdDate_dt>
                   <lastModifiedDate_dt>2020-05-26T22:22:56.532Z</lastModifiedDate_dt>
                   <objectId>add29780-b466-4803-a016-8ad87bc63fd0</objectId>
-                  <locale>en</locale>
                   <disabled>false</disabled>
                   <icon_s>fa-closed-captioning far</icon_s>
                   <title_t>Feature Title</title_t>
-                  <body_html>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                  <body_html>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                     consequat.
@@ -186,8 +179,7 @@
               <item datasource="sharedFeatures">
                 <key>/site/components/features/72ef047f-02b7-89e2-bbd5-4763ac7dbca8.xml</key>
                 <value>Closed captioning</value>
-                <include>/site/components/features/72ef047f-02b7-89e2-bbd5-4763ac7dbca8.xml
-                </include>
+                <include>/site/components/features/72ef047f-02b7-89e2-bbd5-4763ac7dbca8.xml</include>
                 <disableFlattening>false</disableFlattening>
               </item>
             </content_o>
@@ -208,6 +200,7 @@
     <item datasource="TODO" inline="true">
       <key>dc6a9814-6717-4b9d-ae01-cef59bacd36a</key>
       <value>New image</value>
+      <disableFlattening>false</disableFlattening>
       <component id="dc6a9814-6717-4b9d-ae01-cef59bacd36a">
         <content-type>/component/image</content-type>
         <display-template>/templates/web/image.ftl</display-template>
@@ -217,13 +210,13 @@
         <createdDate_dt>2020-05-27T15:23:00.586Z</createdDate_dt>
         <lastModifiedDate_dt>2020-05-27T15:26:56.342Z</lastModifiedDate_dt>
         <objectId>dc6a9814-6717-4b9d-ae01-cef59bacd36a</objectId>
-        <locale>en</locale>
         <image_s>https://via.placeholder.com/150</image_s>
       </component>
     </item>
     <item datasource="TODO" inline="true">
       <key>a5ed1d0e-527f-42b9-aee4-c32de5c5eb0b</key>
       <value>New Feature</value>
+      <disableFlattening>false</disableFlattening>
       <component id="a5ed1d0e-527f-42b9-aee4-c32de5c5eb0b">
         <content-type>/component/feature</content-type>
         <display-template>/templates/web/components/feature.ftl</display-template>
@@ -233,11 +226,11 @@
         <createdDate_dt>2020-05-27T15:19:54.594Z</createdDate_dt>
         <lastModifiedDate_dt>2020-05-27T15:19:54.594Z</lastModifiedDate_dt>
         <objectId>a5ed1d0e-527f-42b9-aee4-c32de5c5eb0b</objectId>
-        <locale>en</locale>
         <disabled>false</disabled>
         <icon_s>fa-closed-captioning far</icon_s>
         <title_t>Feature Title</title_t>
-        <body_html>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+        <body_html>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
           incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
           exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
         </body_html>

@@ -23,16 +23,22 @@
 
 			<!-- Content -->
 			<section>
-				<header class="main" <@studio.iceAttr iceGroup="subject"/>>
-					<h1>${contentModel.subject_t!""}</h1>
-					<h2>by ${contentModel.author_s!""}</h2>
+				<header class="main">
+          <@studio.tag $tag="h1" $field="subject_t">
+            ${contentModel.subject_t!""}
+          </@studio.tag>
+          <@studio.tag $tag="h2" $field="author_s">
+            by ${contentModel.author_s!""}
+          </@studio.tag>
 				</header>
 				<#if contentModel.image_s??>
 					<#assign image = contentModel.image_s/>
 				<#else>
 					<#assign image = "/static-assets/images/placeholder.png"/>
 				</#if>
-				<span class="image main"><img src="${image}" alt="" /></span>
+				<span class="image main">
+          <@studio.img $field='image_s' src="${image}" alt=""/>
+        </span>
 				<#list contentModel.sections_o.item as item>
 					<div <@studio.iceAttr iceGroup="article"/>>
 						${item.section_html}

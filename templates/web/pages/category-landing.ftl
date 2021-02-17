@@ -22,30 +22,30 @@
       <@renderComponent component=contentModel.header_o.item />
 
       <!-- Section -->
-      <section <@studio.iceAttr iceGroup="articles"/>>
+      <@studio.tag $tag="section" $model=contentModel>
         <header class="main">
           <h1>${contentModel.articles_title_t}</h1>
         </header>
         <div class="posts">
-          <#list articles as article>
-            <article>
-              <a href="${article.url}" class="image">
-                <#if article.image??>
-                  <#assign articleImage = article.image/>
-                <#else>
-                  <#assign articleImage = "/static-assets/images/placeholder.png"/>
-                </#if>
-                <img src="${articleImage}" alt=""/>
-              </a>
-              <h3><a href="${article.url}">${article.title}</a></h3>
-              <p>${article.summary}</p>
-              <ul class="actions">
-                <li><a href="${article.url}" class="button">More</a></li>
-              </ul>
-            </article>
-          </#list>
+            <#list articles as article>
+              <article>
+                <a href="${article.url}" class="image">
+                    <#if article.image??>
+                        <#assign articleImage = article.image/>
+                    <#else>
+                        <#assign articleImage = "/static-assets/images/placeholder.png"/>
+                    </#if>
+                  <img src="${articleImage}" alt=""/>
+                </a>
+                <h3><a href="${article.url}">${article.title}</a></h3>
+                <p>${article.summary}</p>
+                <ul class="actions">
+                  <li><a href="${article.url}" class="button">More</a></li>
+                </ul>
+              </article>
+            </#list>
         </div>
-      </section>
+      </@studio.tag>
 
     </div>
   </div>

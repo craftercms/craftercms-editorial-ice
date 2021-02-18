@@ -78,7 +78,7 @@
                 />
               </a>
               <h3>
-                <@studio.a $model=article $field="title_t" href="${article.url}">
+                <@studio.a $model=article $field="subject_t" href="${article.url}">
                   ${article.title}
                 </@studio.a>
               </h3>

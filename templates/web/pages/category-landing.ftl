@@ -28,21 +28,27 @@
         </header>
         <div class="posts">
           <#list articles as article>
-            <article>
+            <@studio.article $model=article>
               <a href="${article.url}" class="image">
-                <#if article.image??>
-                  <#assign articleImage = article.image/>
-                <#else>
-                  <#assign articleImage = "/static-assets/images/placeholder.png"/>
-                </#if>
-                <img src="${articleImage}" alt=""/>
+                <@studio.img
+                  $model=article
+                  $field="image_s"
+                  src=article.image???then(article.image, "/static-assets/images/placeholder.png")
+                  alt=""
+                />
               </a>
-              <h3><a href="${article.url}">${article.title}</a></h3>
-              <p>${article.summary}</p>
+              <h3>
+                <@studio.a $model=article $field="subject_t" href="${article.url}">
+                  ${article.title}
+                </@studio.a>
+              </h3>
+              <@studio.p $model=article $field="summary_t">
+                ${article.summary}
+              </@studio.p>
               <ul class="actions">
                 <li><a href="${article.url}" class="button">More</a></li>
               </ul>
-            </article>
+            </@studio.article>
           </#list>
         </div>
       </@studio.tag>

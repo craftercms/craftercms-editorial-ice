@@ -39,12 +39,20 @@
 				<span class="image main">
           <@studio.img $field='image_s' src="${image}" alt=""/>
         </span>
-				<#list contentModel.sections_o.item as item>
-					<div>
-						${item.section_html}
-					</div>
-					<hr class="major" />
-				</#list>
+
+        <@studio.renderRepeatCollection
+          $field="sections_o"
+          $containerAttributes={'style': 'list-style: none; padding-left: 0;'};
+          item, index
+        >
+          <@studio.tag
+            $field="sections_o.section_html"
+            $index=index
+          >
+            ${item.section_html}
+          </@studio.tag>
+          <hr class="major" />
+        </@studio.renderRepeatCollection>
 			</section>
 		</div>
 	</div>

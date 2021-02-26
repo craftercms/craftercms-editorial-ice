@@ -46,7 +46,7 @@
             ${contentModel.features_title_t}
           </@studio.tag>
         </header>
-        <@studio.renderComponentCollection $field="features_o" class="features" />
+        <@studio.renderComponentCollection $field="features_o" class="features" $itemTag="article" />
       </section>
       <!-- /Section: Features -->
 

@@ -510,7 +510,7 @@
 						</property>
 						<property>
 							<name>itemManager</name>
-							<value>receptacles</value>
+							<value>featuresDropTarget</value>
 							<type>datasource:item</type>
 						</property>
 						<property>
@@ -575,7 +575,7 @@
 						</property>
 						<property>
 							<name>itemManager</name>
-							<value>dynamicReceptacle</value>
+							<value>dynamicContentDropTarget</value>
 							<type>datasource:item</type>
 						</property>
 						<property>
@@ -703,98 +703,98 @@
 					</properties>
 				</datasource>
 				<datasource>
-					<type>receptacles</type>
-					<id>receptacles</id>
-					<title>Features Receptacle</title>
+					<type>dropTargets</type>
+					<id>featuresDropTarget</id>
+					<title>Features Drop Target</title>
 					<interface>item</interface>
 					<properties>
 						<property>
 							<name>allowShared</name>
 							<value>true</value>
-								<type>undefined</type>
+								<type>boolean</type>
 						</property>
 						<property>
 							<name>allowEmbedded</name>
 							<value>true</value>
-								<type>undefined</type>
+								<type>boolean</type>
 						</property>
 						<property>
 							<name>enableBrowse</name>
 							<value>false</value>
-								<type>undefined</type>
+								<type>boolean</type>
 						</property>
 						<property>
 							<name>enableSearch</name>
 							<value>false</value>
-								<type>undefined</type>
+								<type>boolean</type>
 						</property>
 						<property>
 							<name>baseRepositoryPath</name>
 							<value>/site/components</value>
-								<type>undefined</type>
+								<type>string</type>
 						</property>
 						<property>
 							<name>baseBrowsePath</name>
 							<value>/site/components</value>
-								<type>undefined</type>
+								<type>string</type>
 						</property>
 						<property>
 							<name>contentTypes</name>
 							<value>/component/feature</value>
-								<type>undefined</type>
+								<type>contentTypes</type>
 						</property>
 						<property>
 							<name>tags</name>
 							<value></value>
-								<type>undefined</type>
+								<type>string</type>
 						</property>
 					</properties>
 				</datasource>
 				<datasource>
-					<type>receptacles</type>
-					<id>dynamicReceptacle</id>
-					<title>Dynamic Content Receptacle</title>
+					<type>dropTargets</type>
+					<id>dynamicContentDropTarget</id>
+					<title>Dynamic Content Drop Target</title>
 					<interface>item</interface>
 					<properties>
 						<property>
 							<name>allowShared</name>
 							<value>true</value>
-								<type>undefined</type>
+								<type>boolean</type>
 						</property>
 						<property>
 							<name>allowEmbedded</name>
 							<value>true</value>
-								<type>undefined</type>
+								<type>boolean</type>
 						</property>
 						<property>
 							<name>enableBrowse</name>
 							<value>false</value>
-								<type>undefined</type>
+								<type>boolean</type>
 						</property>
 						<property>
 							<name>enableSearch</name>
 							<value>false</value>
-								<type>undefined</type>
+								<type>boolean</type>
 						</property>
 						<property>
 							<name>baseRepositoryPath</name>
 							<value>/site/components</value>
-								<type>undefined</type>
+								<type>string</type>
 						</property>
 						<property>
 							<name>baseBrowsePath</name>
 							<value>/site/components</value>
-								<type>undefined</type>
+								<type>string</type>
 						</property>
 						<property>
 							<name>contentTypes</name>
 							<value>/component/feature,/component/layout,/component/image</value>
-								<type>undefined</type>
+								<type>contentTypes</type>
 						</property>
 						<property>
 							<name>tags</name>
 							<value></value>
-								<type>undefined</type>
+								<type>string</type>
 						</property>
 					</properties>
 				</datasource>

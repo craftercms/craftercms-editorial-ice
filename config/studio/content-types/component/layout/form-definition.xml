@@ -168,7 +168,7 @@
 						</property>
 						<property>
 							<name>itemManager</name>
-							<value>receptacle</value>
+							<value>dropTarget</value>
 							<type>datasource:item</type>
 						</property>
 						<property>
@@ -234,50 +234,50 @@
 					</properties>
 				</datasource>
 				<datasource>
-					<type>receptacles</type>
-					<id>receptacle</id>
-					<title>Receptacle</title>
+					<type>dropTargets</type>
+					<id>dropTarget</id>
+					<title>Drop Target</title>
 					<interface>item</interface>
 					<properties>
 						<property>
 							<name>allowShared</name>
 							<value>true</value>
-								<type>undefined</type>
+								<type>boolean</type>
 						</property>
 						<property>
 							<name>allowEmbedded</name>
 							<value>true</value>
-								<type>undefined</type>
+								<type>boolean</type>
 						</property>
 						<property>
 							<name>enableBrowse</name>
 							<value>false</value>
-								<type>undefined</type>
+								<type>boolean</type>
 						</property>
 						<property>
 							<name>enableSearch</name>
 							<value>false</value>
-								<type>undefined</type>
+								<type>boolean</type>
 						</property>
 						<property>
 							<name>baseRepositoryPath</name>
 							<value>/site/components</value>
-								<type>undefined</type>
+								<type>string</type>
 						</property>
 						<property>
 							<name>baseBrowsePath</name>
 							<value>/site/components</value>
-								<type>undefined</type>
+								<type>string</type>
 						</property>
 						<property>
 							<name>contentTypes</name>
 							<value>/component/feature</value>
-								<type>undefined</type>
+								<type>contentTypes</type>
 						</property>
 						<property>
 							<name>tags</name>
 							<value></value>
-								<type>undefined</type>
+								<type>string</type>
 						</property>
 					</properties>
 				</datasource>

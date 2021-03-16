@@ -24,21 +24,35 @@
 			<!-- Content -->
 			<section>
 				<header class="main">
-					<h1>${contentModel.subject_t!""}</h1>
-					<h2>by ${contentModel.author_s!""}</h2>
+          <@studio.tag $tag="h1" $field="subject_t">
+            ${contentModel.subject_t!""}
+          </@studio.tag>
+          <@studio.tag $tag="h2" $field="author_s">
+            by ${contentModel.author_s!""}
+          </@studio.tag>
 				</header>
 				<#if contentModel.image_s??>
 					<#assign image = contentModel.image_s/>
 				<#else>
 					<#assign image = "/static-assets/images/placeholder.png"/>
 				</#if>
-				<span class="image main"><img src="${image}" alt="" /></span>
-				<#list contentModel.sections_o.item as item>
-					<div>
-						${item.section_html}
-					</div>
-					<hr class="major" />
-				</#list>
+				<span class="image main">
+          <@studio.img $field='image_s' src="${image}" alt=""/>
+        </span>
+
+        <@studio.renderRepeatCollection
+          $field="sections_o"
+          $containerAttributes={'style': 'list-style: none; padding-left: 0;'};
+          item, index
+        >
+          <@studio.tag
+            $field="sections_o.section_html"
+            $index=index
+          >
+            ${item.section_html}
+          </@studio.tag>
+          <hr class="major" />
+        </@studio.renderRepeatCollection>
 			</section>
 		</div>
 	</div>

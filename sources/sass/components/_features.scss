@@ -16,27 +16,27 @@
 
     .feature-container {
       width: calc(50% - #{$gutter});
-      margin: 0 0 3em 3em;
+      margin: 0 0 $gutter $gutter;
+
+      &:nth-child(2n - 1) {
+        margin-right: ($gutter * 0.5);
+      }
+
+      &:nth-child(2n) {
+        margin-left: ($gutter * 0.5);
+      }
+
+      &:nth-last-child(1),
+      &:nth-last-child(2) {
+        margin-bottom: 0;
+      }
+
     }
 
 		.feature {
 			@include vendor('align-items', 'center');
 			@include vendor('display', 'flex');
-			margin: 0 0 $gutter $gutter;
 			position: relative;
-
-			&:nth-child(2n - 1) {
-				margin-right: ($gutter * 0.5);
-			}
-
-			&:nth-child(2n) {
-				margin-left: ($gutter * 0.5);
-			}
-
-			&:nth-last-child(1),
-			&:nth-last-child(2) {
-				margin-bottom: 0;
-			}
 
 			.icon {
 				@include vendor('flex-grow', '0');
@@ -87,28 +87,27 @@
 
       .feature-container {
         width: 100%;
+        margin: 0 0 $gutter 0;
+
+        &:nth-child(2n - 1) {
+          margin-right: 0;
+        }
+
+        &:nth-child(2n) {
+          margin-left: 0;
+        }
+
+        &:nth-last-child(1),
+        &:nth-last-child(2) {
+          margin-bottom: $gutter;
+        }
+
+        &:last-child {
+          margin-bottom: 0;
+        }
       }
 
 			.feature {
-				margin: 0 0 $gutter 0;
-
-				&:nth-child(2n - 1) {
-					margin-right: 0;
-				}
-
-				&:nth-child(2n) {
-					margin-left: 0;
-				}
-
-				&:nth-last-child(1),
-				&:nth-last-child(2) {
-					margin-bottom: $gutter;
-				}
-
-				&:last-child {
-					margin-bottom: 0;
-				}
-
 				.icon {
 					height: 8em;
 					line-height: 8em;

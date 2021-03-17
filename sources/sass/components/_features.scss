@@ -16,7 +16,11 @@
 
     .feature-container {
       width: calc(50% - #{$gutter});
-      margin: 0 0 3em 3em;
+      margin: 0 0 3em 0;
+
+      &:nth-last-child(1), &:nth-last-child(2) {
+        margin-bottom: 0;
+      }
     }
 
 		.feature {

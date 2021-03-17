@@ -1608,7 +1608,8 @@ button,
   margin: 0 0 2em -3em;
   width: calc(100% + 3em); }
   .features .feature-container {
-    width: calc(50% - 3em); }
+    width: calc(50% - 3em);
+    margin: 0 0 3em 3em; }
   .features .feature {
     -moz-align-items: center;
     -webkit-align-items: center;

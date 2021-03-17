@@ -1610,6 +1610,12 @@ button,
   .features .feature-container {
     width: calc(50% - 3em);
     margin: 0 0 3em 3em; }
+    .features .feature-container:nth-child(2n - 1) {
+      margin-right: 1.5em; }
+    .features .feature-container:nth-child(2n) {
+      margin-left: 1.5em; }
+    .features .feature-container:nth-last-child(1), .features .feature-container:nth-last-child(2) {
+      margin-bottom: 0; }
   .features .feature {
     -moz-align-items: center;
     -webkit-align-items: center;
@@ -1619,14 +1625,7 @@ button,
     display: -webkit-flex;
     display: -ms-flex;
     display: flex;
-    margin: 0 0 3em 3em;
     position: relative; }
-    .features .feature:nth-child(2n - 1) {
-      margin-right: 1.5em; }
-    .features .feature:nth-child(2n) {
-      margin-left: 1.5em; }
-    .features .feature:nth-last-child(1), .features .feature:nth-last-child(2) {
-      margin-bottom: 0; }
     .features .feature .icon {
       -moz-flex-grow: 0;
       -webkit-flex-grow: 0;
@@ -1679,27 +1678,26 @@ button,
       margin: 0 0 2em 0;
       width: 100%; }
       .features .feature-container {
-        width: 100%; }
-      .features .feature {
+        width: 100%;
         margin: 0 0 3em 0; }
-        .features .feature:nth-child(2n - 1) {
+        .features .feature-container:nth-child(2n - 1) {
           margin-right: 0; }
-        .features .feature:nth-child(2n) {
+        .features .feature-container:nth-child(2n) {
           margin-left: 0; }
-        .features .feature:nth-last-child(1), .features .feature:nth-last-child(2) {
+        .features .feature-container:nth-last-child(1), .features .feature-container:nth-last-child(2) {
           margin-bottom: 3em; }
-        .features .feature:last-child {
+        .features .feature-container:last-child {
           margin-bottom: 0; }
-        .features .feature .icon {
-          height: 8em;
-          line-height: 8em;
-          width: 8em; }
-          .features .feature .icon:before {
-            font-size: 2.25rem; }
-          .features .feature .icon:after {
-            height: 6em;
-            margin: -3em 0 0 -3em;
-            width: 6em; } }
+      .features .feature .icon {
+        height: 8em;
+        line-height: 8em;
+        width: 8em; }
+        .features .feature .icon:before {
+          font-size: 2.25rem; }
+        .features .feature .icon:after {
+          height: 6em;
+          margin: -3em 0 0 -3em;
+          width: 6em; } }
   @media screen and (max-width: 480px) {
     .features .feature {
       -moz-flex-direction: column;
